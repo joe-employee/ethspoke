@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_ethereum.xhr</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>http://www.chimaira.org/tools/xmlhttp.js.txt</description>
+        <name>xhr</name>
+        <script><![CDATA[/* xmlhttp.js -- Simple XMLHttpRequest for Rhino
+ * by M.Hiyama (hiyama{at}chimaira{dot}org) 2005
+ * URL: http://www.chimaira.org/
+ */
+
+function XMLHttpRequest() {
+ this.requestURL = "";
+ this.responseText = "";
+ this.readyState = 0;
+ this.status = 0;
+
+ this.open = function(method, url, async) {
+  if (method != "GET") {
+   throw new Error("This XMLHttpRequest supports GET method only.");
+  }
+  if (async != false) {
+   throw new Error("This XMLHttpRequest cannot perform asynchronous read.");
+  }
+  this.requestURL = url;
+  this.responseText = "";
+  this.readyState = 0;
+  this.status = 0;
+ }
+ this.send = function(query) {
+  var s;
+  try {
+   s = readUrl(this.requestURL);// readUrl is Rhino's primitive
+   this.status = 200;
+  } catch (e) {
+   s = "";
+   this.status = 1;
+  }
+  this.responseText = s;
+  this.requestURL = null;
+  this.readyState = 4;
+ }
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 10:11:58</sys_created_on>
+        <sys_id>59ca2ae6db402010969430d8689619b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>xhr</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_script_include_59ca2ae6db402010969430d8689619b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 10:15:25</sys_updated_on>
+    </sys_script_include>
+</record_update>
