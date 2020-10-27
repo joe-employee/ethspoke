@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_ethereum.ethjs-provider-ipc</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ethjs-provider-ipc</name>
+        <script><![CDATA[(function _0x477096(_0x37e338, _0x7a341a) {
+    if (typeof exports === 'object' && typeof module === 'object')
+        module['exports'] = _0x7a341a(require('net'));
+    else if (typeof define === 'function' && define['amd'])
+        define('IpcProvider', ['net'], _0x7a341a);
+    else if (typeof exports === 'object')
+        exports['IpcProvider'] = _0x7a341a(require('net'));
+    else
+        _0x37e338['IpcProvider'] = _0x7a341a(_0x37e338['net']);
+}(this, function (_0x4fb592) {
+    return function (_0x4b9712) {
+        var _0x1d337b = {};
+        function _0x29f78a(_0xebd21d) {
+            if (_0x1d337b[_0xebd21d])
+                return _0x1d337b[_0xebd21d]['exports'];
+            var _0x90312d = _0x1d337b[_0xebd21d] = {
+                'i': _0xebd21d,
+                'l': ![],
+                'exports': {}
+            };
+            _0x4b9712[_0xebd21d]['call'](_0x90312d['exports'], _0x90312d, _0x90312d['exports'], _0x29f78a);
+            _0x90312d['l'] = !![];
+            return _0x90312d['exports'];
+        }
+        _0x29f78a['m'] = _0x4b9712;
+        _0x29f78a['c'] = _0x1d337b;
+        _0x29f78a['i'] = function (_0xc3442) {
+            return _0xc3442;
+        };
+        _0x29f78a['d'] = function (_0x4f7229, _0x11370c, _0x4f2397) {
+            Object['defineProperty'](_0x4f7229, _0x11370c, {
+                'configurable': ![],
+                'enumerable': !![],
+                'get': _0x4f2397
+            });
+        };
+        _0x29f78a['o'] = function (_0x4b6251, _0x46c3c0) {
+            return Object['prototype']['hasOwnProperty']['call'](_0x4b6251, _0x46c3c0);
+        };
+        _0x29f78a['p'] = '';
+        return _0x29f78a(_0x29f78a['s'] = 0x2);
+    }([
+        function (_0x3c3116, _0x2cfff8, _0x3d3218) {
+            var _0x4a14e5 = _0x3d3218(0x1);
+            function _0x567437(_0x35c5a4, _0x4365eb) {
+                var _0x3e1cb7 = !!_0x35c5a4 && !!_0x35c5a4['error'] && !!_0x35c5a4['error']['message'] ? '[ethjs-provider-ipc]\x20' + _0x35c5a4['error']['message'] : '[ethjs-provider-ipc]\x20Invalid\x20JSON\x20RPC\x20response\x20from\x20host\x20provider\x20' + _0x4365eb + ':\x20' + JSON['stringify'](_0x35c5a4, null, 0x2);
+                return new Error(_0x3e1cb7);
+            }
+            function _0x196e35(_0x62b85a) {
+                if (!(this instanceof _0x196e35)) {
+                    throw new Error('[ethjs-provider-ipc]\x20the\x20IpcProvider\x20instance\x20requires\x20the\x20\x22new\x22\x20flag\x20in\x20order\x20to\x20function\x20normally\x20(e.g.\x20`const\x20eth\x20=\x20new\x20Eth(new\x20IpcProvider());`).');
+                }
+                if (typeof _0x62b85a !== 'string') {
+                    throw new Error('[ethjs-provider-ipc]\x20the\x20IpcProvider\x20instance\x20requires\x20that\x20the\x20path\x20be\x20specified\x20(e.g.\x20`/var/run/geth.ipc`)');
+                }
+                var _0x2c8046 = this;
+                _0x2c8046['path'] = _0x62b85a;
+                _0x2c8046['responseCallbacks'] = {};
+            }
+            _0x196e35['prototype']['sendAsync'] = function (_0x2ee24c, _0x4213cc) {
+                var _0x5e79f7 = this;
+                try {
+                    if (!_0x5e79f7['connection'] || !_0x5e79f7['connection']['writeable']) {
+                        _0x5e79f7['connection'] = _0x4a14e5['connect'](this['path']);
+                    }
+                } catch (_0x594c70) {
+                    _0x4213cc(new Error('[ethjs-provider-ipc]\x20CONNECTION\x20ERROR:\x20Couldn\x27t\x20connect\x20to\x20path\x20\x27' + _0x5e79f7['path'] + '\x27:\x20' + JSON['stringify'](_0x594c70, null, 0x2)), null);
+                }
+                _0x5e79f7['connection']['on']('error', function (_0x5798b4) {
+                    console['error']('IPC\x20Connection\x20Error', _0x5798b4);
+                    _0x4213cc(new Error('[ethjs-provider-ipc]\x20CONNECTION\x20TIMEOUT:\x20request\x20timeout.\x20(i.e.\x20your\x20connect\x20has\x20timed\x20out\x20for\x20whatever\x20reason,\x20check\x20your\x20provider).'), null);
+                });
+                _0x5e79f7['connection']['on']('end', function (_0x2385aa) {
+                    console['error']('IPC\x20Connection\x20Closed', _0x2385aa);
+                    _0x4213cc(new Error('[ethjs-provider-ipc]\x20CONNECTION\x20TIMEOUT:\x20request\x20timeout.\x20(i.e.\x20your\x20connect\x20has\x20timed\x20out\x20for\x20whatever\x20reason,\x20check\x20your\x20provider).'), null);
+                });
+                _0x5e79f7['connection']['on']('data', function (_0xb2271f) {
+                    var _0x210d6e = null;
+                    try {
+                        _0x210d6e = JSON['parse'](_0xb2271f);
+                        var _0x3438cf = null;
+                        if (Array['isArray'](_0x210d6e)) {
+                            _0x210d6e['forEach'](function (_0x445ab5) {
+                                if (_0x5e79f7['responseCallbacks'][_0x445ab5['id']]) {
+                                    _0x3438cf = _0x445ab5['id'];
+                                }
+                            });
+                        } else {
+                            _0x3438cf = _0x210d6e['id'];
+                        }
+                        if (_0x5e79f7['responseCallbacks'][_0x3438cf]) {
+                            _0x5e79f7['responseCallbacks'][_0x3438cf](null, _0x210d6e);
+                            delete _0x5e79f7['responseCallbacks'][_0x3438cf];
+                        }
+                    } catch (_0x1d690a) {
+                        _0x4213cc(_0x567437(_0xb2271f, _0x5e79f7['path']), null);
+                    }
+                });
+                var _0x1dfb89 = _0x2ee24c['id'] || _0x2ee24c[0x0]['id'];
+                _0x5e79f7['responseCallbacks'][_0x1dfb89] = _0x4213cc;
+                _0x5e79f7['connection']['write'](JSON['stringify'](_0x2ee24c));
+            };
+            _0x3c3116['exports'] = _0x196e35;
+        },
+        function (_0xd07065, _0x12641f) {
+            _0xd07065['exports'] = require('net');
+        },
+        function (_0x4bfe92, _0x3adccc, _0x1d9560) {
+            _0x4bfe92['exports'] = _0x1d9560(0x0);
+        }
+    ]);
+}));
+;]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-26 17:49:15</sys_created_on>
+        <sys_id>6fb98796db0ce010969430d86896191d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ethjs-provider-ipc</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_script_include_6fb98796db0ce010969430d86896191d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-26 18:02:39</sys_updated_on>
+    </sys_script_include>
+</record_update>

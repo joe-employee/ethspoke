@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_ethereum.xhr</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>https://cdn.jsdelivr.net/npm/xhr-polyfill@0.1.8/dist/xhr-polyfill.js</description>
+        <name>xhr</name>
+        <script><![CDATA[window.xhrPolyfill = window.xhrPolyfill || {}, window.xhrPolyfill.originalXMLHttpRequest = window.XMLHttpRequest, window.xhrPolyfill.getOrigin = function(e) {
+    var n;
+    if (n = /^(?:\w+\:)?(?:\/\/)([^\/]*)/.exec(e), !n) throw "invalid url";
+    return n[0]
+}, window.xhrPolyfill.parseHeaders = function(e) {
+    var n, i, r, t;
+    if (!e) return {};
+    if ("string" == typeof e && (e = e.split(/\r\n/)), "[object Array]" === Object.prototype.toString.apply(e)) {
+        for (r = {}, n = e.length - 1; n >= 0; n--) t = /^(.+?)\:\s*(.+)$/.exec(e[n]), t && (r[t[1]] = t[2]);
+        e = r, r = null
+    }
+    if ("object" == typeof e) {
+        r = {};
+        for (i in e) r[i.toLowerCase()] = e[i];
+        e = r, r = null
+    }
+    return e
+}, window.xhrPolyfill.bindEvent = function(e, n, i) {
+    var r, t = "on" + n;
+    if ("addEventListener" in e) return e.addEventListener(n, i, !1);
+    if ("attachEvent" in e) return e.attachEvent(t, i);
+    if (t in e) return r = e[t], void(e[t] = r ? function() {
+        r.apply(this, arguments), i.apply(this, arguments)
+    } : i);
+    throw "could not bind to event '" + n + "'"
+}, window.xhrPolyfill.resolveUrl = function(e) {
+    var n = document.createElement("a");
+    return n.href = e, n.href
+}, window.xhrPolyfill.receiveMessage = function(e, n) {
+    var i;
+    if (e.source !== n) return null;
+    if (i = e.data, "string" == typeof i) {
+        if ("{" !== i[0]) return null;
+        i = JSON.parse(i)
+    }
+    return "object" != typeof i ? null : i
+}, window.xhrPolyfill.xhrSend = function(e, n) {
+    var i, r, t = window.xhrPolyfill.originalXMLHttpRequest ? new window.xhrPolyfill.originalXMLHttpRequest : function() {
+        try {
+            return new window.ActiveXObject("Msxml2.XMLHTTP.6.0")
+        } catch (e) {}
+        try {
+            return new window.ActiveXObject("Msxml2.XMLHTTP.3.0")
+        } catch (n) {}
+        try {
+            return new window.ActiveXObject("Msxml2.XMLHTTP")
+        } catch (i) {}
+        throw new Error("This browser does not support XMLHttpRequest.")
+    }();
+    if (t.onreadystatechange = function() {
+            var i = {};
+            switch (i.id = e.id, i.readyState = this.readyState, this.readyState) {
+                case 1:
+                case 2:
+                case 3:
+                    break;
+                case 4:
+                    i.responseBody = this.responseText, i.responseHeaders = this.getAllResponseHeaders(), i.statusCode = this.status, i.statusText = this.statusText;
+                    break;
+                default:
+                    throw new Error("invalid state")
+            }
+            n(i)
+        }, t.open(e.method, e.url, !0, e.username, e.password), e.requestHeaders) {
+        r = window.xhrPolyfill.parseHeaders(e.requestHeaders);
+        for (i in r) t.setRequestHeader(i, r[i])
+    }
+    t.send(e.requestBody)
+}, window.xhrPolyfill = window.xhrPolyfill || {}, window.xhrPolyfill.bindEvent(window, "message", function(e) {
+    var n, i;
+    e.origin in window.xhrPolyfill.channels && (i = window.xhrPolyfill.channels[e.origin], (n = window.xhrPolyfill.receiveMessage(e, i.iframe.contentWindow)) && i.onreceive && i.onreceive(n))
+}), window.xhrPolyfill.IFrameChannel = function(e) {
+    var n = this;
+    e = window.xhrPolyfill.resolveUrl(e), n.origin = window.xhrPolyfill.getOrigin(e), n.send = function(i) {
+        var r = [i];
+        n.send = function(e) {
+            r.push(e)
+        }, n.iframe = document.createElement("iframe"), window.xhrPolyfill.bindEvent(n.iframe, "load", function() {
+            var e;
+            for (n.send = function(e) {
+                    n.iframe.contentWindow.postMessage(JSON.stringify(e), n.origin)
+                }; e = r.shift();) n.send(e);
+            r = null
+        }), n.iframe.src = e, n.iframe.style.display = "none", document.scripts[0].parentNode.insertBefore(n.iframe, document.scripts[0])
+    }, this.onreceive = null
+}, window.xhrPolyfill = window.xhrPolyfill || {}, window.xhrPolyfill.channels = {}, window.xhrPolyfill.proxies = {}, window.xhrPolyfill.idSequence = 0, window.xhrPolyfill.ensureChannel = function(e) {
+    var n;
+    return e = window.xhrPolyfill.resolveUrl(e), n = window.xhrPolyfill.getOrigin(e), n in window.xhrPolyfill.channels || (window.xhrPolyfill.channels[n] = window.xhrPolyfill.createChannel(e)), window.xhrPolyfill.channels[n]
+}, window.xhrPolyfill.createChannel = function(e) {
+    var n = new window.xhrPolyfill.IFrameChannel(e);
+    return window.xhrPolyfill.bindEvent(n, "receive", function(e) {
+        var n;
+        return e.id in window.xhrPolyfill.proxies ? (n = window.xhrPolyfill.proxies[e.id], 4 === e.readyState && delete window.xhrPolyfill.proxies[e.id], void window.xhrPolyfill.xhrReceive(n, e)) : !1
+    }), n
+}, window.xhrPolyfill.xhrReceive = function(e, n) {
+    var i;
+    i = window.xhrPolyfill.parseHeaders(n.responseHeaders), e.readyState = n.readyState, e.status = n.statusCode, e.statusText = n.statusText, e.responseText = n.responseBody, e.getAllResponseHeaders = function() {
+        return n.responseHeaders
+    }, e.getResponseHeader = function(e) {
+        return e = e.toLowerCase(), e in i ? i[e] : void 0
+    }, e.onreadystatechange && e.onreadystatechange(e)
+}, window.xhrPolyfill.XMLHttpRequestProxy = function() {
+    var e = (++window.xhrPolyfill.idSequence).toString(36),
+        n = this,
+        i = null,
+        r = window.xhrPolyfill.getOrigin(location.href),
+        t = null,
+        o = {
+            id: e,
+            requestHeaders: {}
+        };
+    this.onreadystatechange = null, this.readyState = 0, this.responseText = null, this.status = null, this.statusText = null, this.open = function(e, n, r, t, l) {
+        if (r === !1) throw "only asynchronous behavior is supported";
+        n = window.xhrPolyfill.resolveUrl(n), i = window.xhrPolyfill.getOrigin(n), o.method = e, o.url = n, o.username = t, o.password = l
+    }, this.send = function(l) {
+        o.requestBody = l, r == i ? window.xhrPolyfill.xhrSend(o, function(e) {
+            window.xhrPolyfill.xhrReceive(n, e)
+        }) : (window.xhrPolyfill.proxies[e] = this, t = window.xhrPolyfill.ensureChannel(i + "/xhr-channel.html"), t.send(o))
+    }, this.abort = function() {}, this.setRequestHeader = function(e, n) {
+        e = e.toLowerCase(), o.requestHeaders[e] = n
+    }, this.getAllResponseHeaders = function() {}, this.getResponseHeader = function() {}
+}, document.documentMode && document.documentMode < 10 && (window.XMLHttpRequest = window.xhrPolyfill.XMLHttpRequestProxy);]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-26 17:22:01</sys_created_on>
+        <sys_id>01a1c792db0ce010969430d86896193f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>xhr</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_script_include_01a1c792db0ce010969430d86896193f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-26 17:32:59</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Ethereum">3c0e4434db442010969430d868961918</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>sys_script_include_01a1c792db0ce010969430d86896193f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_snc_ethereum.xhr&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;https://cdn.jsdelivr.net/npm/xhr-polyfill@0.1.8/dist/xhr-polyfill.js&lt;/description&gt;&lt;name&gt;xhr&lt;/name&gt;&lt;script&gt;&lt;![CDATA[window.xhrPolyfill = window.xhrPolyfill || {}, window.xhrPolyfill.originalXMLHttpRequest = window.XMLHttpRequest, window.xhrPolyfill.getOrigin = function(e) {
+    var n;
+    if (n = /^(?:\w+\:)?(?:\/\/)([^\/]*)/.exec(e), !n) throw "invalid url";
+    return n[0]
+}, window.xhrPolyfill.parseHeaders = function(e) {
+    var n, i, r, t;
+    if (!e) return {};
+    if ("string" == typeof e &amp;&amp; (e = e.split(/\r\n/)), "[object Array]" === Object.prototype.toString.apply(e)) {
+        for (r = {}, n = e.length - 1; n &gt;= 0; n--) t = /^(.+?)\:\s*(.+)$/.exec(e[n]), t &amp;&amp; (r[t[1]] = t[2]);
+        e = r, r = null
+    }
+    if ("object" == typeof e) {
+        r = {};
+        for (i in e) r[i.toLowerCase()] = e[i];
+        e = r, r = null
+    }
+    return e
+}, window.xhrPolyfill.bindEvent = function(e, n, i) {
+    var r, t = "on" + n;
+    if ("addEventListener" in e) return e.addEventListener(n, i, !1);
+    if ("attachEvent" in e) return e.attachEvent(t, i);
+    if (t in e) return r = e[t], void(e[t] = r ? function() {
+        r.apply(this, arguments), i.apply(this, arguments)
+    } : i);
+    throw "could not bind to event '" + n + "'"
+}, window.xhrPolyfill.resolveUrl = function(e) {
+    var n = document.createElement("a");
+    return n.href = e, n.href
+}, window.xhrPolyfill.receiveMessage = function(e, n) {
+    var i;
+    if (e.source !== n) return null;
+    if (i = e.data, "string" == typeof i) {
+        if ("{" !== i[0]) return null;
+        i = JSON.parse(i)
+    }
+    return "object" != typeof i ? null : i
+}, window.xhrPolyfill.xhrSend = function(e, n) {
+    var i, r, t = window.xhrPolyfill.originalXMLHttpRequest ? new window.xhrPolyfill.originalXMLHttpRequest : function() {
+        try {
+            return new window.ActiveXObject("Msxml2.XMLHTTP.6.0")
+        } catch (e) {}
+        try {
+            return new window.ActiveXObject("Msxml2.XMLHTTP.3.0")
+        } catch (n) {}
+        try {
+            return new window.ActiveXObject("Msxml2.XMLHTTP")
+        } catch (i) {}
+        throw new Error("This browser does not support XMLHttpRequest.")
+    }();
+    if (t.onreadystatechange = function() {
+            var i = {};
+            switch (i.id = e.id, i.readyState = this.readyState, this.readyState) {
+                case 1:
+                case 2:
+                case 3:
+                    break;
+                case 4:
+                    i.responseBody = this.responseText, i.responseHeaders = this.getAllResponseHeaders(), i.statusCode = this.status, i.statusText = this.statusText;
+                    break;
+                default:
+                    throw new Error("invalid state")
+            }
+            n(i)
+        }, t.open(e.method, e.url, !0, e.username, e.password), e.requestHeaders) {
+        r = window.xhrPolyfill.parseHeaders(e.requestHeaders);
+        for (i in r) t.setRequestHeader(i, r[i])
+    }
+    t.send(e.requestBody)
+}, window.xhrPolyfill = window.xhrPolyfill || {}, window.xhrPolyfill.bindEvent(window, "message", function(e) {
+    var n, i;
+    e.origin in window.xhrPolyfill.channels &amp;&amp; (i = window.xhrPolyfill.channels[e.origin], (n = window.xhrPolyfill.receiveMessage(e, i.iframe.contentWindow)) &amp;&amp; i.onreceive &amp;&amp; i.onreceive(n))
+}), window.xhrPolyfill.IFrameChannel = function(e) {
+    var n = this;
+    e = window.xhrPolyfill.resolveUrl(e), n.origin = window.xhrPolyfill.getOrigin(e), n.send = function(i) {
+        var r = [i];
+        n.send = function(e) {
+            r.push(e)
+        }, n.iframe = document.createElement("iframe"), window.xhrPolyfill.bindEvent(n.iframe, "load", function() {
+            var e;
+            for (n.send = function(e) {
+                    n.iframe.contentWindow.postMessage(JSON.stringify(e), n.origin)
+                }; e = r.shift();) n.send(e);
+            r = null
+        }), n.iframe.src = e, n.iframe.style.display = "none", document.scripts[0].parentNode.insertBefore(n.iframe, document.scripts[0])
+    }, this.onreceive = null
+}, window.xhrPolyfill = window.xhrPolyfill || {}, window.xhrPolyfill.channels = {}, window.xhrPolyfill.proxies = {}, window.xhrPolyfill.idSequence = 0, window.xhrPolyfill.ensureChannel = function(e) {
+    var n;
+    return e = window.xhrPolyfill.resolveUrl(e), n = window.xhrPolyfill.getOrigin(e), n in window.xhrPolyfill.channels || (window.xhrPolyfill.channels[n] = window.xhrPolyfill.createChannel(e)), window.xhrPolyfill.channels[n]
+}, window.xhrPolyfill.createChannel = function(e) {
+    var n = new window.xhrPolyfill.IFrameChannel(e);
+    return window.xhrPolyfill.bindEvent(n, "receive", function(e) {
+        var n;
+        return e.id in window.xhrPolyfill.proxies ? (n = window.xhrPolyfill.proxies[e.id], 4 === e.readyState &amp;&amp; delete window.xhrPolyfill.proxies[e.id], void window.xhrPolyfill.xhrReceive(n, e)) : !1
+    }), n
+}, window.xhrPolyfill.xhrReceive = function(e, n) {
+    var i;
+    i = window.xhrPolyfill.parseHeaders(n.responseHeaders), e.readyState = n.readyState, e.status = n.statusCode, e.statusText = n.statusText, e.responseText = n.responseBody, e.getAllResponseHeaders = function() {
+        return n.responseHeaders
+    }, e.getResponseHeader = function(e) {
+        return e = e.toLowerCase(), e in i ? i[e] : void 0
+    }, e.onreadystatechange &amp;&amp; e.onreadystatechange(e)
+}, window.xhrPolyfill.XMLHttpRequestProxy = function() {
+    var e = (++window.xhrPolyfill.idSequence).toString(36),
+        n = this,
+        i = null,
+        r = window.xhrPolyfill.getOrigin(location.href),
+        t = null,
+        o = {
+            id: e,
+            requestHeaders: {}
+        };
+    this.onreadystatechange = null, this.readyState = 0, this.responseText = null, this.status = null, this.statusText = null, this.open = function(e, n, r, t, l) {
+        if (r === !1) throw "only asynchronous behavior is supported";
+        n = window.xhrPolyfill.resolveUrl(n), i = window.xhrPolyfill.getOrigin(n), o.method = e, o.url = n, o.username = t, o.password = l
+    }, this.send = function(l) {
+        o.requestBody = l, r == i ? window.xhrPolyfill.xhrSend(o, function(e) {
+            window.xhrPolyfill.xhrReceive(n, e)
+        }) : (window.xhrPolyfill.proxies[e] = this, t = window.xhrPolyfill.ensureChannel(i + "/xhr-channel.html"), t.send(o))
+    }, this.abort = function() {}, this.setRequestHeader = function(e, n) {
+        e = e.toLowerCase(), o.requestHeaders[e] = n
+    }, this.getAllResponseHeaders = function() {}, this.getResponseHeader = function() {}
+}, document.documentMode &amp;&amp; document.documentMode &lt; 10 &amp;&amp; (window.XMLHttpRequest = window.xhrPolyfill.XMLHttpRequestProxy);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-10-26 17:22:01&lt;/sys_created_on&gt;&lt;sys_id&gt;01a1c792db0ce010969430d86896193f&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;xhr&lt;/sys_name&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_01a1c792db0ce010969430d86896193f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-10-26 17:32:59&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>468703470</payload_hash>
+        <record_name>xhr</record_name>
+        <reverted_from/>
+        <source>6a5f4434db442010969430d86896195b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-26 17:32:59</sys_created_on>
+        <sys_id>04364b16db0ce010969430d868961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17565f867ac0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-26 17:32:59</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>4c364b16bd0ce010a6104c8c02a40488</update_guid>
+        <update_guid_history>4c364b16bd0ce010a6104c8c02a40488:468703470,a3a387d25b0ce010f9cdf09e600c0fc7:1869088909</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-26 17:34:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>611fd695d3254ec082242e04a6f17590</sys_id>
+        <sys_metadata>01a1c792db0ce010969430d86896193f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>xhr</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_scope_delete display_value="">2bb8a3046e8a400e969b229d381b21b1</sys_scope_delete>
+        <sys_update_name>sys_script_include_01a1c792db0ce010969430d86896193f</sys_update_name>
+        <sys_update_version display_value="sys_script_include_01a1c792db0ce010969430d86896193f">04364b16db0ce010969430d868961989</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-26 17:34:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,3 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Transaction" max_length="40" name="x_snc_ethereum_transaction" type="collection"/>
+    <element label="Transaction" max_length="40" name="x_snc_ethereum_transaction" sizeclass="1" type="collection">
+        <element label="data" max_length="1000" name="data" type="string"/>
+        <element label="From" max_length="42" name="from" type="string"/>
+        <element label="gas" max_length="100" name="gas" type="string"/>
+        <element label="gasPrice" max_length="100" name="gasprice" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Hash" max_length="1000" name="hash" type="string"/>
+        <element label="nonce" max_length="1000" name="nonce" type="string"/>
+        <element label="r" max_length="1000" name="r" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Raw" max_length="4000" name="raw" type="string"/>
+        <element label="s" max_length="1000" name="s" type="string"/>
+        <element label="To" max_length="42" name="to" type="string"/>
+        <element label="v" max_length="1000" name="v" type="string"/>
+        <element label="value" max_length="1000" name="value" type="string"/>
+    </element>
 </database>
