@@ -276,7 +276,7 @@
         <reverted_from/>
         <source>6a5f4434db442010969430d86896195b</source>
         <source_table>sys_update_set</source_table>
-        <state>previous</state>
+        <state>current</state>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-26 17:32:59</sys_created_on>
         <sys_id>04364b16db0ce010969430d868961989</sys_id>

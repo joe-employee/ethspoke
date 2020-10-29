@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_snc_ethereum_method">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="endpoint" table="x_snc_ethereum_transaction">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes/>
+        <attributes>edge_encryption_enabled=true,encode_utf8=false</attributes>
         <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
+        <calculation/>
+        <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label/>
+        <column_label>Endpoint</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -27,20 +22,20 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element/>
+        <element>endpoint</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Collection">collection</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <name>x_snc_ethereum_method</name>
+        <max_length>32</max_length>
+        <name>x_snc_ethereum_transaction</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="x_snc_ethereum_endpoint">x_snc_ethereum_endpoint</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -52,16 +47,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-21 13:31:00</sys_created_on>
-        <sys_id>6ede14bcdb442010969430d86896197f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>x_snc_ethereum_method</sys_name>
+        <sys_created_on>2020-10-28 15:16:46</sys_created_on>
+        <sys_id>d83a304bdb8c2010969430d868961997</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Endpoint</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name>sys_dictionary_x_snc_ethereum_method_null</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2020-10-22 17:47:00</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_snc_ethereum_transaction_endpoint</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-28 15:16:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_ethereum.endpoint_user" name="x_snc_ethereum.endpoint_user">a42df37adb0c2010969430d868961903</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-28 10:50:02</sys_created_on>
+        <sys_id>052df37adb0c2010969430d868961906</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a42df37adb0c2010969430d868961903</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_embedded_help_role_052df37adb0c2010969430d868961906</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-28 10:50:02</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
