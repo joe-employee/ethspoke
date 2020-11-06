@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_ethereum.ethjs-filter</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ethjs-filter</name>
+        <script><![CDATA[(function _0x2910b4(_0x4af716, _0x30c3be) {
+    if (typeof exports === 'object' && typeof module === 'object')
+        module['exports'] = _0x30c3be();
+    else if (typeof define === 'function' && define['amd'])
+        define('EthFilter', [], _0x30c3be);
+    else if (typeof exports === 'object')
+        exports['EthFilter'] = _0x30c3be();
+    else
+        _0x4af716['EthFilter'] = _0x30c3be();
+}(this, function () {
+    return function (_0x3ea408) {
+        var _0x4bcbde = {};
+        function _0x144018(_0x5c7bca) {
+            if (_0x4bcbde[_0x5c7bca])
+                return _0x4bcbde[_0x5c7bca]['exports'];
+            var _0x54285e = _0x4bcbde[_0x5c7bca] = {
+                'i': _0x5c7bca,
+                'l': ![],
+                'exports': {}
+            };
+            _0x3ea408[_0x5c7bca]['call'](_0x54285e['exports'], _0x54285e, _0x54285e['exports'], _0x144018);
+            _0x54285e['l'] = !![];
+            return _0x54285e['exports'];
+        }
+        _0x144018['m'] = _0x3ea408;
+        _0x144018['c'] = _0x4bcbde;
+        _0x144018['i'] = function (_0x2e4747) {
+            return _0x2e4747;
+        };
+        _0x144018['d'] = function (_0x1497da, _0x162294, _0x322812) {
+            Object['defineProperty'](_0x1497da, _0x162294, {
+                'configurable': ![],
+                'enumerable': !![],
+                'get': _0x322812
+            });
+        };
+        _0x144018['o'] = function (_0x1657c8, _0x5f16d4) {
+            return Object['prototype']['hasOwnProperty']['call'](_0x1657c8, _0x5f16d4);
+        };
+        _0x144018['p'] = '';
+        return _0x144018(_0x144018['s'] = 0x0);
+    }([function (_0x56df05, _0x4658a1) {
+            'use strict';
+            'use strict';
+            function _0xd0822f(_0x28f833, _0x39db90) {
+                function _0x361ad5(_0x2370b3) {
+                    var _0x2f337c = this;
+                    _0x2f337c['filterId'] = null;
+                    _0x2f337c['options'] = Object['assign']({
+                        'delay': 0x12c,
+                        'decoder': function _0x21e118(_0x4a93a6) {
+                            return _0x4a93a6;
+                        },
+                        'defaultFilterObject': {}
+                    }, _0x2370b3 || {});
+                    _0x2f337c['watchers'] = {};
+                    _0x2f337c['interval'] = setInterval(function () {
+                        if (_0x2f337c['filterId'] !== null && Object['keys'](_0x2f337c['watchers'])['length'] > 0x0) {
+                            _0x39db90['getFilterChanges'](_0x2f337c['filterId'], function (_0x594ce4, _0x5b4ebd) {
+                                var _0x50d993 = [];
+                                var _0x16bfcb = null;
+                                if (!_0x594ce4) {
+                                    try {
+                                        _0x5b4ebd['forEach'](function (_0x23d02b, _0x2a3eac) {
+                                            _0x50d993[_0x2a3eac] = _0x5b4ebd[_0x2a3eac];
+                                            _0x50d993[_0x2a3eac]['data'] = _0x2f337c['options']['decoder'](_0x50d993[_0x2a3eac]['data']);
+                                        });
+                                    } catch (_0x37f5c6) {
+                                        _0x16bfcb = new Error('[ethjs-filter]\x20while\x20decoding\x20filter\x20change\x20event\x20data\x20from\x20RPC\x20\x27' + JSON['stringify'](_0x50d993) + '\x27:\x20' + _0x37f5c6);
+                                    }
+                                }
+                                Object['keys'](_0x2f337c['watchers'])['forEach'](function (_0x10d135) {
+                                    var _0x571a08 = _0x2f337c['watchers'][_0x10d135];
+                                    if (_0x571a08['stop'] === !![]) {
+                                        delete _0x2f337c['watchers'][_0x10d135];
+                                        return;
+                                    }
+                                    if (_0x16bfcb) {
+                                        _0x571a08['reject'](_0x16bfcb);
+                                        _0x571a08['callback'](_0x16bfcb, null);
+                                    } else {
+                                        if (_0x594ce4) {
+                                            _0x571a08['reject'](_0x594ce4);
+                                        } else if (Array['isArray'](_0x50d993) && _0x5b4ebd['length'] > 0x0) {
+                                            _0x571a08['resolve'](_0x50d993);
+                                        }
+                                        _0x571a08['callback'](_0x594ce4, _0x50d993);
+                                    }
+                                });
+                            });
+                        }
+                    }, _0x2f337c['options']['delay']);
+                }
+                _0x361ad5['prototype']['at'] = function _0x598487(_0x40aab1) {
+                    var _0x15fe9d = this;
+                    _0x15fe9d['filterId'] = _0x40aab1;
+                };
+                _0x361ad5['prototype']['watch'] = function _0x388ea7(_0x3af0d1) {
+                    var _0x25d154 = _0x3af0d1 || function () {
+                    };
+                    var _0x3291f9 = this;
+                    var _0x583987 = Math['random']()['toString'](0x24)['substring'](0x7);
+                    var _0xcfc56 = new Promise(function (_0x1e072e, _0xf2bbac) {
+                        _0x3291f9['watchers'][_0x583987] = {
+                            'resolve': _0x1e072e,
+                            'reject': _0xf2bbac,
+                            'callback': _0x25d154,
+                            'stop': ![]
+                        };
+                    });
+                    _0xcfc56['stopWatching'] = function _0x47b233() {
+                        _0x3291f9['watchers'][_0x583987]['stop'] = !![];
+                    };
+                    return _0xcfc56;
+                };
+                _0x361ad5['prototype']['uninstall'] = function _0x1b102a(_0x2fdb61) {
+                    var _0x4dd771 = this;
+                    var _0x26d539 = _0x2fdb61 || function _0x1d6bdf() {
+                    };
+                    _0x4dd771['watchers'] = Object['assign']({});
+                    clearInterval(_0x4dd771['interval']);
+                    return new Promise(function (_0x4f27d9, _0x3313d3) {
+                        _0x39db90['uninstallFilter'](_0x4dd771['filterId'], function (_0x15c52f, _0x1a1fff) {
+                            if (_0x15c52f) {
+                                _0x3313d3(_0x15c52f);
+                            } else {
+                                _0x4f27d9(_0x1a1fff);
+                            }
+                            _0x26d539(_0x15c52f, _0x1a1fff);
+                        });
+                    });
+                };
+                _0x361ad5['prototype']['new'] = function _0x2dc59c() {
+                    var _0x6c3cc0 = function _0x10f110() {
+                    };
+                    var _0x198ee1 = this;
+                    var _0x5e1593 = [];
+                    var _0x54c43c = []['slice']['call'](arguments);
+                    if (typeof _0x54c43c[_0x54c43c['length'] - 0x1] === 'function') {
+                        _0x6c3cc0 = _0x54c43c['pop']();
+                    }
+                    if (_0x28f833 === 'Filter') {
+                        _0x5e1593['push'](Object['assign'](_0x198ee1['options']['defaultFilterObject'], _0x54c43c[_0x54c43c['length'] - 0x1] || {}));
+                    }
+                    return new Promise(function (_0x26c050, _0x4fd75c) {
+                        _0x5e1593['push'](function (_0xe5e56f, _0x12a133) {
+                            if (!_0xe5e56f) {
+                                _0x198ee1['filterId'] = _0x12a133;
+                                _0x26c050(_0x12a133);
+                            } else {
+                                _0x4fd75c(_0xe5e56f);
+                            }
+                            _0x6c3cc0(_0xe5e56f, _0x12a133);
+                        });
+                        _0x39db90['new' + _0x28f833]['apply'](_0x39db90, _0x5e1593);
+                    });
+                };
+                return _0x361ad5;
+            }
+            function _0x10c711(_0x27ac54) {
+                var _0x58ffd0 = this;
+                if (!(_0x58ffd0 instanceof _0x10c711)) {
+                    throw new Error('the\x20EthFilter\x20object\x20must\x20be\x20instantiated\x20with\x20`new`\x20flag..\x20(e.g.\x20`const\x20filters\x20=\x20new\x20EthFilter(query);`)');
+                }
+                if (typeof _0x27ac54 !== 'object') {
+                    throw new Error('the\x20EthFilter\x20object\x20must\x20be\x20instantiated\x20with\x20an\x20EthQuery\x20instance\x20(e.g.\x20`const\x20filters\x20=\x20new\x20EthFilter(new\x20EthQuery(provider));`).\x20See\x20github.com/ethjs/ethjs-query\x20for\x20more\x20details..');
+                }
+                _0x58ffd0['Filter'] = _0xd0822f('Filter', _0x27ac54);
+                _0x58ffd0['BlockFilter'] = _0xd0822f('BlockFilter', _0x27ac54);
+                _0x58ffd0['PendingTransactionFilter'] = _0xd0822f('PendingTransactionFilter', _0x27ac54);
+            }
+            _0x56df05['exports'] = _0x10c711;
+        }]);
+}));
+;]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 16:28:09</sys_created_on>
+        <sys_id>ac040c45db106410969430d868961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ethjs-filter</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_script_include_ac040c45db106410969430d868961922</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 16:28:09</sys_updated_on>
+    </sys_script_include>
+</record_update>

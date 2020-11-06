@@ -13,9 +13,9 @@
         <ih_action>false</ih_action>
         <internal_name>sign_tx</internal_name>
         <label_cache>[{"name":"{{action.tx}}","label":"action➛tx","type":"action","ref":""}]</label_cache>
-        <latest_snapshot>97e519c7dbcc2010969430d86896198d</latest_snapshot>
+        <latest_snapshot>6781001ddb186410969430d868961996</latest_snapshot>
         <master_snapshot>ebe519c7dbcc2010969430d8689619bf</master_snapshot>
-        <name>Sign Tx (ethjs-sign)</name>
+        <name>Sign Tx</name>
         <natlang/>
         <outputs/>
         <state>published</state>
@@ -25,15 +25,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9675cd8fdb8c2010969430d868961952</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Sign Tx (ethjs-sign)</sys_name>
+        <sys_mod_count>81</sys_mod_count>
+        <sys_name>Sign Tx</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_9675cd8fdb8c2010969430d868961952</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:59</sys_updated_on>
+        <sys_updated_on>2020-11-04 10:55:40</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -41,7 +41,7 @@
     <sys_variable_value action="delete_multiple" query="document_key=9675cd8fdb8c2010969430d868961952"/>
     <sys_hub_step_instance action="delete_multiple" query="action=9675cd8fdb8c2010969430d868961952^sys_idNOT IN1ea555c7dbcc2010969430d8689619f4"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Sign Tx (ethjs-sign)">9675cd8fdb8c2010969430d868961952</action>
+        <action display_value="Sign Tx">9675cd8fdb8c2010969430d868961952</action>
         <cid>73f09265-ec40-4015-ade4-ad2c09b273b5</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -56,10 +56,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:16:48</sys_created_on>
         <sys_id>1ea555c7dbcc2010969430d8689619f4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:54</sys_updated_on>
+        <sys_updated_on>2020-11-04 10:55:35</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1ea555c7dbcc2010969430d8689619f4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -70,33 +70,48 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:16:48</sys_created_on>
         <sys_id>2aa595c7dbcc2010969430d868961900</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:16:48</sys_updated_on>
+        <sys_updated_on>2020-11-04 10:55:35</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+
+gs.info("START");  
+  
 gs.include("ethjs-format");
 gs.include("object-assign");
 gs.include("ethjs-signer");
 
-gs.info("from: " + tx.from);
-gs.info("to: " + tx.to);
-
-var pretx = { "from": tx.from.toString(),
-  "to": tx.to.toString(),
-  "gas": tx.gas.toString(),
-  "gasPrice": tx.gasprice.toString(),
-  "value": tx.value.toString(),
-  "nonce": tx.nonce.toString(),
-  "data": tx.data.toString()
+gs.info("here" + JSON.stringify(inputs.tx));
+  
+var pretx = { "from": inputs.tx.from.toString(),
+  "to": inputs.tx.to.toString(),
+  "gas": inputs.tx.gas.toString(),
+  "gasPrice": inputs.tx.gasprice.toString(),
+  "value": inputs.tx.value.toString(),
+  "nonce": inputs.tx.nonce.toString(),
+  "data": inputs.tx.data.toString()
 };
 
 gs.info("pretx: " + JSON.stringify(pretx));
 
-var rawtx = ethFormat.formatInputs('eth_sendTransaction', [pretx])[0];
+var fmttx = ethFormat.formatInputs('eth_sendTransaction', [pretx])[0];
 
-gs.info("tx: " + JSON.stringify(tx));
+gs.info("fmttx: " + JSON.stringify(fmttx));
+  
+var params = {};
+  
+params.from = fmttx.from.toString();
+params.to = fmttx.to.toString();
+params.gas = fmttx.gas.toString();
+params.gasprice = fmttx.gasPrice.toString();
+params.value = fmttx.value.toString();;
+params.nonce = fmttx.nonce.toString();;
+params.data = fmttx.data.toString();
+  
+gs.info("params: " + JSON.stringify(params));
 
-tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27cbfa884d14f9296", false);
+inputs.tx.raw = sn_fd.FlowAPI.executeSubflow('x_snc_ethsign.sign_transaction', params).txraw;
+inputs.tx.update();
 
 })(inputs, outputs);
 </value>
@@ -235,7 +250,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_action_input action="delete_multiple" query="model=9675cd8fdb8c2010969430d868961952^sys_idNOT IN1ea51187dbcc2010969430d8689619fc"/>
+    <sys_hub_action_input action="delete_multiple" query="model=9675cd8fdb8c2010969430d868961952^sys_idNOT IN7b941d93db086010969430d868961982"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -275,7 +290,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <label>tx</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Sign Tx (ethjs-sign)">9675cd8fdb8c2010969430d868961952</model>
+        <model display_value="Sign Tx">9675cd8fdb8c2010969430d868961952</model>
         <model_id>9675cd8fdb8c2010969430d868961952</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_9675cd8fdb8c2010969430d868961952</name>
@@ -296,8 +311,8 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-28 17:16:48</sys_created_on>
-        <sys_id>1ea51187dbcc2010969430d8689619fc</sys_id>
+        <sys_created_on>2020-10-29 11:50:44</sys_created_on>
+        <sys_id>7b941d93db086010969430d868961982</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -305,7 +320,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:16:48</sys_updated_on>
+        <sys_updated_on>2020-10-29 11:50:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -319,7 +334,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
     </sys_hub_action_input>
     <sys_hub_step_instance action="delete_multiple" query="action=9675cd8fdb8c2010969430d868961952^sys_idNOT IN1ea555c7dbcc2010969430d8689619f4"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Sign Tx (ethjs-sign)">9675cd8fdb8c2010969430d868961952</action>
+        <action display_value="Sign Tx">9675cd8fdb8c2010969430d868961952</action>
         <cid>73f09265-ec40-4015-ade4-ad2c09b273b5</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -334,10 +349,10 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:16:48</sys_created_on>
         <sys_id>1ea555c7dbcc2010969430d8689619f4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:54</sys_updated_on>
+        <sys_updated_on>2020-11-04 10:55:35</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1ea555c7dbcc2010969430d8689619f4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -348,33 +363,48 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:16:48</sys_created_on>
         <sys_id>2aa595c7dbcc2010969430d868961900</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:16:48</sys_updated_on>
+        <sys_updated_on>2020-11-04 10:55:35</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+
+gs.info("START");  
+  
 gs.include("ethjs-format");
 gs.include("object-assign");
 gs.include("ethjs-signer");
 
-gs.info("from: " + tx.from);
-gs.info("to: " + tx.to);
-
-var pretx = { "from": tx.from.toString(),
-  "to": tx.to.toString(),
-  "gas": tx.gas.toString(),
-  "gasPrice": tx.gasprice.toString(),
-  "value": tx.value.toString(),
-  "nonce": tx.nonce.toString(),
-  "data": tx.data.toString()
+gs.info("here" + JSON.stringify(inputs.tx));
+  
+var pretx = { "from": inputs.tx.from.toString(),
+  "to": inputs.tx.to.toString(),
+  "gas": inputs.tx.gas.toString(),
+  "gasPrice": inputs.tx.gasprice.toString(),
+  "value": inputs.tx.value.toString(),
+  "nonce": inputs.tx.nonce.toString(),
+  "data": inputs.tx.data.toString()
 };
 
 gs.info("pretx: " + JSON.stringify(pretx));
 
-var rawtx = ethFormat.formatInputs('eth_sendTransaction', [pretx])[0];
+var fmttx = ethFormat.formatInputs('eth_sendTransaction', [pretx])[0];
 
-gs.info("tx: " + JSON.stringify(tx));
+gs.info("fmttx: " + JSON.stringify(fmttx));
+  
+var params = {};
+  
+params.from = fmttx.from.toString();
+params.to = fmttx.to.toString();
+params.gas = fmttx.gas.toString();
+params.gasprice = fmttx.gasPrice.toString();
+params.value = fmttx.value.toString();;
+params.nonce = fmttx.nonce.toString();;
+params.data = fmttx.data.toString();
+  
+gs.info("params: " + JSON.stringify(params));
 
-tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27cbfa884d14f9296", false);
+inputs.tx.raw = sn_fd.FlowAPI.executeSubflow('x_snc_ethsign.sign_transaction', params).txraw;
+inputs.tx.update();
 
 })(inputs, outputs);
 </value>
@@ -513,7 +543,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_9675cd8fdb8c2010969430d868961952^sys_idNOT IN96a555c7dbcc2010969430d8689619f2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_9675cd8fdb8c2010969430d868961952^sys_idNOT IN37941d93db086010969430d868961987"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>tx</element>
         <help/>
@@ -524,34 +554,34 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-28 17:16:48</sys_created_on>
-        <sys_id>96a555c7dbcc2010969430d8689619f2</sys_id>
+        <sys_created_on>2020-10-29 11:50:44</sys_created_on>
+        <sys_id>37941d93db086010969430d868961987</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>tx</sys_name>
+        <sys_name/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_9675cd8fdb8c2010969430d868961952_tx_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:16:48</sys_updated_on>
+        <sys_updated_on>2020-10-29 11:50:44</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_hub_action_plan action="delete_multiple" query="action_id=9675cd8fdb8c2010969430d868961952^sys_idNOT IN4cf559c7dbcc2010969430d868961900"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Sign Tx (ethjs-sign)">9675cd8fdb8c2010969430d868961952</action_id>
+        <action_id display_value="Sign Tx">9675cd8fdb8c2010969430d868961952</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"4cf559c7dbcc2010969430d868961900","name":"plan"}}</plan>
-        <snapshot>97e519c7dbcc2010969430d86896198d</snapshot>
+        <snapshot>6781001ddb186410969430d868961996</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:18:01</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4cf559c7dbcc2010969430d868961900</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:18:01</sys_updated_on>
+        <sys_updated_on>2020-11-04 10:55:41</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>package_private</access>
@@ -566,17 +596,17 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <internal_name>sign_tx_ethjssign</internal_name>
         <label_cache>[{"name":"{{action.tx}}","label":"action➛tx","type":"action","ref":""}]</label_cache>
         <master>true</master>
-        <name>Sign Tx (ethjs-sign)</name>
+        <name>Sign Tx</name>
         <natlang/>
         <outputs/>
-        <parent_action display_value="Sign Tx (ethjs-sign)">9675cd8fdb8c2010969430d868961952</parent_action>
+        <parent_action display_value="Sign Tx">9675cd8fdb8c2010969430d868961952</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:17:58</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ebe519c7dbcc2010969430d8689619bf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -584,7 +614,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:58</sys_updated_on>
+        <sys_updated_on>2020-11-04 08:58:47</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -592,7 +622,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
     <sys_variable_value action="delete_multiple" query="document_key=ebe519c7dbcc2010969430d8689619bf"/>
     <sys_hub_step_instance action="delete_multiple" query="action=ebe519c7dbcc2010969430d8689619bf^sys_idNOT INe3e519c7dbcc2010969430d8689619c8"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Sign Tx (ethjs-sign)">ebe519c7dbcc2010969430d8689619bf</action>
+        <action display_value="Sign Tx">ebe519c7dbcc2010969430d8689619bf</action>
         <cid>73f09265-ec40-4015-ade4-ad2c09b273b5</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -607,10 +637,10 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:17:58</sys_created_on>
         <sys_id>e3e519c7dbcc2010969430d8689619c8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:59</sys_updated_on>
+        <sys_updated_on>2020-11-04 10:55:40</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e3e519c7dbcc2010969430d8689619c8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -635,33 +665,48 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:17:59</sys_created_on>
         <sys_id>f7e519c7dbcc2010969430d8689619d4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:59</sys_updated_on>
+        <sys_updated_on>2020-11-04 10:55:40</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+
+gs.info("START");  
+  
 gs.include("ethjs-format");
 gs.include("object-assign");
 gs.include("ethjs-signer");
 
-gs.info("from: " + tx.from);
-gs.info("to: " + tx.to);
-
-var pretx = { "from": tx.from.toString(),
-  "to": tx.to.toString(),
-  "gas": tx.gas.toString(),
-  "gasPrice": tx.gasprice.toString(),
-  "value": tx.value.toString(),
-  "nonce": tx.nonce.toString(),
-  "data": tx.data.toString()
+gs.info("here" + JSON.stringify(inputs.tx));
+  
+var pretx = { "from": inputs.tx.from.toString(),
+  "to": inputs.tx.to.toString(),
+  "gas": inputs.tx.gas.toString(),
+  "gasPrice": inputs.tx.gasprice.toString(),
+  "value": inputs.tx.value.toString(),
+  "nonce": inputs.tx.nonce.toString(),
+  "data": inputs.tx.data.toString()
 };
 
 gs.info("pretx: " + JSON.stringify(pretx));
 
-var rawtx = ethFormat.formatInputs('eth_sendTransaction', [pretx])[0];
+var fmttx = ethFormat.formatInputs('eth_sendTransaction', [pretx])[0];
 
-gs.info("tx: " + JSON.stringify(tx));
+gs.info("fmttx: " + JSON.stringify(fmttx));
+  
+var params = {};
+  
+params.from = fmttx.from.toString();
+params.to = fmttx.to.toString();
+params.gas = fmttx.gas.toString();
+params.gasprice = fmttx.gasPrice.toString();
+params.value = fmttx.value.toString();;
+params.nonce = fmttx.nonce.toString();;
+params.data = fmttx.data.toString();
+  
+gs.info("params: " + JSON.stringify(params));
 
-tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27cbfa884d14f9296", false);
+inputs.tx.raw = sn_fd.FlowAPI.executeSubflow('x_snc_ethsign.sign_transaction', params).txraw;
+inputs.tx.update();
 
 })(inputs, outputs);
 </value>
@@ -786,7 +831,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_action_input action="delete_multiple" query="model=ebe519c7dbcc2010969430d8689619bf^sys_idNOT IN2fe519c7dbcc2010969430d8689619c0"/>
+    <sys_hub_action_input action="delete_multiple" query="model=ebe519c7dbcc2010969430d8689619bf^sys_idNOT INe6885157db086010969430d8689619bd"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -826,7 +871,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <label>tx</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Sign Tx (ethjs-sign)">ebe519c7dbcc2010969430d8689619bf</model>
+        <model display_value="Sign Tx">ebe519c7dbcc2010969430d8689619bf</model>
         <model_id>ebe519c7dbcc2010969430d8689619bf</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_ebe519c7dbcc2010969430d8689619bf</name>
@@ -847,8 +892,8 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-28 17:17:58</sys_created_on>
-        <sys_id>2fe519c7dbcc2010969430d8689619c0</sys_id>
+        <sys_created_on>2020-10-29 12:07:51</sys_created_on>
+        <sys_id>e6885157db086010969430d8689619bd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -856,7 +901,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:58</sys_updated_on>
+        <sys_updated_on>2020-10-29 12:07:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -870,7 +915,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
     </sys_hub_action_input>
     <sys_hub_step_instance action="delete_multiple" query="action=ebe519c7dbcc2010969430d8689619bf^sys_idNOT INe3e519c7dbcc2010969430d8689619c8"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Sign Tx (ethjs-sign)">ebe519c7dbcc2010969430d8689619bf</action>
+        <action display_value="Sign Tx">ebe519c7dbcc2010969430d8689619bf</action>
         <cid>73f09265-ec40-4015-ade4-ad2c09b273b5</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -885,10 +930,10 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:17:58</sys_created_on>
         <sys_id>e3e519c7dbcc2010969430d8689619c8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:59</sys_updated_on>
+        <sys_updated_on>2020-11-04 10:55:40</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e3e519c7dbcc2010969430d8689619c8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -913,33 +958,48 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:17:59</sys_created_on>
         <sys_id>f7e519c7dbcc2010969430d8689619d4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:59</sys_updated_on>
+        <sys_updated_on>2020-11-04 10:55:40</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+
+gs.info("START");  
+  
 gs.include("ethjs-format");
 gs.include("object-assign");
 gs.include("ethjs-signer");
 
-gs.info("from: " + tx.from);
-gs.info("to: " + tx.to);
-
-var pretx = { "from": tx.from.toString(),
-  "to": tx.to.toString(),
-  "gas": tx.gas.toString(),
-  "gasPrice": tx.gasprice.toString(),
-  "value": tx.value.toString(),
-  "nonce": tx.nonce.toString(),
-  "data": tx.data.toString()
+gs.info("here" + JSON.stringify(inputs.tx));
+  
+var pretx = { "from": inputs.tx.from.toString(),
+  "to": inputs.tx.to.toString(),
+  "gas": inputs.tx.gas.toString(),
+  "gasPrice": inputs.tx.gasprice.toString(),
+  "value": inputs.tx.value.toString(),
+  "nonce": inputs.tx.nonce.toString(),
+  "data": inputs.tx.data.toString()
 };
 
 gs.info("pretx: " + JSON.stringify(pretx));
 
-var rawtx = ethFormat.formatInputs('eth_sendTransaction', [pretx])[0];
+var fmttx = ethFormat.formatInputs('eth_sendTransaction', [pretx])[0];
 
-gs.info("tx: " + JSON.stringify(tx));
+gs.info("fmttx: " + JSON.stringify(fmttx));
+  
+var params = {};
+  
+params.from = fmttx.from.toString();
+params.to = fmttx.to.toString();
+params.gas = fmttx.gas.toString();
+params.gasprice = fmttx.gasPrice.toString();
+params.value = fmttx.value.toString();;
+params.nonce = fmttx.nonce.toString();;
+params.data = fmttx.data.toString();
+  
+gs.info("params: " + JSON.stringify(params));
 
-tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27cbfa884d14f9296", false);
+inputs.tx.raw = sn_fd.FlowAPI.executeSubflow('x_snc_ethsign.sign_transaction', params).txraw;
+inputs.tx.update();
 
 })(inputs, outputs);
 </value>
@@ -1064,7 +1124,7 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_ebe519c7dbcc2010969430d8689619bf^sys_idNOT IN6fe519c7dbcc2010969430d8689619c5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_ebe519c7dbcc2010969430d8689619bf^sys_idNOT INa2885157db086010969430d8689619c2"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>tx</element>
         <help/>
@@ -1075,16 +1135,16 @@ tx.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-28 17:17:58</sys_created_on>
-        <sys_id>6fe519c7dbcc2010969430d8689619c5</sys_id>
+        <sys_created_on>2020-10-29 12:07:51</sys_created_on>
+        <sys_id>a2885157db086010969430d8689619c2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>tx</sys_name>
+        <sys_name/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_ebe519c7dbcc2010969430d8689619bf_tx_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:58</sys_updated_on>
+        <sys_updated_on>2020-10-29 12:07:51</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>

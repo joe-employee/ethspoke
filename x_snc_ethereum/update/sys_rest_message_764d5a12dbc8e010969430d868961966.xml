@@ -9,19 +9,19 @@
         <name>eth</name>
         <oauth2_profile/>
         <protocol_name/>
-        <rest_endpoint>http://localhost:22001</rest_endpoint>
+        <rest_endpoint>http://165.232.113.143:22001</rest_endpoint>
         <sys_class_name>sys_rest_message</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-26 14:35:12</sys_created_on>
         <sys_id>764d5a12dbc8e010969430d868961966</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>eth</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_rest_message_764d5a12dbc8e010969430d868961966</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-26 15:19:42</sys_updated_on>
+        <sys_updated_on>2020-10-29 13:31:16</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mutual_auth>false</use_mutual_auth>
     </sys_rest_message>

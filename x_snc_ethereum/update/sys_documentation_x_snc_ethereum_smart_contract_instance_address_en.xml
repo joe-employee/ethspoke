@@ -10,8 +10,8 @@
             <plural>Address</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-21 12:58:40</sys_created_on>
-            <sys_id>787754b8db442010969430d8689619d4</sys_id>
+            <sys_created_on>2020-10-29 15:11:26</sys_created_on>
+            <sys_id>b38202dfdb486010969430d8689619df</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Address</sys_name>
             <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -19,7 +19,7 @@
             <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
             <sys_update_name>sys_documentation_x_snc_ethereum_smart_contract_instance_address_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-21 12:58:40</sys_updated_on>
+            <sys_updated_on>2020-10-29 15:11:26</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

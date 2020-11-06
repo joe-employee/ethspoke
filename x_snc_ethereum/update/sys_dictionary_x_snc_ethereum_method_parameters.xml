@@ -53,7 +53,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-22 14:05:49</sys_created_on>
-        <sys_id>6d50b18ddb006010969430d86896195b</sys_id>
+        <sys_id>994cc55fdbc46010969430d8689619d1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Parameters</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -61,7 +61,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_ethereum_method_parameters</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-22 14:05:49</sys_updated_on>
+        <sys_updated_on>2020-10-29 11:14:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

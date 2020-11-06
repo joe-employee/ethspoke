@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_ethereum.miniXhr</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>miniXhr</name>
+        <script><![CDATA[(function (_0x30dead, _0x254915) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? _0x254915(exports) : typeof define === 'function' && define['amd'] ? define(['exports'], _0x254915) : (_0x30dead = _0x30dead || self, _0x254915(_0x30dead['miniXhr'] = {}));
+}(this, function (_0x49347e) {
+    'use strict';
+    var _0x7e7741 = function (_0x1ea22e) {
+        var _0x4c4801 = _0x1ea22e['method'], _0xad65c3 = _0x4c4801 === void 0x0 ? 'GET' : _0x4c4801, _0x50f6bb = _0x1ea22e['url'], _0x37c5a6 = _0x1ea22e['timeout'], _0x2ef05f = _0x37c5a6 === void 0x0 ? 0x0 : _0x37c5a6, _0x479bfc = _0x1ea22e['ontimeoutCB'], _0x4874cb = _0x479bfc === void 0x0 ? null : _0x479bfc, _0x1b3a74 = _0x1ea22e['dataType'], _0xe62026 = _0x1b3a74 === void 0x0 ? 'json' : _0x1b3a74, _0x1afb49 = _0x1ea22e['data'], _0x2dff95 = _0x1ea22e['contentType'], _0x2b8754 = _0x2dff95 === void 0x0 ? 'application/x-www-form-urlencoded;\x20charset=UTF-8' : _0x2dff95, _0xa75dcc = _0x1ea22e['success'], _0x48b9a3 = _0xa75dcc === void 0x0 ? function () {
+            } : _0xa75dcc, _0x356920 = _0x1ea22e['fail'], _0x1a572e = _0x356920 === void 0x0 ? function () {
+            } : _0x356920;
+        var _0x31784c = new XMLHttpRequest();
+        _0x31784c['open'](_0xad65c3, _0x50f6bb, !![]);
+        _0x31784c['onreadystatechange'] = function () {
+            if (_0x31784c['readyState'] !== 0x4) {
+                return;
+            }
+            if (_0x31784c['status'] >= 0xc8 && _0x31784c['status'] < 0x190) {
+                _0x48b9a3(_0x31784c['response']);
+            } else {
+                _0x1a572e(new Error(_0x31784c['statusText']));
+            }
+        };
+        _0x31784c['timeout'] = _0x2ef05f;
+        if (_0x4874cb) {
+            _0x31784c['ontimeout'] = _0x4874cb;
+        }
+        switch (_0xe62026) {
+        case 'json':
+            _0x31784c['responseType'] = 'json';
+            _0x31784c['setRequestHeader']('Accept', 'application/json');
+            break;
+        default:
+            _0x31784c['setRequestHeader']('Accept', '*/*');
+        }
+        _0x31784c['setRequestHeader']('Content-Type', _0x2b8754);
+        _0x31784c['send'](_0x1afb49);
+        return _0x31784c;
+    };
+    var _0x4162ad = function _0x28c5a2(_0x129d92) {
+        if (_0x129d92 === void 0x0) {
+            _0x129d92 = {};
+        }
+        var _0x536756 = '';
+        for (var _0x286644 in _0x129d92) {
+            if (Object['prototype']['hasOwnProperty']['call'](_0x129d92, _0x286644)) {
+                var _0x5a7b78 = '';
+                if (_0x536756) {
+                    _0x5a7b78 = '&';
+                }
+                _0x536756 += _0x5a7b78 + _0x286644 + '=' + _0x129d92[_0x286644];
+            }
+        }
+        return _0x536756;
+    };
+    var _0x4b7ad2 = function _0x35e03d() {
+        return typeof window === 'undefined' ? global : window;
+    };
+    var _0x82ef1d = function _0x505fa2(_0x2be9d1, _0xd080fc) {
+        var _0x4a645e = _0xd080fc === void 0x0 ? {} : _0xd080fc, _0xe8752e = _0x4a645e['dataType'], _0x33e2eb = _0xe8752e === void 0x0 ? 'json' : _0xe8752e, _0x1fccd3 = _0x4a645e['data'], _0x1481b5 = _0x1fccd3 === void 0x0 ? {} : _0x1fccd3, _0x177722 = _0x4a645e['contentType'], _0x12b881 = _0x4a645e['timeout'], _0x5ee92c = _0x12b881 === void 0x0 ? 0x0 : _0x12b881, _0x9d393b = _0x4a645e['ontimeoutCB'], _0x302c06 = _0x9d393b === void 0x0 ? null : _0x9d393b;
+        return Promise['resolve']()['then'](function () {
+            return new Promise(function (_0x33eac8, _0x275f72) {
+                return _0x7e7741({
+                    'method': 'GET',
+                    'url': _0x2be9d1,
+                    'dataType': _0x33e2eb,
+                    'contentType': _0x177722,
+                    'data': _0x4162ad(_0x1481b5),
+                    'timeout': _0x5ee92c,
+                    'ontimeoutCB': _0x302c06,
+                    'success': function _0x26b698(_0x2c8b30) {
+                        return _0x33eac8(_0x2c8b30);
+                    },
+                    'fail': function _0x4978aa(_0x5519bc) {
+                        return _0x275f72(_0x5519bc);
+                    }
+                });
+            });
+        });
+    };
+    var _0xb0c7b6 = function _0x232195(_0x2026ef, _0x3c4831) {
+        var _0x3b3a43 = _0x3c4831 === void 0x0 ? {} : _0x3c4831, _0x382cdd = _0x3b3a43['dataType'], _0x5bb133 = _0x382cdd === void 0x0 ? 'json' : _0x382cdd, _0xc89840 = _0x3b3a43['data'], _0x482d26 = _0xc89840 === void 0x0 ? {} : _0xc89840, _0x1eefec = _0x3b3a43['contentType'], _0x3bbbab = _0x3b3a43['timeout'], _0x53886c = _0x3bbbab === void 0x0 ? 0x0 : _0x3bbbab, _0x3ffa42 = _0x3b3a43['ontimeoutCB'], _0x370708 = _0x3ffa42 === void 0x0 ? null : _0x3ffa42;
+        return Promise['resolve']()['then'](function () {
+            return new Promise(function (_0x26e0ec, _0x290480) {
+                return _0x7e7741({
+                    'method': 'POST',
+                    'url': _0x2026ef,
+                    'dataType': _0x5bb133,
+                    'data': _0x4162ad(_0x482d26),
+                    'contentType': _0x1eefec,
+                    'timeout': _0x53886c,
+                    'ontimeoutCB': _0x370708,
+                    'success': function _0x52e6aa(_0x245998) {
+                        return _0x26e0ec(_0x245998);
+                    },
+                    'fail': function _0x1b966e(_0x19adde) {
+                        return _0x290480(_0x19adde);
+                    }
+                });
+            });
+        });
+    };
+    var _0x177c93 = function _0x2236f7(_0x14ac03, _0x46329d) {
+        var _0x403e8b = _0x46329d === void 0x0 ? {} : _0x46329d, _0x4a0ec3 = _0x403e8b['data'], _0x287021 = _0x4a0ec3 === void 0x0 ? {} : _0x4a0ec3, _0x49c230 = _0x403e8b['timeout'], _0x2beb53 = _0x49c230 === void 0x0 ? 0x0 : _0x49c230;
+        return Promise['resolve']()['then'](function () {
+            return new Promise(function (_0x8ac651, _0x2f004c) {
+                var _0x1c587e = document['querySelector']('head');
+                var _0x323a1e = document['createElement']('script');
+                var _0x266b53 = _0x4162ad(_0x287021);
+                _0x323a1e['src'] = _0x14ac03;
+                _0x323a1e['type'] = 'text/javascript';
+                if (_0x266b53) {
+                    _0x323a1e['src'] += '?' + _0x266b53;
+                }
+                var _0xa61739 = function _0x3bdd0a(_0x117071) {
+                    _0x1c587e['removeChild'](_0x323a1e);
+                    clearTimeout(_0x323a1e['timer']);
+                    _0x8ac651(_0x117071);
+                };
+                _0x323a1e['addEventListener']('load', _0xa61739, ![]);
+                if (_0x2beb53) {
+                    _0x323a1e['timer'] = setTimeout(function () {
+                        _0x323a1e['removeEventListener']('load', _0xa61739, ![]);
+                        _0x1c587e['removeChild'](_0x323a1e);
+                        _0x2f004c(new Error('timeout'));
+                    }, _0x2beb53);
+                }
+                _0x1c587e['appendChild'](_0x323a1e);
+            });
+        });
+    };
+    var _0x5ecabe = function _0x3ca112(_0x5e04ad, _0x4fa966) {
+        var _0xccd602 = _0x4fa966 === void 0x0 ? {} : _0x4fa966, _0x4c1f99 = _0xccd602['data'], _0x1d08ec = _0x4c1f99 === void 0x0 ? {} : _0x4c1f99, _0x371b99 = _0xccd602['timeout'], _0x4aff75 = _0x371b99 === void 0x0 ? 0x0 : _0x371b99;
+        var _0x2988db = _0x4b7ad2();
+        return Promise['resolve']()['then'](function () {
+            return new Promise(function (_0x96b803, _0x4abcbe) {
+                var _0x4561af = document['querySelector']('head');
+                var _0x9a6d99 = document['createElement']('script');
+                var _0x392d07 = _0x4162ad(_0x1d08ec);
+                _0x9a6d99['src'] = _0x5e04ad;
+                _0x9a6d99['type'] = 'text/javascript';
+                var _0x54ec8a = ('jsonp_' + Math['random']())['replace']('.', '');
+                _0x2988db[_0x54ec8a] = function (_0x4ab19d) {
+                    _0x4561af['removeChild'](_0x9a6d99);
+                    clearTimeout(_0x9a6d99['timer']);
+                    _0x2988db[_0x54ec8a] = null;
+                    _0x96b803(_0x4ab19d);
+                };
+                if (_0x392d07) {
+                    _0x9a6d99['src'] += '?' + _0x392d07 + '&callback=' + _0x54ec8a;
+                } else {
+                    _0x9a6d99['src'] += '?callback=' + _0x54ec8a;
+                }
+                if (_0x4aff75) {
+                    _0x9a6d99['timer'] = setTimeout(function () {
+                        _0x4561af['removeChild'](_0x9a6d99);
+                        _0x2988db[_0x54ec8a] = null;
+                        _0x4abcbe(new Error('timeout'));
+                    }, _0x4aff75);
+                }
+                _0x4561af['appendChild'](_0x9a6d99);
+            });
+        });
+    };
+    var _0x12fe35 = {
+        'get': _0x82ef1d,
+        'post': _0xb0c7b6,
+        'script': _0x177c93,
+        'jsonp': _0x5ecabe
+    };
+    _0x49347e['default'] = _0x12fe35;
+    _0x49347e['get'] = _0x82ef1d;
+    _0x49347e['jsonp'] = _0x5ecabe;
+    _0x49347e['post'] = _0xb0c7b6;
+    _0x49347e['script'] = _0x177c93;
+    Object['defineProperty'](_0x49347e, '__esModule', { 'value': !![] });
+}));]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 15:10:18</sys_created_on>
+        <sys_id>a6227f3cdbdc2410969430d868961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>miniXhr</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_script_include_a6227f3cdbdc2410969430d868961922</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 15:10:18</sys_updated_on>
+    </sys_script_include>
+</record_update>

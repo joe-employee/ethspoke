@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
         <api_name>x_snc_ethereum.ethjs-query</api_name>
         <caller_access/>
@@ -7836,13 +7836,13 @@ https://developer.aliyun.com/mirror/npm/package/@sincronia/babel-preset-servicen
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-26 16:18:23</sys_created_on>
         <sys_id>b805361edbc8e010969430d8689619d0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>ethjs-query</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_script_include_b805361edbc8e010969430d8689619d0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 10:35:21</sys_updated_on>
+        <sys_updated_on>2020-11-03 16:36:18</sys_updated_on>
     </sys_script_include>
 </record_update>

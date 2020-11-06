@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="constructor_parameters" label="Constructor Parameters" language="en" table="x_snc_ethereum_smart_contract_instance">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>constructor_parameters</element>
+            <help/>
+            <hint/>
+            <label>Constructor Parameters</label>
+            <language>en</language>
+            <name>x_snc_ethereum_smart_contract_instance</name>
+            <plural>Constructor Parameters</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-05 18:25:16</sys_created_on>
+            <sys_id>5f02f265db902010969430d868961979</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Constructor Parameters</sys_name>
+            <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_ethereum_smart_contract_instance_constructor_parameters_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-05 18:25:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

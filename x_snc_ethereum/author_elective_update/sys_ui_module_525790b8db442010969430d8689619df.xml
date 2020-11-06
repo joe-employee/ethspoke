@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Ethereum">48601c74db442010969430d8689619fe</application>
+        <filter/>
+        <name>Smart Contract Instances</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_snc_ethereum.smart_contract_instance_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 12:58:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>525790b8db442010969430d8689619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Smart Contract Instances</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_ui_module_525790b8db442010969430d8689619df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 12:58:13</sys_updated_on>
+        <table>x_snc_ethereum_smart_contract_instance</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Ethereum">3c0e4434db442010969430d868961918</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>sys_ui_module_525790b8db442010969430d8689619df</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Ethereum">48601c74db442010969430d8689619fe</application>
+        <filter/>
+        <name>Smart Contract Instances</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_snc_ethereum.smart_contract_instance_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 12:58:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>525790b8db442010969430d8689619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Smart Contract Instances</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_ui_module_525790b8db442010969430d8689619df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 12:58:13</sys_updated_on>
+        <table>x_snc_ethereum_smart_contract_instance</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>]]></payload>
+        <payload_hash>-1320243741</payload_hash>
+        <record_name>Smart Contract Instances</record_name>
+        <reverted_from/>
+        <source>36db091fdbc46010969430d8689619a5</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-29 11:15:24</sys_created_on>
+        <sys_id>5e8c019fdbc46010969430d868961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1757411c9750000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-29 11:15:24</sys_updated_on>
+        <type>Module</type>
+        <update_guid>da8c019f8dc46010b5429281fd4f7b56</update_guid>
+        <update_guid_history>da8c019f8dc46010b5429281fd4f7b56:0,adeb891fdfc4601028470e4463370cdd:1705000453,2fd945db26c46010809448b60b5fb519:0,22e8cd5b13c4601031fb6472134a41ad:1705000453,e4d50dd7f0c46010aabb24f7c3700d1e:0,495fb89395c4601051be5ce7ecc1dd81:1237734047,525790b86144201098846f8d0f42e5e0:-1215687657</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-29 15:10:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>8d795eede996481a93f073c9f18109f1</sys_id>
+        <sys_metadata>525790b8db442010969430d8689619df</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Smart Contract Instances</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_scope_delete display_value="">2bb8a3046e8a400e969b229d381b21b1</sys_scope_delete>
+        <sys_update_name>sys_ui_module_525790b8db442010969430d8689619df</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_525790b8db442010969430d8689619df">5e8c019fdbc46010969430d868961956</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-29 15:10:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
