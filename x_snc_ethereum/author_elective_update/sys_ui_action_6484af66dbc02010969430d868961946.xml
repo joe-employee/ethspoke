@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Sign TX (ethjs-sign)</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[gs.include("ethjs-format");
+
+//gs.include("bn");
+
+gs.include("object-assign");
+
+gs.include("ethjs-signer");
+
+gs.info("from: " + current.from);
+gs.info("to: " + current.to);
+
+var pretx = { "from": current.from.toString(),
+  "to": current.to.toString(),
+  "gas": current.gas.toString(),
+  "gasPrice": current.gasprice.toString(),
+  "value": current.value.toString(),
+  "nonce": current.nonce.toString(),
+  "data": current.data.toString()
+};
+
+gs.info("pretx: " + JSON.stringify(pretx));
+
+var tx = ethFormat.formatInputs('eth_sendTransaction', [pretx])[0];
+
+gs.info("tx: " + JSON.stringify(tx));
+
+current.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27cbfa884d14f9296", false);
+action.setRedirectURL(current);
+current.update();]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-27 14:33:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6484af66dbc02010969430d868961946</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>Sign TX (ethjs-sign)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_ui_action_6484af66dbc02010969430d868961946</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-27 17:28:45</sys_updated_on>
+        <table>x_snc_ethereum_transaction</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Ethereum">3c0e4434db442010969430d868961918</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>sys_ui_action_6484af66dbc02010969430d868961946</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;
+    &lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;
+        &lt;action_name/&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;client&gt;false&lt;/client&gt;
+        &lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;
+        &lt;comments/&gt;
+        &lt;condition/&gt;
+        &lt;form_action&gt;true&lt;/form_action&gt;
+        &lt;form_button&gt;true&lt;/form_button&gt;
+        &lt;form_button_v2&gt;false&lt;/form_button_v2&gt;
+        &lt;form_context_menu&gt;false&lt;/form_context_menu&gt;
+        &lt;form_link&gt;false&lt;/form_link&gt;
+        &lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;
+        &lt;form_style/&gt;
+        &lt;hint/&gt;
+        &lt;isolate_script&gt;false&lt;/isolate_script&gt;
+        &lt;list_action&gt;false&lt;/list_action&gt;
+        &lt;list_banner_button&gt;false&lt;/list_banner_button&gt;
+        &lt;list_button&gt;false&lt;/list_button&gt;
+        &lt;list_choice&gt;false&lt;/list_choice&gt;
+        &lt;list_context_menu&gt;false&lt;/list_context_menu&gt;
+        &lt;list_link&gt;false&lt;/list_link&gt;
+        &lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;
+        &lt;list_style/&gt;
+        &lt;name&gt;Sign TX (ethjs-sign)&lt;/name&gt;
+        &lt;onclick/&gt;
+        &lt;order&gt;100&lt;/order&gt;
+        &lt;script&gt;&lt;![CDATA[gs.include("ethjs-format");
+
+//gs.include("bn");
+
+gs.include("object-assign");
+
+gs.include("ethjs-signer");
+
+gs.info("from: " + current.from);
+gs.info("to: " + current.to);
+
+var pretx = { "from": current.from.toString(),
+  "to": current.to.toString(),
+  "gas": current.gas.toString(),
+  "gasPrice": current.gasprice.toString(),
+  "value": current.value.toString(),
+  "nonce": current.nonce.toString(),
+  "data": current.data.toString()
+};
+
+gs.info("pretx: " + JSON.stringify(pretx));
+
+var tx = ethFormat.formatInputs('eth_sendTransaction', [pretx])[0];
+
+gs.info("tx: " + JSON.stringify(tx));
+
+current.raw = ethSigner.sign(tx, "0x2f5205aa34bf4c5bdc6c6af8b8384641e4bb1468a64bfdb27cbfa884d14f9296", false);
+action.setRedirectURL(current);
+current.update();]]&gt;&lt;/script&gt;
+        &lt;show_insert&gt;true&lt;/show_insert&gt;
+        &lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;
+        &lt;show_query&gt;false&lt;/show_query&gt;
+        &lt;show_update&gt;true&lt;/show_update&gt;
+        &lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-27 14:33:33&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;6484af66dbc02010969430d868961946&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;34&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;Sign TX (ethjs-sign)&lt;/sys_name&gt;
+        &lt;sys_overrides/&gt;
+        &lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_ui_action_6484af66dbc02010969430d868961946&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-27 17:28:45&lt;/sys_updated_on&gt;
+        &lt;table&gt;x_snc_ethereum_transaction&lt;/table&gt;
+        &lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;
+        &lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;
+    &lt;/sys_ui_action&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-382065087</payload_hash>
+        <record_name>Sign TX (ethjs-sign)</record_name>
+        <reverted_from/>
+        <source>36db091fdbc46010969430d8689619a5</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-29 11:15:23</sys_created_on>
+        <sys_id>068c019fdbc46010969430d868961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1757411c5620000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-29 11:15:23</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>828c019f8fc460105b60ff0f56928a34</update_guid>
+        <update_guid_history>828c019f8fc460105b60ff0f56928a34:0,602cc15f8fc46010b5bd3558a8e9f125:-609761299,dbd945dba0c46010bfeae2937625080a:0,ec19c59bc0c46010ea712b973892026a:-609761299,2cd50dd78ac4601072adaba609ecb503:0,478f34d329c460101c8b800e8b9681b2:-1403312760,73ce087e200420109b46f71e8a56c493:1650966009,b28e847e10042010922745c74df82e2b:-232170983,6447087abf0420104b3f263a75e52723:243493845,9044c0f6800420108ecf1ea02807d907:627998293,b3f2c0f6f504201050286b7584e02a02:-1653270319,17d28cb6680420100b2a17cc22323037:744729799,4e7284b6a00420108f1dd2510441e6f0:-1653270319,2aae3f26dd042010deb32b6749e5cb6d:2093111065,a8dcb3e2900420109dac182ff975323a:817830027,867b33e29b0420101a20eac7dc5cbbd6:358059353,4e9af3a2ae0420108a648a3455a64419:86824530,27e933a2a40420100b12cbdba4d70c15:757101497,1419f7628f04201077735dc8465797b5:-1483342641,b7d8f3629d0420108376a4072ad4eaf6:-1374228222,5a8e232e02c020100ef4d316b6e9768f:1091165003,f45eafea62c02010c941afbf70ed3e47:1503164198,d84eabeae8c02010636eee54eb6f9efd:-1280834110,17cd2beab9c020102b52aeb37b36498d:-2025185771,438d27ea11c0201038630d4645928cad:-1211236539,205d23ea23c02010129917c91168c807:-1038606223,f1cc6faad4c02010abf3a3a042d0fc01:1032588549,f18cabaa3ec02010e5fb9421d62f1148:1843704071,0f5c27aaedc02010a839efa92d2b8ab2:1759570388,10cba3aaf1c020103c9b63fb95ffe035:2011010211,24ab23aa95c0201094a823ed3b256050:1732763727,e92be76afec020108571acc6f880d370:-1089290646,1e7aaf2a49c02010250aa581af890e86:1087397854,76696b2abac0201045af5d8876be5725:-577239921,7aa8e32a0dc02010a450fdc15a363173:807890924,21682fe693c02010679dd118aff7baa8:1902838294,a9b76be6ffc020108b030839ade1e17d:-966505366,1767a7e660c020103870168b8e08a510:-1656348820,1237a7e63dc02010159fa23d46aa1108:-216394770,abf6e3e6a5c020106b23220a3c956d0e:-1498109636,adb623e6e8c02010b9ad0551ddf3e811:-1934298680</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 14:32:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>d4a9164565014cf4b4b20d82dafa2d09</sys_id>
+        <sys_metadata>6484af66dbc02010969430d868961946</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sign TX (ethjs-sign)</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_parent display_value="Transaction">e6401874db442010969430d868961901</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_scope_delete display_value="">2bb8a3046e8a400e969b229d381b21b1</sys_scope_delete>
+        <sys_update_name>sys_ui_action_6484af66dbc02010969430d868961946</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_6484af66dbc02010969430d868961946">068c019fdbc46010969430d868961934</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 14:32:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

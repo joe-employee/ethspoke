@@ -12,8 +12,8 @@
         <description/>
         <ih_action>true</ih_action>
         <internal_name>submit_tx</internal_name>
-        <label_cache>[{"name":"{{action.tx}}","label":"action➛tx","type":"action","ref":""},{"name":"{{action.tx.endpoint}}","label":"action➛tx➛Endpoint","type":"action","ref":"x_snc_ethereum_endpoint"},{"name":"{{action.tx.endpoint.uri}}","label":"action➛tx➛Endpoint➛URI","type":"action","ref":""},{"name":"{{action.tx.raw}}","label":"action➛tx➛Raw","type":"action","ref":""}]</label_cache>
-        <latest_snapshot>da07150bdbcc2010969430d868961905</latest_snapshot>
+        <label_cache>[{"name":"{{action.tx}}","label":"action➛tx","type":"action","ref":""},{"name":"{{action.tx.endpoint}}","label":"action➛tx➛Endpoint","type":"action","ref":"x_snc_ethereum_endpoint"},{"name":"{{action.tx.endpoint.uri}}","label":"action➛tx➛Endpoint➛URI","type":"action","ref":""},{"name":"{{action.tx.raw}}","label":"action➛tx➛Raw","type":"action","ref":""},{"name":"{{step[f710683c-059b-489b-a858-8ed70751cb19].response_body}}","label":"step➛Submit➛Response Body","type":"step","ref":""},{"name":"{{step[43ff90c4-0c06-46a2-902d-c9d33187acc4].variable}}","label":"step➛Get Tx Hash➛variable","type":"step","ref":""},{"name":"{{step[43ff90c4-0c06-46a2-902d-c9d33187acc4].txhash}}","label":"step➛Get Tx Hash➛txhash","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>be9d2701db186410969430d868961904</latest_snapshot>
         <master_snapshot>ae07150bdbcc2010969430d86896191f</master_snapshot>
         <name>Submit Tx</name>
         <natlang/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fc09300bdb8c2010969430d8689619d3</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Submit Tx</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -33,13 +33,13 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_fc09300bdb8c2010969430d8689619d3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:22:49</sys_updated_on>
+        <sys_updated_on>2020-11-04 09:28:33</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
     <sys_translated_text action="delete_multiple" query="documentkey=fc09300bdb8c2010969430d8689619d3"/>
     <sys_variable_value action="delete_multiple" query="document_key=fc09300bdb8c2010969430d8689619d3"/>
-    <sys_hub_step_instance action="delete_multiple" query="action=fc09300bdb8c2010969430d8689619d3^sys_idNOT IN7d4a704bdb8c2010969430d868961983"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=fc09300bdb8c2010969430d8689619d3^sys_idNOT IN7d4a704bdb8c2010969430d868961983,83eedf381b9c241064bf11fc2d4bcb1f"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Submit Tx">fc09300bdb8c2010969430d8689619d3</action>
         <cid>f710683c-059b-489b-a858-8ed70751cb19</cid>
@@ -56,10 +56,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 15:17:09</sys_created_on>
         <sys_id>7d4a704bdb8c2010969430d868961983</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:22:46</sys_updated_on>
+        <sys_updated_on>2020-10-29 13:47:01</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7d4a704bdb8c2010969430d868961983"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -177,11 +177,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:17:08</sys_created_on>
         <sys_id>53b595c7dbcc2010969430d8689619a2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:08</sys_updated_on>
+        <sys_updated_on>2020-10-29 13:47:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{{{action.tx.raw}}}],"id":1}</value>
+        <value>{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":["{{action.tx.raw}}"],"id":1}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>capabilities</field>
@@ -243,6 +243,360 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Submit Tx">fc09300bdb8c2010969430d8689619d3</action>
+        <cid>43ff90c4-0c06-46a2-902d-c9d33187acc4</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Get Tx Hash</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:52</sys_created_on>
+        <sys_id>83eedf381b9c241064bf11fc2d4bcb1f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:28:21</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=83eedf381b9c241064bf11fc2d4bcb1f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>83eedf381b9c241064bf11fc2d4bcb1f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>17eedf381b9c241064bf11fc2d4bcb36</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:28:21</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+var txhash = JSON.parse(inputs.responseBody).result;
+  
+inputs.tx.hash = txhash;
+inputs.tx.update();
+  
+outputs.txhash = txhash;
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>83eedf381b9c241064bf11fc2d4bcb1f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>53eedf381b9c241064bf11fc2d4bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=83eedf381b9c241064bf11fc2d4bcb1f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>83eedf381b9c241064bf11fc2d4bcb1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>1feedf381b9c241064bf11fc2d4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>responseBody</field>
+        <id>83eedf381b9c241064bf11fc2d4bcb1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>53eedf381b9c241064bf11fc2d4bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_83eedf381b9c241064bf11fc2d4bcb1f</table>
+        <value>{{step[f710683c-059b-489b-a858-8ed70751cb19].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>83eedf381b9c241064bf11fc2d4bcb1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>dfeedf381b9c241064bf11fc2d4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tx</field>
+        <id>83eedf381b9c241064bf11fc2d4bcb1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>9feedf381b9c241064bf11fc2d4bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_83eedf381b9c241064bf11fc2d4bcb1f</table>
+        <value>{{action.tx}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=83eedf381b9c241064bf11fc2d4bcb1f^sys_idNOT IN0beedf381b9c241064bf11fc2d4bcb27,0feedf381b9c241064bf11fc2d4bcb22"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tx</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">83eedf381b9c241064bf11fc2d4bcb1f</model>
+        <model_id>83eedf381b9c241064bf11fc2d4bcb1f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_83eedf381b9c241064bf11fc2d4bcb1f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:52</sys_created_on>
+        <sys_id>0beedf381b9c241064bf11fc2d4bcb27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>responseBody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">83eedf381b9c241064bf11fc2d4bcb1f</model>
+        <model_id>83eedf381b9c241064bf11fc2d4bcb1f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_83eedf381b9c241064bf11fc2d4bcb1f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:52</sys_created_on>
+        <sys_id>0feedf381b9c241064bf11fc2d4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=83eedf381b9c241064bf11fc2d4bcb1f^sys_idNOT IN97eedf381b9c241064bf11fc2d4bcb2c"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fdfdfc1f-2096-431b-8119-20ae26038d0e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>txhash</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>txhash</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">83eedf381b9c241064bf11fc2d4bcb1f</model>
+        <model_id>83eedf381b9c241064bf11fc2d4bcb1f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_83eedf381b9c241064bf11fc2d4bcb1f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>97eedf381b9c241064bf11fc2d4bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_hub_action_input action="delete_multiple" query="model=fc09300bdb8c2010969430d8689619d3^sys_idNOT IN3d4a304bdb8c2010969430d8689619fe"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -325,7 +679,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_step_instance action="delete_multiple" query="action=fc09300bdb8c2010969430d8689619d3^sys_idNOT IN7d4a704bdb8c2010969430d868961983"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=fc09300bdb8c2010969430d8689619d3^sys_idNOT IN7d4a704bdb8c2010969430d868961983,83eedf381b9c241064bf11fc2d4bcb1f"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Submit Tx">fc09300bdb8c2010969430d8689619d3</action>
         <cid>f710683c-059b-489b-a858-8ed70751cb19</cid>
@@ -342,10 +696,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 15:17:09</sys_created_on>
         <sys_id>7d4a704bdb8c2010969430d868961983</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:22:46</sys_updated_on>
+        <sys_updated_on>2020-10-29 13:47:01</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7d4a704bdb8c2010969430d868961983"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -463,11 +817,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:17:08</sys_created_on>
         <sys_id>53b595c7dbcc2010969430d8689619a2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:17:08</sys_updated_on>
+        <sys_updated_on>2020-10-29 13:47:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{{{action.tx.raw}}}],"id":1}</value>
+        <value>{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":["{{action.tx.raw}}"],"id":1}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>capabilities</field>
@@ -529,6 +883,360 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Submit Tx">fc09300bdb8c2010969430d8689619d3</action>
+        <cid>43ff90c4-0c06-46a2-902d-c9d33187acc4</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Get Tx Hash</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:52</sys_created_on>
+        <sys_id>83eedf381b9c241064bf11fc2d4bcb1f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:28:21</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=83eedf381b9c241064bf11fc2d4bcb1f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>83eedf381b9c241064bf11fc2d4bcb1f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>17eedf381b9c241064bf11fc2d4bcb36</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:28:21</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+var txhash = JSON.parse(inputs.responseBody).result;
+  
+inputs.tx.hash = txhash;
+inputs.tx.update();
+  
+outputs.txhash = txhash;
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>83eedf381b9c241064bf11fc2d4bcb1f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>53eedf381b9c241064bf11fc2d4bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=83eedf381b9c241064bf11fc2d4bcb1f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>83eedf381b9c241064bf11fc2d4bcb1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>1feedf381b9c241064bf11fc2d4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>responseBody</field>
+        <id>83eedf381b9c241064bf11fc2d4bcb1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>53eedf381b9c241064bf11fc2d4bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_83eedf381b9c241064bf11fc2d4bcb1f</table>
+        <value>{{step[f710683c-059b-489b-a858-8ed70751cb19].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>83eedf381b9c241064bf11fc2d4bcb1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>dfeedf381b9c241064bf11fc2d4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tx</field>
+        <id>83eedf381b9c241064bf11fc2d4bcb1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>9feedf381b9c241064bf11fc2d4bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_83eedf381b9c241064bf11fc2d4bcb1f</table>
+        <value>{{action.tx}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=83eedf381b9c241064bf11fc2d4bcb1f^sys_idNOT IN0beedf381b9c241064bf11fc2d4bcb27,0feedf381b9c241064bf11fc2d4bcb22"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tx</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">83eedf381b9c241064bf11fc2d4bcb1f</model>
+        <model_id>83eedf381b9c241064bf11fc2d4bcb1f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_83eedf381b9c241064bf11fc2d4bcb1f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:52</sys_created_on>
+        <sys_id>0beedf381b9c241064bf11fc2d4bcb27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>responseBody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">83eedf381b9c241064bf11fc2d4bcb1f</model>
+        <model_id>83eedf381b9c241064bf11fc2d4bcb1f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_83eedf381b9c241064bf11fc2d4bcb1f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:52</sys_created_on>
+        <sys_id>0feedf381b9c241064bf11fc2d4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=83eedf381b9c241064bf11fc2d4bcb1f^sys_idNOT IN97eedf381b9c241064bf11fc2d4bcb2c"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fdfdfc1f-2096-431b-8119-20ae26038d0e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>txhash</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>txhash</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">83eedf381b9c241064bf11fc2d4bcb1f</model>
+        <model_id>83eedf381b9c241064bf11fc2d4bcb1f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_83eedf381b9c241064bf11fc2d4bcb1f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 13:45:53</sys_created_on>
+        <sys_id>97eedf381b9c241064bf11fc2d4bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-03 13:45:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_fc09300bdb8c2010969430d8689619d3^sys_idNOT IN354a704bdb8c2010969430d868961981"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>tx</element>
@@ -543,11 +1251,11 @@
         <sys_created_on>2020-10-28 15:17:09</sys_created_on>
         <sys_id>354a704bdb8c2010969430d868961981</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>tx</sys_name>
+        <sys_name/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_fc09300bdb8c2010969430d8689619d3_tx_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-28 15:17:09</sys_updated_on>
         <url/>
@@ -557,17 +1265,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Submit Tx">fc09300bdb8c2010969430d8689619d3</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"0b07150bdbcc2010969430d86896198f","name":"plan"}}</plan>
-        <snapshot>da07150bdbcc2010969430d868961905</snapshot>
+        <snapshot>be9d2701db186410969430d868961904</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:22:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0b07150bdbcc2010969430d86896198f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:22:51</sys_updated_on>
+        <sys_updated_on>2020-11-04 09:28:35</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>package_private</access>
@@ -580,7 +1288,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>submit_tx</internal_name>
-        <label_cache>[{"name":"{{action.tx}}","label":"action➛tx","type":"action","ref":""},{"name":"{{action.tx.endpoint}}","label":"action➛tx➛Endpoint","type":"action","ref":"x_snc_ethereum_endpoint"},{"name":"{{action.tx.endpoint.uri}}","label":"action➛tx➛Endpoint➛URI","type":"action","ref":""},{"name":"{{action.tx.raw}}","label":"action➛tx➛Raw","type":"action","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.tx}}","label":"action➛tx","type":"action","ref":""},{"name":"{{action.tx.endpoint}}","label":"action➛tx➛Endpoint","type":"action","ref":"x_snc_ethereum_endpoint"},{"name":"{{action.tx.endpoint.uri}}","label":"action➛tx➛Endpoint➛URI","type":"action","ref":""},{"name":"{{action.tx.raw}}","label":"action➛tx➛Raw","type":"action","ref":""},{"name":"{{step[f710683c-059b-489b-a858-8ed70751cb19].response_body}}","label":"step➛Submit➛Response Body","type":"step","ref":""},{"name":"{{step[43ff90c4-0c06-46a2-902d-c9d33187acc4].variable}}","label":"step➛Get Tx Hash➛variable","type":"step","ref":""},{"name":"{{step[43ff90c4-0c06-46a2-902d-c9d33187acc4].txhash}}","label":"step➛Get Tx Hash➛txhash","type":"step","ref":""}]</label_cache>
         <master>true</master>
         <name>Submit Tx</name>
         <natlang/>
@@ -592,7 +1300,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ae07150bdbcc2010969430d86896191f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -600,13 +1308,13 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:22:48</sys_updated_on>
+        <sys_updated_on>2020-11-04 09:23:56</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=ae07150bdbcc2010969430d86896191f"/>
     <sys_variable_value action="delete_multiple" query="document_key=ae07150bdbcc2010969430d86896191f"/>
-    <sys_hub_step_instance action="delete_multiple" query="action=ae07150bdbcc2010969430d86896191f^sys_idNOT INa607150bdbcc2010969430d868961928"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=ae07150bdbcc2010969430d86896191f^sys_idNOT INa607150bdbcc2010969430d868961928,cc9ce7cddbd46410969430d86896192b"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Submit Tx">ae07150bdbcc2010969430d86896191f</action>
         <cid>f710683c-059b-489b-a858-8ed70751cb19</cid>
@@ -623,10 +1331,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:22:48</sys_created_on>
         <sys_id>a607150bdbcc2010969430d868961928</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:22:49</sys_updated_on>
+        <sys_updated_on>2020-11-04 09:23:56</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a607150bdbcc2010969430d868961928"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -744,11 +1452,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:22:49</sys_created_on>
         <sys_id>2e07150bdbcc2010969430d86896193f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:22:49</sys_updated_on>
+        <sys_updated_on>2020-11-04 09:23:56</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{{{action.tx.raw}}}],"id":1}</value>
+        <value>{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":["{{action.tx.raw}}"],"id":1}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>capabilities</field>
@@ -810,6 +1518,360 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Submit Tx">ae07150bdbcc2010969430d86896191f</action>
+        <cid>43ff90c4-0c06-46a2-902d-c9d33187acc4</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Get Tx Hash</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>cc9ce7cddbd46410969430d86896192b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:28:33</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cc9ce7cddbd46410969430d86896192b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc9ce7cddbd46410969430d86896192b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>5c9ce7cddbd46410969430d868961944</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:28:33</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+var txhash = JSON.parse(inputs.responseBody).result;
+  
+inputs.tx.hash = txhash;
+inputs.tx.update();
+  
+outputs.txhash = txhash;
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc9ce7cddbd46410969430d86896192b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>989ce7cddbd46410969430d868961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cc9ce7cddbd46410969430d86896192b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>cc9ce7cddbd46410969430d86896192b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>549ce7cddbd46410969430d868961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>responseBody</field>
+        <id>cc9ce7cddbd46410969430d86896192b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>989ce7cddbd46410969430d868961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_cc9ce7cddbd46410969430d86896192b</table>
+        <value>{{step[f710683c-059b-489b-a858-8ed70751cb19].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>cc9ce7cddbd46410969430d86896192b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>189ce7cddbd46410969430d868961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tx</field>
+        <id>cc9ce7cddbd46410969430d86896192b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>d49ce7cddbd46410969430d868961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_cc9ce7cddbd46410969430d86896192b</table>
+        <value>{{action.tx}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=cc9ce7cddbd46410969430d86896192b^sys_idNOT IN409ce7cddbd46410969430d868961935,889ce7cddbd46410969430d86896192e"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tx</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>tx</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">cc9ce7cddbd46410969430d86896192b</model>
+        <model_id>cc9ce7cddbd46410969430d86896192b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_cc9ce7cddbd46410969430d86896192b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>409ce7cddbd46410969430d868961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>responseBody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>responseBody</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">cc9ce7cddbd46410969430d86896192b</model>
+        <model_id>cc9ce7cddbd46410969430d86896192b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_cc9ce7cddbd46410969430d86896192b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>889ce7cddbd46410969430d86896192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=cc9ce7cddbd46410969430d86896192b^sys_idNOT IN189ce7cddbd46410969430d86896193b"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fdfdfc1f-2096-431b-8119-20ae26038d0e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>txhash</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>txhash</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">cc9ce7cddbd46410969430d86896192b</model>
+        <model_id>cc9ce7cddbd46410969430d86896192b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_cc9ce7cddbd46410969430d86896192b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>189ce7cddbd46410969430d86896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_hub_action_input action="delete_multiple" query="model=ae07150bdbcc2010969430d86896191f^sys_idNOT INee07150bdbcc2010969430d868961920"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -892,7 +1954,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_step_instance action="delete_multiple" query="action=ae07150bdbcc2010969430d86896191f^sys_idNOT INa607150bdbcc2010969430d868961928"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=ae07150bdbcc2010969430d86896191f^sys_idNOT INa607150bdbcc2010969430d868961928,cc9ce7cddbd46410969430d86896192b"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Submit Tx">ae07150bdbcc2010969430d86896191f</action>
         <cid>f710683c-059b-489b-a858-8ed70751cb19</cid>
@@ -909,10 +1971,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:22:48</sys_created_on>
         <sys_id>a607150bdbcc2010969430d868961928</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:22:49</sys_updated_on>
+        <sys_updated_on>2020-11-04 09:23:56</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a607150bdbcc2010969430d868961928"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1030,11 +2092,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:22:49</sys_created_on>
         <sys_id>2e07150bdbcc2010969430d86896193f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 17:22:49</sys_updated_on>
+        <sys_updated_on>2020-11-04 09:23:56</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{{{action.tx.raw}}}],"id":1}</value>
+        <value>{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":["{{action.tx.raw}}"],"id":1}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>capabilities</field>
@@ -1096,6 +2158,360 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Submit Tx">ae07150bdbcc2010969430d86896191f</action>
+        <cid>43ff90c4-0c06-46a2-902d-c9d33187acc4</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Get Tx Hash</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>cc9ce7cddbd46410969430d86896192b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:28:33</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cc9ce7cddbd46410969430d86896192b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc9ce7cddbd46410969430d86896192b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>5c9ce7cddbd46410969430d868961944</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:28:33</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+var txhash = JSON.parse(inputs.responseBody).result;
+  
+inputs.tx.hash = txhash;
+inputs.tx.update();
+  
+outputs.txhash = txhash;
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc9ce7cddbd46410969430d86896192b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>989ce7cddbd46410969430d868961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cc9ce7cddbd46410969430d86896192b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>cc9ce7cddbd46410969430d86896192b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>549ce7cddbd46410969430d868961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>responseBody</field>
+        <id>cc9ce7cddbd46410969430d86896192b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>989ce7cddbd46410969430d868961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_cc9ce7cddbd46410969430d86896192b</table>
+        <value>{{step[f710683c-059b-489b-a858-8ed70751cb19].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>cc9ce7cddbd46410969430d86896192b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>189ce7cddbd46410969430d868961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tx</field>
+        <id>cc9ce7cddbd46410969430d86896192b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>d49ce7cddbd46410969430d868961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_cc9ce7cddbd46410969430d86896192b</table>
+        <value>{{action.tx}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=cc9ce7cddbd46410969430d86896192b^sys_idNOT IN409ce7cddbd46410969430d868961935,889ce7cddbd46410969430d86896192e"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tx</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>tx</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">cc9ce7cddbd46410969430d86896192b</model>
+        <model_id>cc9ce7cddbd46410969430d86896192b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_cc9ce7cddbd46410969430d86896192b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>409ce7cddbd46410969430d868961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>responseBody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>responseBody</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">cc9ce7cddbd46410969430d86896192b</model>
+        <model_id>cc9ce7cddbd46410969430d86896192b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_cc9ce7cddbd46410969430d86896192b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>889ce7cddbd46410969430d86896192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=cc9ce7cddbd46410969430d86896192b^sys_idNOT IN189ce7cddbd46410969430d86896193b"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fdfdfc1f-2096-431b-8119-20ae26038d0e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>txhash</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>txhash</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Tx Hash">cc9ce7cddbd46410969430d86896192b</model>
+        <model_id>cc9ce7cddbd46410969430d86896192b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_cc9ce7cddbd46410969430d86896192b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 09:23:57</sys_created_on>
+        <sys_id>189ce7cddbd46410969430d86896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:23:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_ae07150bdbcc2010969430d86896191f^sys_idNOT IN2207150bdbcc2010969430d868961926"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>tx</element>
@@ -1110,11 +2526,11 @@
         <sys_created_on>2020-10-28 17:22:48</sys_created_on>
         <sys_id>2207150bdbcc2010969430d868961926</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>tx</sys_name>
+        <sys_name/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_ae07150bdbcc2010969430d86896191f_tx_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-28 17:22:48</sys_updated_on>
         <url/>

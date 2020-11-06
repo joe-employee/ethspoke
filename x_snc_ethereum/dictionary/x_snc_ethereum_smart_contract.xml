@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Smart Contract" max_length="40" name="x_snc_ethereum_smart_contract" sizeclass="2" type="collection">
+        <element label="ABI" max_length="10000" name="abi" type="string"/>
+        <element label="Bytecode" max_length="10000" name="bytecode" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Disabled" value="2"/>
+                <element inactive_on_update="false" label="Draft" value="0"/>
+                <element inactive_on_update="false" label="Ready" value="1"/>
+            </choice>
+        </element>
+    </element>
+</database>

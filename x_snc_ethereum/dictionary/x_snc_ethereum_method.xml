@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Method" max_length="40" name="x_snc_ethereum_method" type="collection">
+    <element label="Method" max_length="40" name="x_snc_ethereum_method" sizeclass="13" type="collection">
+        <element label="Fragment" max_length="1000" name="fragment" type="string"/>
         <element label="name" max_length="1000" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Number" max_length="40" name="number" type="integer"/>
         <element label="Parameters" max_length="1000" name="parameters" type="string"/>
-        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Smart Contract Instance" max_length="32" name="smart_contract_instance" reference="x_snc_ethereum_smart_contract_instance" type="reference"/>
+        <element label="Smart Contract" max_length="32" name="smart_contract" reference="x_snc_ethereum_smart_contract" type="reference"/>
+        <element choice="1" label="State Mutability" max_length="40" name="state_mutability" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="nonpayable" value="nonpayable"/>
+                <element inactive_on_update="false" label="view" value="view"/>
+            </choice>
+        </element>
         <index name="index">
-            <element name="smart_contract_instance"/>
+            <element name="smart_contract"/>
         </index>
     </element>
 </database>
