@@ -6,13 +6,13 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
+        <compiler_build>glide-orlando-12-11-2019__patch8-hotfix1-10-16-2020</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>execute_tx</internal_name>
-        <label_cache>[{"name":"subflow.tx","label":"Input➛tx","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b92f2df9-2ef7-4186-85ec-dd3e0eb0c12f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"e0ad745d-eac7-40a0-85af-e2e7b9b54265.scheduled_end_date_time","label":"2➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"e0ad745d-eac7-40a0-85af-e2e7b9b54265.total_duration","label":"2➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"91361084-e9c8-413a-8594-798e48808e4a.variable","label":"2.2➛receipt","reference_display":"receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dc702ce3-fdcc-43b8-a184-c8d6d4337eab"}},{"name":"a01d0fdb-859f-4727-adce-cb4e623aebd1.total_duration","label":"2.1➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"a01d0fdb-859f-4727-adce-cb4e623aebd1.scheduled_end_date_time","label":"2.1➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"91361084-e9c8-413a-8594-798e48808e4a.receipt","label":"2.2➛receipt","reference_display":"receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dc702ce3-fdcc-43b8-a184-c8d6d4337eab"}}]</label_cache>
-        <latest_snapshot>f7aaaf4ddbd46410969430d8689619d4</latest_snapshot>
+        <label_cache>[{"name":"1e11f105-8e47-4ec4-82ba-4b4954cef826.table_name","label":"2.2.1➛Transaction Table","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1e11f105-8e47-4ec4-82ba-4b4954cef826.record","label":"2.2.1➛Transaction Record","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.tx","label":"Input➛tx","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b92f2df9-2ef7-4186-85ec-dd3e0eb0c12f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"e0ad745d-eac7-40a0-85af-e2e7b9b54265.scheduled_end_date_time","label":"2➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"e0ad745d-eac7-40a0-85af-e2e7b9b54265.total_duration","label":"2➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"91361084-e9c8-413a-8594-798e48808e4a.variable","label":"2.1➛receipt","reference_display":"receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dc702ce3-fdcc-43b8-a184-c8d6d4337eab"}},{"name":"a01d0fdb-859f-4727-adce-cb4e623aebd1.total_duration","label":"2.1➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"a01d0fdb-859f-4727-adce-cb4e623aebd1.scheduled_end_date_time","label":"2.1➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"91361084-e9c8-413a-8594-798e48808e4a.receipt","label":"2.1➛receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dc702ce3-fdcc-43b8-a184-c8d6d4337eab"}}]</label_cache>
+        <latest_snapshot>cf503331db1c2010969430d8689619e4</latest_snapshot>
         <master_snapshot>f7aaaf4ddbd46410969430d8689619d4</master_snapshot>
         <name>Execute Tx</name>
         <natlang/>
@@ -22,14 +22,14 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 09:04:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7f18670ddbd46410969430d868961902</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_name>Execute Tx</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -37,14 +37,14 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_hub_flow_7f18670ddbd46410969430d868961902</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:34</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:14:33</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=7f18670ddbd46410969430d868961902"/>
     <sys_variable_value action="delete_multiple" query="document_key=7f18670ddbd46410969430d868961902"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=7f18670ddbd46410969430d868961902^sys_idNOT IN005c8091db586410969430d8689619a9,12aaaf4ddbd46410969430d86896191f,374c8091db586410969430d8689619a7,aaf0f225db902010969430d8689619fb,fb4ccc51db586410969430d868961978"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=7f18670ddbd46410969430d868961902^sys_idNOT IN0f1163b5dbd82010969430d868961962,12aaaf4ddbd46410969430d86896191f,374c8091db586410969430d8689619a7,4ccd17f1dbd82010969430d868961929,5f3bdf71dbd82010969430d868961954,8ccd17f1dbd82010969430d868961925,d1c536bddb582010969430d868961971"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">885c8091db586410969430d8689619a8</block>
+        <block display_value="">431163b5dbd82010969430d868961962</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -53,71 +53,31 @@
         <extended_inputs/>
         <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
         <inputs/>
-        <inputs/>
-        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
-        <order>2</order>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>2.2.3</order>
         <outputs_assigned/>
         <outputs_to_assign/>
-        <parent_ui_id/>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 11:42:39</sys_created_on>
-        <sys_id>005c8091db586410969430d8689619a9</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_created_on>2020-11-06 16:29:20</sys_created_on>
+        <sys_id>0f1163b5dbd82010969430d868961962</sys_id>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:34</sys_updated_on>
-        <ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</ui_id>
+        <sys_updated_on>2020-11-06 17:14:33</sys_updated_on>
+        <ui_id>e5118d61-5c38-4897-a445-5ae0cf9a0ec4</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=005c8091db586410969430d8689619a9"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>005c8091db586410969430d8689619a9</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:18:11</sys_created_on>
-        <sys_id>3360fee1db902010969430d868961944</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:18:11</sys_updated_on>
-        <value>receipt defined</value>
-        <variable display_value="">bda2cb0473031300612c273ffff6a750</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=005c8091db586410969430d8689619a9"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>005c8091db586410969430d8689619a9</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:05:54</sys_created_on>
-        <sys_id>e4a1d855db586410969430d868961995</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:59:05</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
-        <value>{{91361084-e9c8-413a-8594-798e48808e4a.variable}}!=</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>005c8091db586410969430d8689619a9</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:18:11</sys_created_on>
-        <sys_id>3b60fee1db902010969430d868961943</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:18:11</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
-        <value/>
-    </sys_element_mapping>
+    <sys_variable_value action="delete_multiple" query="document_key=0f1163b5dbd82010969430d868961962"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
         <action_type display_value="Submit Tx">ae07150bdbcc2010969430d86896191f</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>ae07150bdbcc2010969430d86896191f</compiled_snapshot>
         <display_text/>
         <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
         <order>1</order>
@@ -126,10 +86,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 09:15:37</sys_created_on>
         <sys_id>12aaaf4ddbd46410969430d86896191f</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>120</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:33</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:36:01</sys_updated_on>
         <ui_id>ae11589a-a1a0-4309-b19f-957be4c9b0af</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=12aaaf4ddbd46410969430d86896191f"/>
@@ -152,19 +112,19 @@
         <action_type display_value="Get Transaction Receipt">776aeb4ddbd46410969430d868961972</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>776aeb4ddbd46410969430d868961972</compiled_snapshot>
         <display_text/>
         <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
-        <order>2.2</order>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
+        <order>2.1</order>
+        <parent_ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 11:42:39</sys_created_on>
         <sys_id>374c8091db586410969430d8689619a7</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>114</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:33</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:36:01</sys_updated_on>
         <ui_id>91361084-e9c8-413a-8594-798e48808e4a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=374c8091db586410969430d8689619a7"/>
@@ -182,7 +142,230 @@
         <value>{{subflow.tx}}</value>
     </sys_element_mapping>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">eef0f225db902010969430d8689619fa</block>
+        <block display_value="">84cd17f1dbd82010969430d868961929</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:14:40</sys_created_on>
+        <sys_id>4ccd17f1dbd82010969430d868961929</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:33</sys_updated_on>
+        <ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4ccd17f1dbd82010969430d868961929"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4ccd17f1dbd82010969430d868961929</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:25:43</sys_created_on>
+        <sys_id>71402775dbd82010969430d8689619a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:25:43</sys_updated_on>
+        <value>receipt is null</value>
+        <variable display_value="">bda2cb0473031300612c273ffff6a750</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4ccd17f1dbd82010969430d868961929"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4ccd17f1dbd82010969430d868961929</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:15:45</sys_created_on>
+        <sys_id>c00e97f1dbd82010969430d8689619c4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:25:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}=null</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4ccd17f1dbd82010969430d868961929</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:25:43</sys_created_on>
+        <sys_id>3d402775dbd82010969430d8689619a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:25:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
+        <order>2.2.1</order>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>5f3bdf71dbd82010969430d868961954</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:36:01</sys_updated_on>
+        <ui_id>1e11f105-8e47-4ec4-82ba-4b4954cef826</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5f3bdf71dbd82010969430d868961954"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5f3bdf71dbd82010969430d868961954</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>133bdf71dbd82010969430d868961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:03:42</sys_updated_on>
+        <value>x_snc_ethereum_transaction</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5f3bdf71dbd82010969430d868961954</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>5f3bdf71dbd82010969430d868961956</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:04:25</sys_updated_on>
+        <value/>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5f3bdf71dbd82010969430d868961954"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5f3bdf71dbd82010969430d868961954</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>1b3bdf71dbd82010969430d868961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:03:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.tx}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5f3bdf71dbd82010969430d868961954</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>573bdf71dbd82010969430d868961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:03:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5f3bdf71dbd82010969430d868961954</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>db3bdf71dbd82010969430d868961956</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>receipt={{91361084-e9c8-413a-8594-798e48808e4a.receipt}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c0cd17f1dbd82010969430d868961925</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:14:40</sys_created_on>
+        <sys_id>8ccd17f1dbd82010969430d868961925</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:33</sys_updated_on>
+        <ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8ccd17f1dbd82010969430d868961925"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8ccd17f1dbd82010969430d868961925</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:14:40</sys_created_on>
+        <sys_id>00cd17f1dbd82010969430d868961929</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:25:42</sys_updated_on>
+        <value>receipt is not null</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8ccd17f1dbd82010969430d868961925"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>8ccd17f1dbd82010969430d868961925</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:14:40</sys_created_on>
+        <sys_id>8ccd17f1dbd82010969430d868961928</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:25:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}!=null</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>8ccd17f1dbd82010969430d868961925</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:14:40</sys_created_on>
+        <sys_id>c8cd17f1dbd82010969430d868961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:14:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1dc536bddb582010969430d868961970</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -192,93 +375,37 @@
         <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>2.3</order>
+        <order>2.2.2</order>
         <outputs_assigned>receipt</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:34</sys_created_on>
-        <sys_id>aaf0f225db902010969430d8689619fb</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2020-11-06 13:19:59</sys_created_on>
+        <sys_id>d1c536bddb582010969430d868961971</sys_id>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:34</sys_updated_on>
-        <ui_id>9c8806e1-f410-4aae-862d-d2168a9d0054</ui_id>
+        <sys_updated_on>2020-11-06 17:14:32</sys_updated_on>
+        <ui_id>494a10d3-e7f2-4232-a0e2-cfcee897f203</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=aaf0f225db902010969430d8689619fb"/>
-    <sys_element_mapping action="delete_multiple" query="id=aaf0f225db902010969430d8689619fb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d1c536bddb582010969430d868961971"/>
+    <sys_element_mapping action="delete_multiple" query="id=d1c536bddb582010969430d868961971"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>receipt</field>
-        <id>aaf0f225db902010969430d8689619fb</id>
+        <id>d1c536bddb582010969430d868961971</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:34</sys_created_on>
-        <sys_id>62f0f225db902010969430d8689619fe</sys_id>
+        <sys_created_on>2020-11-06 13:19:59</sys_created_on>
+        <sys_id>19c536bddb582010969430d868961973</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:20:34</sys_updated_on>
+        <sys_updated_on>2020-11-06 13:19:59</sys_updated_on>
         <table>var__m_sys_hub_flow_output_7f18670ddbd46410969430d868961902</table>
         <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}</value>
     </sys_element_mapping>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">734ccc51db586410969430d868961978</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
-        <inputs/>
-        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
-        <order>2.1</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 11:42:39</sys_created_on>
-        <sys_id>fb4ccc51db586410969430d868961978</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:33</sys_updated_on>
-        <ui_id>a01d0fdb-859f-4727-adce-cb4e623aebd1</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=fb4ccc51db586410969430d868961978"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>fb4ccc51db586410969430d868961978</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 11:42:39</sys_created_on>
-        <sys_id>3f4c8091db586410969430d8689619a5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:57:55</sys_updated_on>
-        <value>1970-01-01 00:00:00</value>
-        <variable display_value="">ef145c1473031300b61e66476bf6a7be</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>fb4ccc51db586410969430d868961978</document_key>
-        <order>300</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 11:42:39</sys_created_on>
-        <sys_id>7b4c8091db586410969430d8689619a5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 11:42:39</sys_updated_on>
-        <value/>
-        <variable display_value="">dca4105473031300b61e66476bf6a726</variable>
-    </sys_variable_value>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=7f18670ddbd46410969430d868961902^sys_idNOT IN4428670ddbd46410969430d868961905"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>7f18670ddbd46410969430d868961902</id>
@@ -455,14 +582,14 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
-    <sys_hub_action_instance action="delete_multiple" query="flow=7f18670ddbd46410969430d868961902^sys_idNOT IN12aaaf4ddbd46410969430d86896191f,374c8091db586410969430d8689619a7"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=7f18670ddbd46410969430d868961902^sys_idNOT IN12aaaf4ddbd46410969430d86896191f,374c8091db586410969430d8689619a7,5f3bdf71dbd82010969430d868961954"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
         <action_type display_value="Submit Tx">ae07150bdbcc2010969430d86896191f</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>ae07150bdbcc2010969430d86896191f</compiled_snapshot>
         <display_text/>
         <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
         <order>1</order>
@@ -471,10 +598,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 09:15:37</sys_created_on>
         <sys_id>12aaaf4ddbd46410969430d86896191f</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>120</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:33</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:36:01</sys_updated_on>
         <ui_id>ae11589a-a1a0-4309-b19f-957be4c9b0af</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=12aaaf4ddbd46410969430d86896191f"/>
@@ -497,19 +624,19 @@
         <action_type display_value="Get Transaction Receipt">776aeb4ddbd46410969430d868961972</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>776aeb4ddbd46410969430d868961972</compiled_snapshot>
         <display_text/>
         <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
-        <order>2.2</order>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
+        <order>2.1</order>
+        <parent_ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 11:42:39</sys_created_on>
         <sys_id>374c8091db586410969430d8689619a7</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>114</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:33</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:36:01</sys_updated_on>
         <ui_id>91361084-e9c8-413a-8594-798e48808e4a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=374c8091db586410969430d8689619a7"/>
@@ -526,9 +653,138 @@
         <table>var__m_sys_hub_action_input_776aeb4ddbd46410969430d868961972</table>
         <value>{{subflow.tx}}</value>
     </sys_element_mapping>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=7f18670ddbd46410969430d868961902^sys_idNOT IN005c8091db586410969430d8689619a9,aaf0f225db902010969430d8689619fb,fb4ccc51db586410969430d868961978"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
+        <order>2.2.1</order>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>5f3bdf71dbd82010969430d868961954</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:36:01</sys_updated_on>
+        <ui_id>1e11f105-8e47-4ec4-82ba-4b4954cef826</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5f3bdf71dbd82010969430d868961954"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5f3bdf71dbd82010969430d868961954</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>133bdf71dbd82010969430d868961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:03:42</sys_updated_on>
+        <value>x_snc_ethereum_transaction</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5f3bdf71dbd82010969430d868961954</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>5f3bdf71dbd82010969430d868961956</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:04:25</sys_updated_on>
+        <value/>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5f3bdf71dbd82010969430d868961954"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5f3bdf71dbd82010969430d868961954</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>1b3bdf71dbd82010969430d868961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:03:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.tx}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5f3bdf71dbd82010969430d868961954</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>573bdf71dbd82010969430d868961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:03:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5f3bdf71dbd82010969430d868961954</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:03:42</sys_created_on>
+        <sys_id>db3bdf71dbd82010969430d868961956</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>receipt={{91361084-e9c8-413a-8594-798e48808e4a.receipt}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5f3bdf71dbd82010969430d868961954^sys_idNOT IN75d62b79dbd82010969430d8689619fc"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>values</input_name>
+        <instance>5f3bdf71dbd82010969430d868961954</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"contract_address":{"scriptActive":true,"script":"var x \u003d JSON.parse(fd_data.trigger.current.receipt).contractAddress;\nreturn x;","savedValue":""}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:54:22</sys_created_on>
+        <sys_id>75d62b79dbd82010969430d8689619fc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:14</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=7f18670ddbd46410969430d868961902^sys_idNOT IN0f1163b5dbd82010969430d868961962,4ccd17f1dbd82010969430d868961929,8ccd17f1dbd82010969430d868961925,d1c536bddb582010969430d868961971"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">885c8091db586410969430d8689619a8</block>
+        <block display_value="">431163b5dbd82010969430d868961962</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>2.2.3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:29:20</sys_created_on>
+        <sys_id>0f1163b5dbd82010969430d868961962</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:33</sys_updated_on>
+        <ui_id>e5118d61-5c38-4897-a445-5ae0cf9a0ec4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0f1163b5dbd82010969430d868961962"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">84cd17f1dbd82010969430d868961929</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -545,58 +801,126 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 11:42:39</sys_created_on>
-        <sys_id>005c8091db586410969430d8689619a9</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_created_on>2020-11-06 16:14:40</sys_created_on>
+        <sys_id>4ccd17f1dbd82010969430d868961929</sys_id>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:34</sys_updated_on>
-        <ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</ui_id>
+        <sys_updated_on>2020-11-06 17:14:33</sys_updated_on>
+        <ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=005c8091db586410969430d8689619a9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4ccd17f1dbd82010969430d868961929"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_flow_logic</document>
-        <document_key>005c8091db586410969430d8689619a9</document_key>
+        <document_key>4ccd17f1dbd82010969430d868961929</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:18:11</sys_created_on>
-        <sys_id>3360fee1db902010969430d868961944</sys_id>
+        <sys_created_on>2020-11-06 16:25:43</sys_created_on>
+        <sys_id>71402775dbd82010969430d8689619a9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:18:11</sys_updated_on>
-        <value>receipt defined</value>
+        <sys_updated_on>2020-11-06 16:25:43</sys_updated_on>
+        <value>receipt is null</value>
         <variable display_value="">bda2cb0473031300612c273ffff6a750</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=005c8091db586410969430d8689619a9"/>
+    <sys_element_mapping action="delete_multiple" query="id=4ccd17f1dbd82010969430d868961929"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
-        <id>005c8091db586410969430d8689619a9</id>
+        <id>4ccd17f1dbd82010969430d868961929</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:05:54</sys_created_on>
-        <sys_id>e4a1d855db586410969430d868961995</sys_id>
+        <sys_created_on>2020-11-06 16:15:45</sys_created_on>
+        <sys_id>c00e97f1dbd82010969430d8689619c4</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:59:05</sys_updated_on>
+        <sys_updated_on>2020-11-06 16:25:43</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
-        <value>{{91361084-e9c8-413a-8594-798e48808e4a.variable}}!=</value>
+        <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}=null</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition_name</field>
-        <id>005c8091db586410969430d8689619a9</id>
+        <id>4ccd17f1dbd82010969430d868961929</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:18:11</sys_created_on>
-        <sys_id>3b60fee1db902010969430d868961943</sys_id>
+        <sys_created_on>2020-11-06 16:25:43</sys_created_on>
+        <sys_id>3d402775dbd82010969430d8689619a8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:18:11</sys_updated_on>
+        <sys_updated_on>2020-11-06 16:25:43</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
         <value/>
     </sys_element_mapping>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">eef0f225db902010969430d8689619fa</block>
+        <block display_value="">c0cd17f1dbd82010969430d868961925</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:14:40</sys_created_on>
+        <sys_id>8ccd17f1dbd82010969430d868961925</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:33</sys_updated_on>
+        <ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8ccd17f1dbd82010969430d868961925"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8ccd17f1dbd82010969430d868961925</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:14:40</sys_created_on>
+        <sys_id>00cd17f1dbd82010969430d868961929</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:25:42</sys_updated_on>
+        <value>receipt is not null</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8ccd17f1dbd82010969430d868961925"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>8ccd17f1dbd82010969430d868961925</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:14:40</sys_created_on>
+        <sys_id>8ccd17f1dbd82010969430d868961928</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:25:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}!=null</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>8ccd17f1dbd82010969430d868961925</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:14:40</sys_created_on>
+        <sys_id>c8cd17f1dbd82010969430d868961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:14:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1dc536bddb582010969430d868961970</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -606,93 +930,37 @@
         <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>2.3</order>
+        <order>2.2.2</order>
         <outputs_assigned>receipt</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:34</sys_created_on>
-        <sys_id>aaf0f225db902010969430d8689619fb</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2020-11-06 13:19:59</sys_created_on>
+        <sys_id>d1c536bddb582010969430d868961971</sys_id>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:34</sys_updated_on>
-        <ui_id>9c8806e1-f410-4aae-862d-d2168a9d0054</ui_id>
+        <sys_updated_on>2020-11-06 17:14:32</sys_updated_on>
+        <ui_id>494a10d3-e7f2-4232-a0e2-cfcee897f203</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=aaf0f225db902010969430d8689619fb"/>
-    <sys_element_mapping action="delete_multiple" query="id=aaf0f225db902010969430d8689619fb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d1c536bddb582010969430d868961971"/>
+    <sys_element_mapping action="delete_multiple" query="id=d1c536bddb582010969430d868961971"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>receipt</field>
-        <id>aaf0f225db902010969430d8689619fb</id>
+        <id>d1c536bddb582010969430d868961971</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:34</sys_created_on>
-        <sys_id>62f0f225db902010969430d8689619fe</sys_id>
+        <sys_created_on>2020-11-06 13:19:59</sys_created_on>
+        <sys_id>19c536bddb582010969430d868961973</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:20:34</sys_updated_on>
+        <sys_updated_on>2020-11-06 13:19:59</sys_updated_on>
         <table>var__m_sys_hub_flow_output_7f18670ddbd46410969430d868961902</table>
         <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}</value>
     </sys_element_mapping>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">734ccc51db586410969430d868961978</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="Execute Tx">7f18670ddbd46410969430d868961902</flow>
-        <inputs/>
-        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
-        <order>2.1</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 11:42:39</sys_created_on>
-        <sys_id>fb4ccc51db586410969430d868961978</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:33</sys_updated_on>
-        <ui_id>a01d0fdb-859f-4727-adce-cb4e623aebd1</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=fb4ccc51db586410969430d868961978"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>fb4ccc51db586410969430d868961978</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 11:42:39</sys_created_on>
-        <sys_id>3f4c8091db586410969430d8689619a5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:57:55</sys_updated_on>
-        <value>1970-01-01 00:00:00</value>
-        <variable display_value="">ef145c1473031300b61e66476bf6a7be</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>fb4ccc51db586410969430d868961978</document_key>
-        <order>300</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 11:42:39</sys_created_on>
-        <sys_id>7b4c8091db586410969430d8689619a5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 11:42:39</sys_updated_on>
-        <value/>
-        <variable display_value="">dca4105473031300b61e66476bf6a726</variable>
-    </sys_variable_value>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7f18670ddbd46410969430d868961902^sys_idNOT INcaaaaf4ddbd46410969430d868961919"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>tx</element>
@@ -743,19 +1011,19 @@
     </sys_documentation>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=7f18670ddbd46410969430d868961902^sys_idNOT IN90baef4ddbd46410969430d868961931"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@106e573</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"90baef4ddbd46410969430d868961931","name":"plan"}}</plan>
         <plan_id display_value="Execute Tx">7f18670ddbd46410969430d868961902</plan_id>
-        <snapshot>f7aaaf4ddbd46410969430d8689619d4</snapshot>
+        <snapshot>cf503331db1c2010969430d8689619e4</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 09:15:46</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>90baef4ddbd46410969430d868961931</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:59:15</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:14:32</sys_updated_on>
     </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -768,7 +1036,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>execute_tx</internal_name>
-        <label_cache>[{"name":"subflow.tx","label":"Input➛tx","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b92f2df9-2ef7-4186-85ec-dd3e0eb0c12f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"e0ad745d-eac7-40a0-85af-e2e7b9b54265.scheduled_end_date_time","label":"2➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"e0ad745d-eac7-40a0-85af-e2e7b9b54265.total_duration","label":"2➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"91361084-e9c8-413a-8594-798e48808e4a.variable","label":"2.2➛receipt","reference_display":"receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dc702ce3-fdcc-43b8-a184-c8d6d4337eab"}},{"name":"a01d0fdb-859f-4727-adce-cb4e623aebd1.total_duration","label":"2.1➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"a01d0fdb-859f-4727-adce-cb4e623aebd1.scheduled_end_date_time","label":"2.1➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"91361084-e9c8-413a-8594-798e48808e4a.receipt","label":"2.2➛receipt","reference_display":"receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dc702ce3-fdcc-43b8-a184-c8d6d4337eab"}}]</label_cache>
+        <label_cache>[{"name":"1e11f105-8e47-4ec4-82ba-4b4954cef826.table_name","label":"2.2.1➛Transaction Table","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1e11f105-8e47-4ec4-82ba-4b4954cef826.record","label":"2.2.1➛Transaction Record","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.tx","label":"Input➛tx","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b92f2df9-2ef7-4186-85ec-dd3e0eb0c12f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"e0ad745d-eac7-40a0-85af-e2e7b9b54265.scheduled_end_date_time","label":"2➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"e0ad745d-eac7-40a0-85af-e2e7b9b54265.total_duration","label":"2➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"91361084-e9c8-413a-8594-798e48808e4a.variable","label":"2.1➛receipt","reference_display":"receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dc702ce3-fdcc-43b8-a184-c8d6d4337eab"}},{"name":"a01d0fdb-859f-4727-adce-cb4e623aebd1.total_duration","label":"2.1➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"a01d0fdb-859f-4727-adce-cb4e623aebd1.scheduled_end_date_time","label":"2.1➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"91361084-e9c8-413a-8594-798e48808e4a.receipt","label":"2.1➛receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dc702ce3-fdcc-43b8-a184-c8d6d4337eab"}}]</label_cache>
         <master>true</master>
         <name>Execute Tx</name>
         <natlang/>
@@ -784,7 +1052,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f7aaaf4ddbd46410969430d8689619d4</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -792,12 +1060,12 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:39</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:14:29</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=f7aaaf4ddbd46410969430d8689619d4"/>
     <sys_variable_value action="delete_multiple" query="document_key=f7aaaf4ddbd46410969430d8689619d4"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=f7aaaf4ddbd46410969430d8689619d4^sys_idNOT IN24b11c55db586410969430d8689619e5,2901f625db902010969430d86896198b,74b11c55db586410969430d8689619e7,7cb11c55db586410969430d8689619ed,f7aaef4ddbd46410969430d868961907"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=f7aaaf4ddbd46410969430d8689619d4^sys_idNOT IN24b11c55db586410969430d8689619e5,41d576bddb582010969430d8689619f2,4e21e3b5dbd82010969430d86896192b,777f1f35dbd82010969430d868961934,b77f1f35dbd82010969430d868961938,bb7f1f35dbd82010969430d86896192c,f7aaef4ddbd46410969430d868961907"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -807,16 +1075,16 @@
         <compiled_snapshot>776aeb4ddbd46410969430d868961972</compiled_snapshot>
         <display_text/>
         <flow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</flow>
-        <order>2.2</order>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
+        <order>2.1</order>
+        <parent_ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 12:06:11</sys_created_on>
         <sys_id>24b11c55db586410969430d8689619e5</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>80</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:38</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:14:28</sys_updated_on>
         <ui_id>91361084-e9c8-413a-8594-798e48808e4a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=24b11c55db586410969430d8689619e5"/>
@@ -834,7 +1102,7 @@
         <value>{{subflow.tx}}</value>
     </sys_element_mapping>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">eef0f225db902010969430d8689619fa</block>
+        <block display_value="">1dc536bddb582010969430d868961970</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -844,39 +1112,39 @@
         <flow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</flow>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>2.3</order>
+        <order>2.2.2</order>
         <outputs_assigned>receipt</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:47</sys_created_on>
-        <sys_id>2901f625db902010969430d86896198b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_created_on>2020-11-06 13:20:15</sys_created_on>
+        <sys_id>41d576bddb582010969430d8689619f2</sys_id>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:38</sys_updated_on>
-        <ui_id>9c8806e1-f410-4aae-862d-d2168a9d0054</ui_id>
+        <sys_updated_on>2020-11-06 17:14:29</sys_updated_on>
+        <ui_id>494a10d3-e7f2-4232-a0e2-cfcee897f203</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=2901f625db902010969430d86896198b"/>
-    <sys_element_mapping action="delete_multiple" query="id=2901f625db902010969430d86896198b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=41d576bddb582010969430d8689619f2"/>
+    <sys_element_mapping action="delete_multiple" query="id=41d576bddb582010969430d8689619f2"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>receipt</field>
-        <id>2901f625db902010969430d86896198b</id>
+        <id>41d576bddb582010969430d8689619f2</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:47</sys_created_on>
-        <sys_id>6101f625db902010969430d86896198e</sys_id>
+        <sys_created_on>2020-11-06 13:20:15</sys_created_on>
+        <sys_id>09d576bddb582010969430d8689619f4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:20:47</sys_updated_on>
+        <sys_updated_on>2020-11-06 13:20:15</sys_updated_on>
         <table>var__m_sys_hub_flow_output_f7aaaf4ddbd46410969430d8689619d4</table>
         <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}</value>
     </sys_element_mapping>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">734ccc51db586410969430d868961978</block>
+        <block display_value="">431163b5dbd82010969430d868961962</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -885,54 +1153,94 @@
         <extended_inputs/>
         <flow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</flow>
         <inputs/>
-        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
-        <order>2.1</order>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>2.2.3</order>
         <outputs_assigned/>
         <outputs_to_assign/>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:06:11</sys_created_on>
-        <sys_id>74b11c55db586410969430d8689619e7</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_created_on>2020-11-06 16:29:33</sys_created_on>
+        <sys_id>4e21e3b5dbd82010969430d86896192b</sys_id>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:38</sys_updated_on>
-        <ui_id>a01d0fdb-859f-4727-adce-cb4e623aebd1</ui_id>
+        <sys_updated_on>2020-11-06 17:14:29</sys_updated_on>
+        <ui_id>e5118d61-5c38-4897-a445-5ae0cf9a0ec4</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=74b11c55db586410969430d8689619e7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4e21e3b5dbd82010969430d86896192b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c0cd17f1dbd82010969430d868961925</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>777f1f35dbd82010969430d868961934</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:29</sys_updated_on>
+        <ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=777f1f35dbd82010969430d868961934"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_flow_logic</document>
-        <document_key>74b11c55db586410969430d8689619e7</document_key>
-        <order>200</order>
+        <document_key>777f1f35dbd82010969430d868961934</document_key>
+        <order>10</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:06:12</sys_created_on>
-        <sys_id>30b11c55db586410969430d8689619ed</sys_id>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>3b7f1f35dbd82010969430d868961937</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:58:03</sys_updated_on>
-        <value>1970-01-01 00:00:00</value>
-        <variable display_value="">ef145c1473031300b61e66476bf6a7be</variable>
+        <sys_updated_on>2020-11-06 16:25:51</sys_updated_on>
+        <value>receipt is not null</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
     </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>74b11c55db586410969430d8689619e7</document_key>
-        <order>300</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_element_mapping action="delete_multiple" query="id=777f1f35dbd82010969430d868961934"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>777f1f35dbd82010969430d868961934</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:06:12</sys_created_on>
-        <sys_id>7cb11c55db586410969430d8689619ec</sys_id>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>b77f1f35dbd82010969430d868961937</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:25:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}!=null</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>777f1f35dbd82010969430d868961934</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>f37f1f35dbd82010969430d868961937</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:06:12</sys_updated_on>
+        <sys_updated_on>2020-11-06 16:22:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value/>
-        <variable display_value="">dca4105473031300b61e66476bf6a726</variable>
-    </sys_variable_value>
+    </sys_element_mapping>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">885c8091db586410969430d8689619a8</block>
+        <block display_value="">84cd17f1dbd82010969430d868961929</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -949,55 +1257,128 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:06:12</sys_created_on>
-        <sys_id>7cb11c55db586410969430d8689619ed</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>b77f1f35dbd82010969430d868961938</sys_id>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:39</sys_updated_on>
-        <ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</ui_id>
+        <sys_updated_on>2020-11-06 17:14:29</sys_updated_on>
+        <ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=7cb11c55db586410969430d8689619ed"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b77f1f35dbd82010969430d868961938"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_flow_logic</document>
-        <document_key>7cb11c55db586410969430d8689619ed</document_key>
+        <document_key>b77f1f35dbd82010969430d868961938</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:47</sys_created_on>
-        <sys_id>7101f625db902010969430d868961994</sys_id>
+        <sys_created_on>2020-11-06 16:25:51</sys_created_on>
+        <sys_id>8850a775dbd82010969430d868961917</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:20:47</sys_updated_on>
-        <value>receipt defined</value>
+        <sys_updated_on>2020-11-06 16:25:51</sys_updated_on>
+        <value>receipt is null</value>
         <variable display_value="">bda2cb0473031300612c273ffff6a750</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=7cb11c55db586410969430d8689619ed"/>
+    <sys_element_mapping action="delete_multiple" query="id=b77f1f35dbd82010969430d868961938"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
-        <id>7cb11c55db586410969430d8689619ed</id>
+        <id>b77f1f35dbd82010969430d868961938</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:06:12</sys_created_on>
-        <sys_id>b4b11c55db586410969430d8689619f0</sys_id>
+        <sys_created_on>2020-11-06 16:22:18</sys_created_on>
+        <sys_id>377f1f35dbd82010969430d86896193b</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:59:13</sys_updated_on>
+        <sys_updated_on>2020-11-06 16:25:51</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
-        <value>{{91361084-e9c8-413a-8594-798e48808e4a.variable}}!=</value>
+        <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}=null</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition_name</field>
-        <id>7cb11c55db586410969430d8689619ed</id>
+        <id>b77f1f35dbd82010969430d868961938</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:47</sys_created_on>
-        <sys_id>fd01f625db902010969430d868961993</sys_id>
+        <sys_created_on>2020-11-06 16:25:51</sys_created_on>
+        <sys_id>4450a775dbd82010969430d868961917</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:20:47</sys_updated_on>
+        <sys_updated_on>2020-11-06 16:25:51</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
         <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</flow>
+        <order>2.2.1</order>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>bb7f1f35dbd82010969430d86896192c</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:28</sys_updated_on>
+        <ui_id>1e11f105-8e47-4ec4-82ba-4b4954cef826</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bb7f1f35dbd82010969430d86896192c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>bb7f1f35dbd82010969430d86896192c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>f77f1f35dbd82010969430d86896192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:22:17</sys_updated_on>
+        <value>x_snc_ethereum_transaction</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bb7f1f35dbd82010969430d86896192c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>bb7f1f35dbd82010969430d86896192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>b37f1f35dbd82010969430d86896192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:22:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.tx}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>bb7f1f35dbd82010969430d86896192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>ff7f1f35dbd82010969430d86896192d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:22:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>bb7f1f35dbd82010969430d86896192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>777f1f35dbd82010969430d86896192e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>receipt={{91361084-e9c8-413a-8594-798e48808e4a.receipt}}</value>
     </sys_element_mapping>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -1014,10 +1395,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 09:15:44</sys_created_on>
         <sys_id>f7aaef4ddbd46410969430d868961907</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>82</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:38</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:14:28</sys_updated_on>
         <ui_id>ae11589a-a1a0-4309-b19f-957be4c9b0af</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f7aaef4ddbd46410969430d868961907"/>
@@ -1210,7 +1591,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
-    <sys_hub_action_instance action="delete_multiple" query="flow=f7aaaf4ddbd46410969430d8689619d4^sys_idNOT IN24b11c55db586410969430d8689619e5,f7aaef4ddbd46410969430d868961907"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f7aaaf4ddbd46410969430d8689619d4^sys_idNOT IN24b11c55db586410969430d8689619e5,bb7f1f35dbd82010969430d86896192c,f7aaef4ddbd46410969430d868961907"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1220,16 +1601,16 @@
         <compiled_snapshot>776aeb4ddbd46410969430d868961972</compiled_snapshot>
         <display_text/>
         <flow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</flow>
-        <order>2.2</order>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
+        <order>2.1</order>
+        <parent_ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 12:06:11</sys_created_on>
         <sys_id>24b11c55db586410969430d8689619e5</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>80</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:38</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:14:28</sys_updated_on>
         <ui_id>91361084-e9c8-413a-8594-798e48808e4a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=24b11c55db586410969430d8689619e5"/>
@@ -1249,6 +1630,93 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</flow>
+        <order>2.2.1</order>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>bb7f1f35dbd82010969430d86896192c</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:28</sys_updated_on>
+        <ui_id>1e11f105-8e47-4ec4-82ba-4b4954cef826</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bb7f1f35dbd82010969430d86896192c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>bb7f1f35dbd82010969430d86896192c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>f77f1f35dbd82010969430d86896192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:22:17</sys_updated_on>
+        <value>x_snc_ethereum_transaction</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bb7f1f35dbd82010969430d86896192c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>bb7f1f35dbd82010969430d86896192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>b37f1f35dbd82010969430d86896192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:22:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.tx}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>bb7f1f35dbd82010969430d86896192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>ff7f1f35dbd82010969430d86896192d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:22:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>bb7f1f35dbd82010969430d86896192c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>777f1f35dbd82010969430d86896192e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>receipt={{91361084-e9c8-413a-8594-798e48808e4a.receipt}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bb7f1f35dbd82010969430d86896192c^sys_idNOT INb4e6ab79dbd82010969430d8689619aa"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>values</input_name>
+        <instance>bb7f1f35dbd82010969430d86896192c</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"contract_address":{"scriptActive":true,"script":"var x \u003d JSON.parse(fd_data.trigger.current.receipt).contractAddress;\nreturn x;","savedValue":""}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:54:35</sys_created_on>
+        <sys_id>b4e6ab79dbd82010969430d8689619aa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:27</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
         <action_type display_value="Submit Tx">ae07150bdbcc2010969430d86896191f</action_type>
         <action_type_parent display_value="Submit Tx">fc09300bdb8c2010969430d8689619d3</action_type_parent>
         <comment/>
@@ -1261,10 +1729,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 09:15:44</sys_created_on>
         <sys_id>f7aaef4ddbd46410969430d868961907</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>82</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:38</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:14:28</sys_updated_on>
         <ui_id>ae11589a-a1a0-4309-b19f-957be4c9b0af</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f7aaef4ddbd46410969430d868961907"/>
@@ -1281,9 +1749,9 @@
         <table>var__m_sys_hub_action_input_ae07150bdbcc2010969430d86896191f</table>
         <value>{{subflow.tx}}</value>
     </sys_element_mapping>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=f7aaaf4ddbd46410969430d8689619d4^sys_idNOT IN2901f625db902010969430d86896198b,74b11c55db586410969430d8689619e7,7cb11c55db586410969430d8689619ed"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f7aaaf4ddbd46410969430d8689619d4^sys_idNOT IN41d576bddb582010969430d8689619f2,4e21e3b5dbd82010969430d86896192b,777f1f35dbd82010969430d868961934,b77f1f35dbd82010969430d868961938"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">eef0f225db902010969430d8689619fa</block>
+        <block display_value="">1dc536bddb582010969430d868961970</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1293,39 +1761,39 @@
         <flow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</flow>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>2.3</order>
+        <order>2.2.2</order>
         <outputs_assigned>receipt</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:47</sys_created_on>
-        <sys_id>2901f625db902010969430d86896198b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_created_on>2020-11-06 13:20:15</sys_created_on>
+        <sys_id>41d576bddb582010969430d8689619f2</sys_id>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:38</sys_updated_on>
-        <ui_id>9c8806e1-f410-4aae-862d-d2168a9d0054</ui_id>
+        <sys_updated_on>2020-11-06 17:14:29</sys_updated_on>
+        <ui_id>494a10d3-e7f2-4232-a0e2-cfcee897f203</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=2901f625db902010969430d86896198b"/>
-    <sys_element_mapping action="delete_multiple" query="id=2901f625db902010969430d86896198b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=41d576bddb582010969430d8689619f2"/>
+    <sys_element_mapping action="delete_multiple" query="id=41d576bddb582010969430d8689619f2"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>receipt</field>
-        <id>2901f625db902010969430d86896198b</id>
+        <id>41d576bddb582010969430d8689619f2</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:47</sys_created_on>
-        <sys_id>6101f625db902010969430d86896198e</sys_id>
+        <sys_created_on>2020-11-06 13:20:15</sys_created_on>
+        <sys_id>09d576bddb582010969430d8689619f4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:20:47</sys_updated_on>
+        <sys_updated_on>2020-11-06 13:20:15</sys_updated_on>
         <table>var__m_sys_hub_flow_output_f7aaaf4ddbd46410969430d8689619d4</table>
         <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}</value>
     </sys_element_mapping>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">734ccc51db586410969430d868961978</block>
+        <block display_value="">431163b5dbd82010969430d868961962</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1334,54 +1802,94 @@
         <extended_inputs/>
         <flow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</flow>
         <inputs/>
-        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
-        <order>2.1</order>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>2.2.3</order>
         <outputs_assigned/>
         <outputs_to_assign/>
-        <parent_ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</parent_ui_id>
+        <parent_ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:06:11</sys_created_on>
-        <sys_id>74b11c55db586410969430d8689619e7</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_created_on>2020-11-06 16:29:33</sys_created_on>
+        <sys_id>4e21e3b5dbd82010969430d86896192b</sys_id>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:38</sys_updated_on>
-        <ui_id>a01d0fdb-859f-4727-adce-cb4e623aebd1</ui_id>
+        <sys_updated_on>2020-11-06 17:14:29</sys_updated_on>
+        <ui_id>e5118d61-5c38-4897-a445-5ae0cf9a0ec4</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=74b11c55db586410969430d8689619e7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4e21e3b5dbd82010969430d86896192b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c0cd17f1dbd82010969430d868961925</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>777f1f35dbd82010969430d868961934</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 17:14:29</sys_updated_on>
+        <ui_id>33f8cec4-67ae-46a0-803f-780c06cee7c4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=777f1f35dbd82010969430d868961934"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_flow_logic</document>
-        <document_key>74b11c55db586410969430d8689619e7</document_key>
-        <order>200</order>
+        <document_key>777f1f35dbd82010969430d868961934</document_key>
+        <order>10</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:06:12</sys_created_on>
-        <sys_id>30b11c55db586410969430d8689619ed</sys_id>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>3b7f1f35dbd82010969430d868961937</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:58:03</sys_updated_on>
-        <value>1970-01-01 00:00:00</value>
-        <variable display_value="">ef145c1473031300b61e66476bf6a7be</variable>
+        <sys_updated_on>2020-11-06 16:25:51</sys_updated_on>
+        <value>receipt is not null</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
     </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>74b11c55db586410969430d8689619e7</document_key>
-        <order>300</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_element_mapping action="delete_multiple" query="id=777f1f35dbd82010969430d868961934"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>777f1f35dbd82010969430d868961934</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:06:12</sys_created_on>
-        <sys_id>7cb11c55db586410969430d8689619ec</sys_id>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>b77f1f35dbd82010969430d868961937</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 16:25:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}!=null</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>777f1f35dbd82010969430d868961934</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>f37f1f35dbd82010969430d868961937</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:06:12</sys_updated_on>
+        <sys_updated_on>2020-11-06 16:22:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value/>
-        <variable display_value="">dca4105473031300b61e66476bf6a726</variable>
-    </sys_variable_value>
+    </sys_element_mapping>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">885c8091db586410969430d8689619a8</block>
+        <block display_value="">84cd17f1dbd82010969430d868961929</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1398,53 +1906,53 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:06:12</sys_created_on>
-        <sys_id>7cb11c55db586410969430d8689619ed</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_created_on>2020-11-06 16:22:17</sys_created_on>
+        <sys_id>b77f1f35dbd82010969430d868961938</sys_id>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 08:57:39</sys_updated_on>
-        <ui_id>964a59cd-ac38-4814-8e22-a4d97172d86c</ui_id>
+        <sys_updated_on>2020-11-06 17:14:29</sys_updated_on>
+        <ui_id>44572db2-ac9a-4cb9-8808-dc49cb0fcbfc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=7cb11c55db586410969430d8689619ed"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b77f1f35dbd82010969430d868961938"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_flow_logic</document>
-        <document_key>7cb11c55db586410969430d8689619ed</document_key>
+        <document_key>b77f1f35dbd82010969430d868961938</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:47</sys_created_on>
-        <sys_id>7101f625db902010969430d868961994</sys_id>
+        <sys_created_on>2020-11-06 16:25:51</sys_created_on>
+        <sys_id>8850a775dbd82010969430d868961917</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:20:47</sys_updated_on>
-        <value>receipt defined</value>
+        <sys_updated_on>2020-11-06 16:25:51</sys_updated_on>
+        <value>receipt is null</value>
         <variable display_value="">bda2cb0473031300612c273ffff6a750</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=7cb11c55db586410969430d8689619ed"/>
+    <sys_element_mapping action="delete_multiple" query="id=b77f1f35dbd82010969430d868961938"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
-        <id>7cb11c55db586410969430d8689619ed</id>
+        <id>b77f1f35dbd82010969430d868961938</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 12:06:12</sys_created_on>
-        <sys_id>b4b11c55db586410969430d8689619f0</sys_id>
+        <sys_created_on>2020-11-06 16:22:18</sys_created_on>
+        <sys_id>377f1f35dbd82010969430d86896193b</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:59:13</sys_updated_on>
+        <sys_updated_on>2020-11-06 16:25:51</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
-        <value>{{91361084-e9c8-413a-8594-798e48808e4a.variable}}!=</value>
+        <value>{{91361084-e9c8-413a-8594-798e48808e4a.receipt}}=null</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition_name</field>
-        <id>7cb11c55db586410969430d8689619ed</id>
+        <id>b77f1f35dbd82010969430d868961938</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-05 18:20:47</sys_created_on>
-        <sys_id>fd01f625db902010969430d868961993</sys_id>
+        <sys_created_on>2020-11-06 16:25:51</sys_created_on>
+        <sys_id>4450a775dbd82010969430d868961917</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 18:20:47</sys_updated_on>
+        <sys_updated_on>2020-11-06 16:25:51</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
         <value/>
     </sys_element_mapping>

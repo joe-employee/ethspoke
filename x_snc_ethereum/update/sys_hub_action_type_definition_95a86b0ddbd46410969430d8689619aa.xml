@@ -13,7 +13,7 @@
         <ih_action>true</ih_action>
         <internal_name>get_transaction_receipt</internal_name>
         <label_cache>[{"name":"{{action.txhash}}","label":"action➛txhash","type":"action","ref":""},{"name":"{{action.tx}}","label":"action➛tx","type":"action","ref":""},{"name":"{{action.tx.endpoint.uri}}","label":"action➛tx➛Endpoint➛URI","type":"action","ref":""},{"name":"{{action.tx.hash}}","label":"action➛tx➛Hash","type":"action","ref":""},{"name":"{{action.tx.receipt}}","label":"action➛tx➛Receipt","type":"action","ref":""},{"name":"{{step[6d98b303-1fac-4a4d-ac70-ac13731d1cff].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[6d98b303-1fac-4a4d-ac70-ac13731d1cff].receipt}}","label":"step➛Script step➛receipt","type":"step","ref":""},{"name":"{{step[c28902ca-f158-4822-aebb-e9f0edcfec3d].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>911435611b14a41064bf11fc2d4bcb14</latest_snapshot>
+        <latest_snapshot>f33fa3fddbd82010969430d86896197e</latest_snapshot>
         <master_snapshot>776aeb4ddbd46410969430d868961972</master_snapshot>
         <name>Get Transaction Receipt</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>95a86b0ddbd46410969430d8689619aa</sys_id>
-        <sys_mod_count>51</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_name>Get Transaction Receipt</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_95a86b0ddbd46410969430d8689619aa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 13:54:35</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:31:09</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -65,80 +65,7 @@
         <table>var__m_sys_hub_action_output_95a86b0ddbd46410969430d8689619aa</table>
         <value>{{step[6d98b303-1fac-4a4d-ac70-ac13731d1cff].receipt}}</value>
     </sys_element_mapping>
-    <sys_hub_step_instance action="delete_multiple" query="action=95a86b0ddbd46410969430d8689619aa^sys_idNOT IN3f5a2855db986410969430d868961917,73feccd1db586410969430d868961908,804a2b4ddbd46410969430d8689619fb"/>
-    <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Transaction Receipt">95a86b0ddbd46410969430d8689619aa</action>
-        <cid>1b926f99-8263-4b7b-b773-b10a2f18840f</cid>
-        <extended_inputs/>
-        <extended_outputs/>
-        <icon/>
-        <inputs/>
-        <inputs/>
-        <label>Update Record step</label>
-        <order>3</order>
-        <outputs/>
-        <section/>
-        <step_type display_value="Update Record">b51f683667003200553fafb49585ef3f</step_type>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:53:59</sys_created_on>
-        <sys_id>3f5a2855db986410969430d868961917</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
-    </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=3f5a2855db986410969430d868961917"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>3f5a2855db986410969430d868961917</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:53:59</sys_created_on>
-        <sys_id>f75a2855db986410969430d86896191d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
-        <value>x_snc_ethereum_transaction</value>
-        <variable display_value="">3930d57267003200553fafb49585efc5</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=3f5a2855db986410969430d868961917"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>3f5a2855db986410969430d868961917</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:53:59</sys_created_on>
-        <sys_id>775a2855db986410969430d86896191d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value>{{action.tx}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>3f5a2855db986410969430d868961917</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:53:59</sys_created_on>
-        <sys_id>ff5a2855db986410969430d86896191c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>update_record_field_values</field>
-        <id>3f5a2855db986410969430d868961917</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:53:59</sys_created_on>
-        <sys_id>b35a2855db986410969430d86896191d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value>receipt={{step[6d98b303-1fac-4a4d-ac70-ac13731d1cff].receipt}}</value>
-    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=95a86b0ddbd46410969430d8689619aa^sys_idNOT IN73feccd1db586410969430d868961908,804a2b4ddbd46410969430d8689619fb"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Get Transaction Receipt">95a86b0ddbd46410969430d8689619aa</action>
         <cid>6d98b303-1fac-4a4d-ac70-ac13731d1cff</cid>
@@ -155,10 +82,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 11:54:23</sys_created_on>
         <sys_id>73feccd1db586410969430d868961908</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:31:00</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=73feccd1db586410969430d868961908"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -183,12 +110,18 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 11:54:24</sys_created_on>
         <sys_id>880fccd1db586410969430d86896190f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:31:00</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 var receipt = JSON.parse(inputs.responseBody).result;
 
+inputs.tx.receipt = JSON.stringify(receipt);
+inputs.tx.contract_address = receipt.contractAddress;
+inputs.tx.status = receipt.contractAddressstatus;
+inputs.tx.update();
+  
+  
 outputs.receipt = JSON.stringify(receipt);
   
 })(inputs, outputs);
@@ -858,80 +791,7 @@ outputs.receipt = JSON.stringify(receipt);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_hub_step_instance action="delete_multiple" query="action=95a86b0ddbd46410969430d8689619aa^sys_idNOT IN3f5a2855db986410969430d868961917,73feccd1db586410969430d868961908,804a2b4ddbd46410969430d8689619fb"/>
-    <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Transaction Receipt">95a86b0ddbd46410969430d8689619aa</action>
-        <cid>1b926f99-8263-4b7b-b773-b10a2f18840f</cid>
-        <extended_inputs/>
-        <extended_outputs/>
-        <icon/>
-        <inputs/>
-        <inputs/>
-        <label>Update Record step</label>
-        <order>3</order>
-        <outputs/>
-        <section/>
-        <step_type display_value="Update Record">b51f683667003200553fafb49585ef3f</step_type>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:53:59</sys_created_on>
-        <sys_id>3f5a2855db986410969430d868961917</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
-    </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=3f5a2855db986410969430d868961917"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>3f5a2855db986410969430d868961917</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:53:59</sys_created_on>
-        <sys_id>f75a2855db986410969430d86896191d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
-        <value>x_snc_ethereum_transaction</value>
-        <variable display_value="">3930d57267003200553fafb49585efc5</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=3f5a2855db986410969430d868961917"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>3f5a2855db986410969430d868961917</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:53:59</sys_created_on>
-        <sys_id>775a2855db986410969430d86896191d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value>{{action.tx}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>3f5a2855db986410969430d868961917</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:53:59</sys_created_on>
-        <sys_id>ff5a2855db986410969430d86896191c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>update_record_field_values</field>
-        <id>3f5a2855db986410969430d868961917</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:53:59</sys_created_on>
-        <sys_id>b35a2855db986410969430d86896191d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value>receipt={{step[6d98b303-1fac-4a4d-ac70-ac13731d1cff].receipt}}</value>
-    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=95a86b0ddbd46410969430d8689619aa^sys_idNOT IN73feccd1db586410969430d868961908,804a2b4ddbd46410969430d8689619fb"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Get Transaction Receipt">95a86b0ddbd46410969430d8689619aa</action>
         <cid>6d98b303-1fac-4a4d-ac70-ac13731d1cff</cid>
@@ -948,10 +808,10 @@ outputs.receipt = JSON.stringify(receipt);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 11:54:23</sys_created_on>
         <sys_id>73feccd1db586410969430d868961908</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:31:00</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=73feccd1db586410969430d868961908"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -976,12 +836,18 @@ outputs.receipt = JSON.stringify(receipt);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 11:54:24</sys_created_on>
         <sys_id>880fccd1db586410969430d86896190f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:53:59</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:31:00</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 var receipt = JSON.parse(inputs.responseBody).result;
 
+inputs.tx.receipt = JSON.stringify(receipt);
+inputs.tx.contract_address = receipt.contractAddress;
+inputs.tx.status = receipt.contractAddressstatus;
+inputs.tx.update();
+  
+  
 outputs.receipt = JSON.stringify(receipt);
   
 })(inputs, outputs);
@@ -1537,17 +1403,17 @@ outputs.receipt = JSON.stringify(receipt);
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Get Transaction Receipt">95a86b0ddbd46410969430d8689619aa</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"9c7aeb4ddbd46410969430d8689619e2","name":"plan"}}</plan>
-        <snapshot>911435611b14a41064bf11fc2d4bcb14</snapshot>
+        <snapshot>f33fa3fddbd82010969430d86896197e</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 09:14:41</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9c7aeb4ddbd46410969430d8689619e2</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 13:54:37</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:31:13</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1612,80 +1478,7 @@ outputs.receipt = JSON.stringify(receipt);
         <table>var__m_sys_hub_action_output_776aeb4ddbd46410969430d868961972</table>
         <value>{{step[6d98b303-1fac-4a4d-ac70-ac13731d1cff].receipt}}</value>
     </sys_element_mapping>
-    <sys_hub_step_instance action="delete_multiple" query="action=776aeb4ddbd46410969430d868961972^sys_idNOT IN2b6aa855db986410969430d86896195a,f10f0015db586410969430d868961923,ff6aeb4ddbd46410969430d86896197a"/>
-    <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Transaction Receipt">776aeb4ddbd46410969430d868961972</action>
-        <cid>1b926f99-8263-4b7b-b773-b10a2f18840f</cid>
-        <extended_inputs/>
-        <extended_outputs/>
-        <icon/>
-        <inputs/>
-        <inputs/>
-        <label>Update Record step</label>
-        <order>3</order>
-        <outputs/>
-        <section/>
-        <step_type display_value="Update Record">b51f683667003200553fafb49585ef3f</step_type>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:54:15</sys_created_on>
-        <sys_id>2b6aa855db986410969430d86896195a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
-    </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=2b6aa855db986410969430d86896195a"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>2b6aa855db986410969430d86896195a</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:54:15</sys_created_on>
-        <sys_id>7f6aa855db986410969430d86896195e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
-        <value>x_snc_ethereum_transaction</value>
-        <variable display_value="">3930d57267003200553fafb49585efc5</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=2b6aa855db986410969430d86896195a"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>2b6aa855db986410969430d86896195a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:54:15</sys_created_on>
-        <sys_id>fb6aa855db986410969430d86896195e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value>{{action.tx}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>2b6aa855db986410969430d86896195a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:54:15</sys_created_on>
-        <sys_id>776aa855db986410969430d86896195e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>update_record_field_values</field>
-        <id>2b6aa855db986410969430d86896195a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:54:15</sys_created_on>
-        <sys_id>3b6aa855db986410969430d86896195e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value>receipt={{step[6d98b303-1fac-4a4d-ac70-ac13731d1cff].receipt}}</value>
-    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=776aeb4ddbd46410969430d868961972^sys_idNOT INf10f0015db586410969430d868961923,ff6aeb4ddbd46410969430d86896197a"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Get Transaction Receipt">776aeb4ddbd46410969430d868961972</action>
         <cid>6d98b303-1fac-4a4d-ac70-ac13731d1cff</cid>
@@ -1702,10 +1495,10 @@ outputs.receipt = JSON.stringify(receipt);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 11:54:32</sys_created_on>
         <sys_id>f10f0015db586410969430d868961923</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:31:09</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f10f0015db586410969430d868961923"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1716,12 +1509,18 @@ outputs.receipt = JSON.stringify(receipt);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 11:54:32</sys_created_on>
         <sys_id>0e0f0015db586410969430d868961928</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:31:09</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 var receipt = JSON.parse(inputs.responseBody).result;
 
+inputs.tx.receipt = JSON.stringify(receipt);
+inputs.tx.contract_address = receipt.contractAddress;
+inputs.tx.status = receipt.contractAddressstatus;
+inputs.tx.update();
+  
+  
 outputs.receipt = JSON.stringify(receipt);
   
 })(inputs, outputs);
@@ -2405,80 +2204,7 @@ outputs.receipt = JSON.stringify(receipt);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_hub_step_instance action="delete_multiple" query="action=776aeb4ddbd46410969430d868961972^sys_idNOT IN2b6aa855db986410969430d86896195a,f10f0015db586410969430d868961923,ff6aeb4ddbd46410969430d86896197a"/>
-    <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Transaction Receipt">776aeb4ddbd46410969430d868961972</action>
-        <cid>1b926f99-8263-4b7b-b773-b10a2f18840f</cid>
-        <extended_inputs/>
-        <extended_outputs/>
-        <icon/>
-        <inputs/>
-        <inputs/>
-        <label>Update Record step</label>
-        <order>3</order>
-        <outputs/>
-        <section/>
-        <step_type display_value="Update Record">b51f683667003200553fafb49585ef3f</step_type>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:54:15</sys_created_on>
-        <sys_id>2b6aa855db986410969430d86896195a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
-    </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=2b6aa855db986410969430d86896195a"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>2b6aa855db986410969430d86896195a</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:54:15</sys_created_on>
-        <sys_id>7f6aa855db986410969430d86896195e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
-        <value>x_snc_ethereum_transaction</value>
-        <variable display_value="">3930d57267003200553fafb49585efc5</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=2b6aa855db986410969430d86896195a"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>2b6aa855db986410969430d86896195a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:54:15</sys_created_on>
-        <sys_id>fb6aa855db986410969430d86896195e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value>{{action.tx}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>2b6aa855db986410969430d86896195a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:54:15</sys_created_on>
-        <sys_id>776aa855db986410969430d86896195e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>update_record_field_values</field>
-        <id>2b6aa855db986410969430d86896195a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 13:54:15</sys_created_on>
-        <sys_id>3b6aa855db986410969430d86896195e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value>receipt={{step[6d98b303-1fac-4a4d-ac70-ac13731d1cff].receipt}}</value>
-    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=776aeb4ddbd46410969430d868961972^sys_idNOT INf10f0015db586410969430d868961923,ff6aeb4ddbd46410969430d86896197a"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Get Transaction Receipt">776aeb4ddbd46410969430d868961972</action>
         <cid>6d98b303-1fac-4a4d-ac70-ac13731d1cff</cid>
@@ -2495,10 +2221,10 @@ outputs.receipt = JSON.stringify(receipt);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 11:54:32</sys_created_on>
         <sys_id>f10f0015db586410969430d868961923</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:31:09</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f10f0015db586410969430d868961923"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2509,12 +2235,18 @@ outputs.receipt = JSON.stringify(receipt);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 11:54:32</sys_created_on>
         <sys_id>0e0f0015db586410969430d868961928</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:54:15</sys_updated_on>
+        <sys_updated_on>2020-11-06 17:31:09</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 var receipt = JSON.parse(inputs.responseBody).result;
 
+inputs.tx.receipt = JSON.stringify(receipt);
+inputs.tx.contract_address = receipt.contractAddress;
+inputs.tx.status = receipt.contractAddressstatus;
+inputs.tx.update();
+  
+  
 outputs.receipt = JSON.stringify(receipt);
   
 })(inputs, outputs);
