@@ -14,7 +14,7 @@
         <element label="Gas Used" max_length="100" name="gas_used" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Hash" max_length="1000" name="hash" type="string"/>
         <element label="nonce" max_length="1000" name="nonce" type="string"/>
-        <element label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:getNextObjNumber();" display="true" dynamic_default_value="8acb83a85f220100a9ad2572f2b47741" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
         <element attributes="edge_encryption_enabled=true" label="Raw" max_length="4000" name="raw" type="string"/>
         <element label="Receipt" max_length="1000" name="receipt" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="0" label="State" max_length="40" name="state" type="choice">
@@ -27,7 +27,10 @@
             </choice>
         </element>
         <element choice="1" label="Status" max_length="40" name="status" type="choice">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="0x0" value="0x0"/>
+                <element inactive_on_update="false" label="0x1" value="0x1"/>
+            </choice>
         </element>
         <element label="To" max_length="42" name="to" type="string"/>
         <element label="Transaction Index" max_length="100" name="transaction_index" type="string"/>

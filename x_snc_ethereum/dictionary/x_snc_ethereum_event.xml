@@ -3,9 +3,9 @@
         <element label="Name" max_length="100" name="name" type="string"/>
         <element label="Number" max_length="40" name="number" type="integer"/>
         <element label="parameters" max_length="1000" name="parameters" type="string"/>
-        <element label="Smart Contract" max_length="32" name="smart_contract" reference="x_snc_ethereum_smart_contract" type="reference"/>
+        <element label="Smart Contract Instance" max_length="32" name="smart_contract_instance" reference="x_snc_ethereum_smart_contract_instance" type="reference"/>
         <index name="index">
-            <element name="smart_contract"/>
+            <element name="smart_contract_instance"/>
         </index>
     </element>
 </database>

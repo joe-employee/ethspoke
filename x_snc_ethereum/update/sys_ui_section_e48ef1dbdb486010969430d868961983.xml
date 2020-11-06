@@ -4,97 +4,111 @@
             <element>receipt</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-05 12:25:54</sys_created_on>
-            <sys_id>cbcf5d651bd0a41064bf11fc2d4bcba6</sys_id>
+            <sys_created_on>2020-11-06 16:45:47</sys_created_on>
+            <sys_id>44e4ab39dbd82010969430d868961926</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Result" display_value="Result" name="x_snc_ethereum_transaction" sys_domain="global" view="Default view">e48ef1dbdb486010969430d868961983</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-05 12:25:54</sys_updated_on>
+            <sys_updated_on>2020-11-06 16:45:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contract_address</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-06 16:45:48</sys_created_on>
+            <sys_id>c8e4ab39dbd82010969430d868961926</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Result" display_value="Result" name="x_snc_ethereum_transaction" sys_domain="global" view="Default view">e48ef1dbdb486010969430d868961983</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-06 16:45:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>status</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-05 12:25:54</sys_created_on>
-            <sys_id>4fcf5d651bd0a41064bf11fc2d4bcba6</sys_id>
+            <sys_created_on>2020-11-06 16:45:48</sys_created_on>
+            <sys_id>4ce4ab39dbd82010969430d868961926</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Result" display_value="Result" name="x_snc_ethereum_transaction" sys_domain="global" view="Default view">e48ef1dbdb486010969430d868961983</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-05 12:25:54</sys_updated_on>
+            <sys_updated_on>2020-11-06 16:45:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>block_hash</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-05 12:25:54</sys_created_on>
-            <sys_id>cfcf5d651bd0a41064bf11fc2d4bcba6</sys_id>
+            <sys_created_on>2020-11-06 16:45:48</sys_created_on>
+            <sys_id>cce4ab39dbd82010969430d868961926</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Result" display_value="Result" name="x_snc_ethereum_transaction" sys_domain="global" view="Default view">e48ef1dbdb486010969430d868961983</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-05 12:25:54</sys_updated_on>
+            <sys_updated_on>2020-11-06 16:45:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>block_number</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-05 12:25:54</sys_created_on>
-            <sys_id>43cf5d651bd0a41064bf11fc2d4bcba7</sys_id>
+            <sys_created_on>2020-11-06 16:45:48</sys_created_on>
+            <sys_id>40e4ab39dbd82010969430d868961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Result" display_value="Result" name="x_snc_ethereum_transaction" sys_domain="global" view="Default view">e48ef1dbdb486010969430d868961983</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-05 12:25:54</sys_updated_on>
+            <sys_updated_on>2020-11-06 16:45:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>cumulative_gas_used</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-05 12:25:54</sys_created_on>
-            <sys_id>c3cf5d651bd0a41064bf11fc2d4bcba7</sys_id>
+            <sys_created_on>2020-11-06 16:45:48</sys_created_on>
+            <sys_id>c0e4ab39dbd82010969430d868961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Result" display_value="Result" name="x_snc_ethereum_transaction" sys_domain="global" view="Default view">e48ef1dbdb486010969430d868961983</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-05 12:25:54</sys_updated_on>
+            <sys_updated_on>2020-11-06 16:45:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>gas_used</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-05 12:25:54</sys_created_on>
-            <sys_id>47cf5d651bd0a41064bf11fc2d4bcba7</sys_id>
+            <sys_created_on>2020-11-06 16:45:48</sys_created_on>
+            <sys_id>44e4ab39dbd82010969430d868961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Result" display_value="Result" name="x_snc_ethereum_transaction" sys_domain="global" view="Default view">e48ef1dbdb486010969430d868961983</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-05 12:25:54</sys_updated_on>
+            <sys_updated_on>2020-11-06 16:45:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>transaction_index</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-05 12:25:54</sys_created_on>
-            <sys_id>c7cf5d651bd0a41064bf11fc2d4bcba7</sys_id>
+            <sys_created_on>2020-11-06 16:45:48</sys_created_on>
+            <sys_id>c4e4ab39dbd82010969430d868961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Result" display_value="Result" name="x_snc_ethereum_transaction" sys_domain="global" view="Default view">e48ef1dbdb486010969430d868961983</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-05 12:25:54</sys_updated_on>
+            <sys_updated_on>2020-11-06 16:45:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

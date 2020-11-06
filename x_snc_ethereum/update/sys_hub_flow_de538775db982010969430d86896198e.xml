@@ -10,11 +10,11 @@
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <internal_name>parse_abi</internal_name>
-        <label_cache>[{"name":"subflow.sc","label":"Input➛sc","reference":"x_snc_ethereum_smart_contract","reference_display":"Smart Contract","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e83e60ab-0925-453c-a85a-b0621888f84d"}}]</label_cache>
-        <latest_snapshot>a9a0d1191b98641064bf11fc2d4bcb50</latest_snapshot>
-        <master_snapshot>a9a0d1191b98641064bf11fc2d4bcb50</master_snapshot>
-        <name>Parse ABI</name>
+        <internal_name>parse_constructor</internal_name>
+        <label_cache>[{"name":"subflow.sc","label":"Input➛sc","reference":"x_snc_ethereum_smart_contract","reference_display":"Smart Contract","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"bf42f69e-95f5-4253-9969-5e4e1480d1ec"}}]</label_cache>
+        <latest_snapshot>2d5403b5db982010969430d8689619b3</latest_snapshot>
+        <master_snapshot>2d5403b5db982010969430d8689619b3</master_snapshot>
+        <name>Parse constructor</name>
         <natlang/>
         <outputs/>
         <remote_trigger_id/>
@@ -25,63 +25,77 @@
         <status>published</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:40:14</sys_created_on>
+        <sys_created_on>2020-11-06 14:19:19</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>8b6011191b98641064bf11fc2d4bcbc7</sys_id>
+        <sys_id>de538775db982010969430d86896198e</sys_id>
         <sys_mod_count>3</sys_mod_count>
-        <sys_name>Parse ABI</sys_name>
+        <sys_name>Parse constructor</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name>sys_hub_flow_8b6011191b98641064bf11fc2d4bcbc7</sys_update_name>
+        <sys_update_name>sys_hub_flow_de538775db982010969430d86896198e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:14</sys_updated_on>
+        <sys_updated_on>2020-11-06 14:23:39</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
-    <sys_translated_text action="delete_multiple" query="documentkey=8b6011191b98641064bf11fc2d4bcbc7"/>
-    <sys_variable_value action="delete_multiple" query="document_key=8b6011191b98641064bf11fc2d4bcbc7"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=8b6011191b98641064bf11fc2d4bcbc7^sys_idNOT INf8a0d1191b98641064bf11fc2d4bcb0e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=de538775db982010969430d86896198e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=de538775db982010969430d86896198e"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=de538775db982010969430d86896198e^sys_idNOT IN785403b5db982010969430d86896197c"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Parse ABI">b6ef68f4db842010969430d8689619af</action_type>
+        <action_inputs/>
+        <action_type display_value="Parse Constructor">d5348f75db982010969430d8689619b1</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot/>
         <display_text/>
-        <flow display_value="Parse ABI">8b6011191b98641064bf11fc2d4bcbc7</flow>
+        <flow display_value="Parse constructor">de538775db982010969430d86896198e</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:41:10</sys_created_on>
-        <sys_id>f8a0d1191b98641064bf11fc2d4bcb0e</sys_id>
+        <sys_created_on>2020-11-06 14:23:35</sys_created_on>
+        <sys_id>785403b5db982010969430d86896197c</sys_id>
         <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:14</sys_updated_on>
-        <ui_id>4fb196ba-3c57-4fb0-87b6-46fe8c350465</ui_id>
+        <sys_updated_on>2020-11-06 14:23:39</sys_updated_on>
+        <ui_id>c386c353-3246-4a4a-b7ce-58d9183d6563</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=f8a0d1191b98641064bf11fc2d4bcb0e"/>
-    <sys_flow_cat_variable_model action="delete_multiple" query="id=8b6011191b98641064bf11fc2d4bcbc7^sys_idNOT IN036011191b98641064bf11fc2d4bcbca"/>
-    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
-        <id>8b6011191b98641064bf11fc2d4bcbc7</id>
-        <name>Parse ABI</name>
+    <sys_variable_value action="delete_multiple" query="document_key=785403b5db982010969430d86896197c"/>
+    <sys_element_mapping action="delete_multiple" query="id=785403b5db982010969430d86896197c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sc</field>
+        <id>785403b5db982010969430d86896197c</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:40:14</sys_created_on>
-        <sys_id>036011191b98641064bf11fc2d4bcbca</sys_id>
+        <sys_created_on>2020-11-06 14:23:35</sys_created_on>
+        <sys_id>c55403b5db982010969430d86896197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 14:23:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d5348f75db982010969430d8689619b1</table>
+        <value>{{subflow.sc}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=de538775db982010969430d86896198e^sys_idNOT IN16538775db982010969430d868961990"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>de538775db982010969430d86896198e</id>
+        <name>Parse constructor</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 14:19:19</sys_created_on>
+        <sys_id>16538775db982010969430d868961990</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:40:14</sys_updated_on>
+        <sys_updated_on>2020-11-06 14:19:19</sys_updated_on>
     </sys_flow_cat_variable_model>
-    <sys_hub_flow_input action="delete_multiple" query="model=8b6011191b98641064bf11fc2d4bcbc7^sys_idNOT INe4a051191b98641064bf11fc2d4bcbb1"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=de538775db982010969430d86896198e^sys_idNOT INb05403b5db982010969430d86896190d"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e83e60ab-0925-453c-a85a-b0621888f84d</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bf42f69e-95f5-4253-9969-5e4e1480d1ec</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -116,10 +130,10 @@
         <label>sc</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Parse ABI">8b6011191b98641064bf11fc2d4bcbc7</model>
-        <model_id>8b6011191b98641064bf11fc2d4bcbc7</model_id>
+        <model display_value="Parse constructor">de538775db982010969430d86896198e</model>
+        <model_id>de538775db982010969430d86896198e</model_id>
         <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_8b6011191b98641064bf11fc2d4bcbc7</name>
+        <name>var__m_sys_hub_flow_input_de538775db982010969430d86896198e</name>
         <next_element/>
         <order>1</order>
         <primary>false</primary>
@@ -137,8 +151,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:41:10</sys_created_on>
-        <sys_id>e4a051191b98641064bf11fc2d4bcbb1</sys_id>
+        <sys_created_on>2020-11-06 14:23:35</sys_created_on>
+        <sys_id>b05403b5db982010969430d86896190d</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -146,7 +160,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:10</sys_updated_on>
+        <sys_updated_on>2020-11-06 14:23:35</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -158,41 +172,55 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_instance action="delete_multiple" query="flow=8b6011191b98641064bf11fc2d4bcbc7^sys_idNOT INf8a0d1191b98641064bf11fc2d4bcb0e"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=de538775db982010969430d86896198e^sys_idNOT IN785403b5db982010969430d86896197c"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Parse ABI">b6ef68f4db842010969430d8689619af</action_type>
+        <action_inputs/>
+        <action_type display_value="Parse Constructor">d5348f75db982010969430d8689619b1</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot/>
         <display_text/>
-        <flow display_value="Parse ABI">8b6011191b98641064bf11fc2d4bcbc7</flow>
+        <flow display_value="Parse constructor">de538775db982010969430d86896198e</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:41:10</sys_created_on>
-        <sys_id>f8a0d1191b98641064bf11fc2d4bcb0e</sys_id>
+        <sys_created_on>2020-11-06 14:23:35</sys_created_on>
+        <sys_id>785403b5db982010969430d86896197c</sys_id>
         <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:14</sys_updated_on>
-        <ui_id>4fb196ba-3c57-4fb0-87b6-46fe8c350465</ui_id>
+        <sys_updated_on>2020-11-06 14:23:39</sys_updated_on>
+        <ui_id>c386c353-3246-4a4a-b7ce-58d9183d6563</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=f8a0d1191b98641064bf11fc2d4bcb0e"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_8b6011191b98641064bf11fc2d4bcbc7^sys_idNOT INa8a0d1191b98641064bf11fc2d4bcb09"/>
+    <sys_variable_value action="delete_multiple" query="document_key=785403b5db982010969430d86896197c"/>
+    <sys_element_mapping action="delete_multiple" query="id=785403b5db982010969430d86896197c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sc</field>
+        <id>785403b5db982010969430d86896197c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 14:23:35</sys_created_on>
+        <sys_id>c55403b5db982010969430d86896197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 14:23:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d5348f75db982010969430d8689619b1</table>
+        <value>{{subflow.sc}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_de538775db982010969430d86896198e^sys_idNOT IN705403b5db982010969430d868961914"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sc</element>
         <help/>
         <hint/>
         <label>sc</label>
         <language>en</language>
-        <name>var__m_sys_hub_flow_input_8b6011191b98641064bf11fc2d4bcbc7</name>
+        <name>var__m_sys_hub_flow_input_de538775db982010969430d86896198e</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:41:10</sys_created_on>
-        <sys_id>a8a0d1191b98641064bf11fc2d4bcb09</sys_id>
+        <sys_created_on>2020-11-06 14:23:35</sys_created_on>
+        <sys_id>705403b5db982010969430d868961914</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -200,25 +228,25 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:10</sys_updated_on>
+        <sys_updated_on>2020-11-06 14:23:35</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=8b6011191b98641064bf11fc2d4bcbc7^sys_idNOT INe5a0d1191b98641064bf11fc2d4bcb74"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=de538775db982010969430d86896198e^sys_idNOT INfd5403b5db982010969430d8689619e5"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@1dca230</plan>
-        <plan_id display_value="Parse ABI">8b6011191b98641064bf11fc2d4bcbc7</plan_id>
-        <snapshot>a9a0d1191b98641064bf11fc2d4bcb50</snapshot>
+        <plan>com.snc.process_flow.engine.ProcessPlan@15bf70b</plan>
+        <plan_id display_value="Parse constructor">de538775db982010969430d86896198e</plan_id>
+        <snapshot>2d5403b5db982010969430d8689619b3</snapshot>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:41:14</sys_created_on>
+        <sys_created_on>2020-11-06 14:23:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>e5a0d1191b98641064bf11fc2d4bcb74</sys_id>
+        <sys_id>fd5403b5db982010969430d8689619e5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:14</sys_updated_on>
+        <sys_updated_on>2020-11-06 14:23:39</sys_updated_on>
     </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -230,23 +258,23 @@
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <internal_name>parse_abi</internal_name>
-        <label_cache>[{"name":"subflow.sc","label":"Input➛sc","reference":"x_snc_ethereum_smart_contract","reference_display":"Smart Contract","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e83e60ab-0925-453c-a85a-b0621888f84d"}}]</label_cache>
+        <internal_name>parse_constructor</internal_name>
+        <label_cache>[{"name":"subflow.sc","label":"Input➛sc","reference":"x_snc_ethereum_smart_contract","reference_display":"Smart Contract","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"bf42f69e-95f5-4253-9969-5e4e1480d1ec"}}]</label_cache>
         <master>true</master>
-        <name>Parse ABI</name>
+        <name>Parse constructor</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="Parse ABI">8b6011191b98641064bf11fc2d4bcbc7</parent_flow>
+        <parent_flow display_value="Parse constructor">de538775db982010969430d86896198e</parent_flow>
         <remote_trigger_id/>
         <run_as>user</run_as>
         <sc_callable>false</sc_callable>
         <status>published</status>
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:41:13</sys_created_on>
+        <sys_created_on>2020-11-06 14:23:38</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>a9a0d1191b98641064bf11fc2d4bcb50</sys_id>
+        <sys_id>2d5403b5db982010969430d8689619b3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
@@ -255,51 +283,65 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:13</sys_updated_on>
+        <sys_updated_on>2020-11-06 14:23:38</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
-    <sys_translated_text action="delete_multiple" query="documentkey=a9a0d1191b98641064bf11fc2d4bcb50"/>
-    <sys_variable_value action="delete_multiple" query="document_key=a9a0d1191b98641064bf11fc2d4bcb50"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=a9a0d1191b98641064bf11fc2d4bcb50^sys_idNOT IN2da0d1191b98641064bf11fc2d4bcb6b"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=2d5403b5db982010969430d8689619b3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2d5403b5db982010969430d8689619b3"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=2d5403b5db982010969430d8689619b3^sys_idNOT IN355403b5db982010969430d8689619dd"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Parse ABI">b6ef68f4db842010969430d8689619af</action_type>
-        <action_type_parent display_value="Parse ABI">3fd32070db842010969430d8689619a0</action_type_parent>
+        <action_inputs/>
+        <action_type display_value="Parse Constructor">d5348f75db982010969430d8689619b1</action_type>
+        <action_type_parent display_value="Parse Constructor">86a3c775db982010969430d8689619f3</action_type_parent>
         <comment/>
-        <compiled_snapshot>b6ef68f4db842010969430d8689619af</compiled_snapshot>
+        <compiled_snapshot>d5348f75db982010969430d8689619b1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Parse ABI">a9a0d1191b98641064bf11fc2d4bcb50</flow>
+        <flow display_value="Parse constructor">2d5403b5db982010969430d8689619b3</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:41:14</sys_created_on>
-        <sys_id>2da0d1191b98641064bf11fc2d4bcb6b</sys_id>
+        <sys_created_on>2020-11-06 14:23:39</sys_created_on>
+        <sys_id>355403b5db982010969430d8689619dd</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:14</sys_updated_on>
-        <ui_id>4fb196ba-3c57-4fb0-87b6-46fe8c350465</ui_id>
+        <sys_updated_on>2020-11-06 14:23:39</sys_updated_on>
+        <ui_id>c386c353-3246-4a4a-b7ce-58d9183d6563</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=2da0d1191b98641064bf11fc2d4bcb6b"/>
-    <sys_flow_cat_variable_model action="delete_multiple" query="id=a9a0d1191b98641064bf11fc2d4bcb50^sys_idNOT IN29a0d1191b98641064bf11fc2d4bcb51"/>
-    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
-        <id>a9a0d1191b98641064bf11fc2d4bcb50</id>
-        <name>Parse ABI</name>
+    <sys_variable_value action="delete_multiple" query="document_key=355403b5db982010969430d8689619dd"/>
+    <sys_element_mapping action="delete_multiple" query="id=355403b5db982010969430d8689619dd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sc</field>
+        <id>355403b5db982010969430d8689619dd</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:41:13</sys_created_on>
-        <sys_id>29a0d1191b98641064bf11fc2d4bcb51</sys_id>
+        <sys_created_on>2020-11-06 14:23:39</sys_created_on>
+        <sys_id>715403b5db982010969430d8689619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 14:23:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d5348f75db982010969430d8689619b1</table>
+        <value>{{subflow.sc}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2d5403b5db982010969430d8689619b3^sys_idNOT IN655403b5db982010969430d8689619b4"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2d5403b5db982010969430d8689619b3</id>
+        <name>Parse constructor</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 14:23:38</sys_created_on>
+        <sys_id>655403b5db982010969430d8689619b4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:13</sys_updated_on>
+        <sys_updated_on>2020-11-06 14:23:38</sys_updated_on>
     </sys_flow_cat_variable_model>
-    <sys_hub_flow_input action="delete_multiple" query="model=a9a0d1191b98641064bf11fc2d4bcb50^sys_idNOT IN29a0d1191b98641064bf11fc2d4bcb52"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2d5403b5db982010969430d8689619b3^sys_idNOT IN655403b5db982010969430d8689619b5"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e83e60ab-0925-453c-a85a-b0621888f84d</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bf42f69e-95f5-4253-9969-5e4e1480d1ec</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -334,10 +376,10 @@
         <label>sc</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Parse ABI">a9a0d1191b98641064bf11fc2d4bcb50</model>
-        <model_id>a9a0d1191b98641064bf11fc2d4bcb50</model_id>
+        <model display_value="Parse constructor">2d5403b5db982010969430d8689619b3</model>
+        <model_id>2d5403b5db982010969430d8689619b3</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
-        <name>var__m_sys_hub_flow_input_a9a0d1191b98641064bf11fc2d4bcb50</name>
+        <name>var__m_sys_hub_flow_input_2d5403b5db982010969430d8689619b3</name>
         <next_element/>
         <order>1</order>
         <primary>false</primary>
@@ -355,8 +397,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:41:13</sys_created_on>
-        <sys_id>29a0d1191b98641064bf11fc2d4bcb52</sys_id>
+        <sys_created_on>2020-11-06 14:23:38</sys_created_on>
+        <sys_id>655403b5db982010969430d8689619b5</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -364,7 +406,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:14</sys_updated_on>
+        <sys_updated_on>2020-11-06 14:23:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -376,41 +418,55 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_instance action="delete_multiple" query="flow=a9a0d1191b98641064bf11fc2d4bcb50^sys_idNOT IN2da0d1191b98641064bf11fc2d4bcb6b"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=2d5403b5db982010969430d8689619b3^sys_idNOT IN355403b5db982010969430d8689619dd"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Parse ABI">b6ef68f4db842010969430d8689619af</action_type>
-        <action_type_parent display_value="Parse ABI">3fd32070db842010969430d8689619a0</action_type_parent>
+        <action_inputs/>
+        <action_type display_value="Parse Constructor">d5348f75db982010969430d8689619b1</action_type>
+        <action_type_parent display_value="Parse Constructor">86a3c775db982010969430d8689619f3</action_type_parent>
         <comment/>
-        <compiled_snapshot>b6ef68f4db842010969430d8689619af</compiled_snapshot>
+        <compiled_snapshot>d5348f75db982010969430d8689619b1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Parse ABI">a9a0d1191b98641064bf11fc2d4bcb50</flow>
+        <flow display_value="Parse constructor">2d5403b5db982010969430d8689619b3</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:41:14</sys_created_on>
-        <sys_id>2da0d1191b98641064bf11fc2d4bcb6b</sys_id>
+        <sys_created_on>2020-11-06 14:23:39</sys_created_on>
+        <sys_id>355403b5db982010969430d8689619dd</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:14</sys_updated_on>
-        <ui_id>4fb196ba-3c57-4fb0-87b6-46fe8c350465</ui_id>
+        <sys_updated_on>2020-11-06 14:23:39</sys_updated_on>
+        <ui_id>c386c353-3246-4a4a-b7ce-58d9183d6563</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=2da0d1191b98641064bf11fc2d4bcb6b"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a9a0d1191b98641064bf11fc2d4bcb50^sys_idNOT IN61a0d1191b98641064bf11fc2d4bcb5a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=355403b5db982010969430d8689619dd"/>
+    <sys_element_mapping action="delete_multiple" query="id=355403b5db982010969430d8689619dd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sc</field>
+        <id>355403b5db982010969430d8689619dd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 14:23:39</sys_created_on>
+        <sys_id>715403b5db982010969430d8689619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 14:23:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d5348f75db982010969430d8689619b1</table>
+        <value>{{subflow.sc}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_2d5403b5db982010969430d8689619b3^sys_idNOT INad5403b5db982010969430d8689619bb"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sc</element>
         <help/>
         <hint/>
         <label>sc</label>
         <language>en</language>
-        <name>var__m_sys_hub_flow_input_a9a0d1191b98641064bf11fc2d4bcb50</name>
+        <name>var__m_sys_hub_flow_input_2d5403b5db982010969430d8689619b3</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-04 16:41:14</sys_created_on>
-        <sys_id>61a0d1191b98641064bf11fc2d4bcb5a</sys_id>
+        <sys_created_on>2020-11-06 14:23:38</sys_created_on>
+        <sys_id>ad5403b5db982010969430d8689619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -418,7 +474,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 16:41:14</sys_updated_on>
+        <sys_updated_on>2020-11-06 14:23:38</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
