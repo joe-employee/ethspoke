@@ -18,14 +18,14 @@
         <name>Sign Tx</name>
         <natlang/>
         <outputs/>
-        <state>published</state>
+        <state>draft</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 16:06:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9675cd8fdb8c2010969430d868961952</sys_id>
-        <sys_mod_count>81</sys_mod_count>
+        <sys_mod_count>83</sys_mod_count>
         <sys_name>Sign Tx</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_9675cd8fdb8c2010969430d868961952</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 10:55:40</sys_updated_on>
+        <sys_updated_on>2020-11-12 14:39:29</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -56,10 +56,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:16:48</sys_created_on>
         <sys_id>1ea555c7dbcc2010969430d8689619f4</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 10:55:35</sys_updated_on>
+        <sys_updated_on>2020-11-12 14:39:28</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1ea555c7dbcc2010969430d8689619f4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -70,18 +70,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:16:48</sys_created_on>
         <sys_id>2aa595c7dbcc2010969430d868961900</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 10:55:35</sys_updated_on>
-        <value>(function execute(inputs, outputs) {
-
-gs.info("START");  
+        <sys_updated_on>2020-11-12 14:39:28</sys_updated_on>
+        <value>(function execute(inputs, outputs) { 
   
 gs.include("ethjs-format");
 gs.include("object-assign");
 gs.include("ethjs-signer");
-
-gs.info("here" + JSON.stringify(inputs.tx));
   
 var pretx = { "from": inputs.tx.from.toString(),
   "to": inputs.tx.to.toString(),
@@ -349,10 +345,10 @@ inputs.tx.update();
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:16:48</sys_created_on>
         <sys_id>1ea555c7dbcc2010969430d8689619f4</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 10:55:35</sys_updated_on>
+        <sys_updated_on>2020-11-12 14:39:28</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1ea555c7dbcc2010969430d8689619f4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -363,18 +359,14 @@ inputs.tx.update();
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-28 17:16:48</sys_created_on>
         <sys_id>2aa595c7dbcc2010969430d868961900</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 10:55:35</sys_updated_on>
-        <value>(function execute(inputs, outputs) {
-
-gs.info("START");  
+        <sys_updated_on>2020-11-12 14:39:28</sys_updated_on>
+        <value>(function execute(inputs, outputs) { 
   
 gs.include("ethjs-format");
 gs.include("object-assign");
 gs.include("ethjs-signer");
-
-gs.info("here" + JSON.stringify(inputs.tx));
   
 var pretx = { "from": inputs.tx.from.toString(),
   "to": inputs.tx.to.toString(),
