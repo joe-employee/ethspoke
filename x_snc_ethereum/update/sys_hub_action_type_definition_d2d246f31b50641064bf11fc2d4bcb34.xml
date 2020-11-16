@@ -13,7 +13,7 @@
         <ih_action>false</ih_action>
         <internal_name>call_method</internal_name>
         <label_cache>[{"name":"{{action.payload}}","label":"action➛payload","type":"action","ref":""},{"name":"{{action.block_parameter}}","label":"action➛block_parameter","type":"action","ref":""},{"name":"{{step[5d130fa0-168d-407e-8ffd-233ab570544d].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[5d130fa0-168d-407e-8ffd-233ab570544d].payload2}}","label":"step➛Script step➛payload2","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>d31b0e7b1b50641064bf11fc2d4bcb85</latest_snapshot>
+        <latest_snapshot>8fad53c51ba0281064bf11fc2d4bcb98</latest_snapshot>
         <master_snapshot>e4588af71b50641064bf11fc2d4bcb2d</master_snapshot>
         <name>Prepare payload</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d2d246f31b50641064bf11fc2d4bcb34</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Prepare payload</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_d2d246f31b50641064bf11fc2d4bcb34</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:21:30</sys_updated_on>
+        <sys_updated_on>2020-11-16 18:34:37</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -70,10 +70,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:51:18</sys_created_on>
         <sys_id>453402771b50641064bf11fc2d4bcbbd</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:21:24</sys_updated_on>
+        <sys_updated_on>2020-11-16 18:34:32</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=453402771b50641064bf11fc2d4bcbbd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -98,15 +98,24 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:51:18</sys_created_on>
         <sys_id>d13402771b50641064bf11fc2d4bcbcf</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:21:24</sys_updated_on>
+        <sys_updated_on>2020-11-16 18:34:32</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 gs.include("ethjs-format");
 gs.include("object-assign");
   
 var payload = JSON.parse(inputs.payload);
+
+if (payload.to == "")  { delete payload.to }
+if (payload.gas == "")  { delete payload.gas }
+if (payload.gasPrice == "")  { delete payload.gasPrice }
+if (payload.value == "")  { delete payload.value }
+if (payload.nonce == "")  { delete payload.nonce }
+  
+  
+  
   
 var payload2 = ethFormat.formatInputs('eth_call', [payload])[0];
   
@@ -500,10 +509,10 @@ outputs.payload2 = JSON.stringify(payload2);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:51:18</sys_created_on>
         <sys_id>453402771b50641064bf11fc2d4bcbbd</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:21:24</sys_updated_on>
+        <sys_updated_on>2020-11-16 18:34:32</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=453402771b50641064bf11fc2d4bcbbd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -528,15 +537,24 @@ outputs.payload2 = JSON.stringify(payload2);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:51:18</sys_created_on>
         <sys_id>d13402771b50641064bf11fc2d4bcbcf</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:21:24</sys_updated_on>
+        <sys_updated_on>2020-11-16 18:34:32</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 gs.include("ethjs-format");
 gs.include("object-assign");
   
 var payload = JSON.parse(inputs.payload);
+
+if (payload.to == "")  { delete payload.to }
+if (payload.gas == "")  { delete payload.gas }
+if (payload.gasPrice == "")  { delete payload.gasPrice }
+if (payload.value == "")  { delete payload.value }
+if (payload.nonce == "")  { delete payload.nonce }
+  
+  
+  
   
 var payload2 = ethFormat.formatInputs('eth_call', [payload])[0];
   
@@ -799,17 +817,17 @@ outputs.payload2 = JSON.stringify(payload2);
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Prepare payload">d2d246f31b50641064bf11fc2d4bcb34</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"cd588af71b50641064bf11fc2d4bcb8e","name":"plan"}}</plan>
-        <snapshot>d31b0e7b1b50641064bf11fc2d4bcb85</snapshot>
+        <snapshot>8fad53c51ba0281064bf11fc2d4bcb98</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 15:09:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cd588af71b50641064bf11fc2d4bcb8e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:21:31</sys_updated_on>
+        <sys_updated_on>2020-11-16 18:34:38</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -879,10 +897,10 @@ outputs.payload2 = JSON.stringify(payload2);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 15:09:16</sys_created_on>
         <sys_id>68588af71b50641064bf11fc2d4bcb35</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:21:30</sys_updated_on>
+        <sys_updated_on>2020-11-16 18:34:37</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=68588af71b50641064bf11fc2d4bcb35"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -907,15 +925,24 @@ outputs.payload2 = JSON.stringify(payload2);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 15:09:17</sys_created_on>
         <sys_id>e8588af71b50641064bf11fc2d4bcb47</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:21:30</sys_updated_on>
+        <sys_updated_on>2020-11-16 18:34:37</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 gs.include("ethjs-format");
 gs.include("object-assign");
   
 var payload = JSON.parse(inputs.payload);
+
+if (payload.to == "")  { delete payload.to }
+if (payload.gas == "")  { delete payload.gas }
+if (payload.gasPrice == "")  { delete payload.gasPrice }
+if (payload.value == "")  { delete payload.value }
+if (payload.nonce == "")  { delete payload.nonce }
+  
+  
+  
   
 var payload2 = ethFormat.formatInputs('eth_call', [payload])[0];
   
@@ -1309,10 +1336,10 @@ outputs.payload2 = JSON.stringify(payload2);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 15:09:16</sys_created_on>
         <sys_id>68588af71b50641064bf11fc2d4bcb35</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:21:30</sys_updated_on>
+        <sys_updated_on>2020-11-16 18:34:37</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=68588af71b50641064bf11fc2d4bcb35"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1337,15 +1364,24 @@ outputs.payload2 = JSON.stringify(payload2);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 15:09:17</sys_created_on>
         <sys_id>e8588af71b50641064bf11fc2d4bcb47</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:21:30</sys_updated_on>
+        <sys_updated_on>2020-11-16 18:34:37</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 gs.include("ethjs-format");
 gs.include("object-assign");
   
 var payload = JSON.parse(inputs.payload);
+
+if (payload.to == "")  { delete payload.to }
+if (payload.gas == "")  { delete payload.gas }
+if (payload.gasPrice == "")  { delete payload.gasPrice }
+if (payload.value == "")  { delete payload.value }
+if (payload.nonce == "")  { delete payload.nonce }
+  
+  
+  
   
 var payload2 = ethFormat.formatInputs('eth_call', [payload])[0];
   
