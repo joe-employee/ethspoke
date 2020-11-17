@@ -1,0 +1,2487 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>get_contract_address</internal_name>
+        <label_cache>[{"name":"{{action.receipt}}","label":"action➛receipt","type":"action","ref":""},{"name":"{{action.sc}}","label":"action➛sc","type":"action","ref":""},{"name":"{{action.network}}","label":"action➛network","type":"action","ref":""},{"name":"{{action.sc.abi}}","label":"action➛sc➛ABI","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].variable}}","label":"step➛Get Smart Contract Address➛variable","type":"step","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}","label":"step➛Get Smart Contract Address➛contract_address","type":"step","ref":""},{"name":"{{step[3db72170-9cfe-493d-b9b1-dec461ee9b76].record}}","label":"step➛Create Record step➛Smart Contract Instance Record","type":"step","ref":"x_snc_ethereum_smart_contract_instance"}]</label_cache>
+        <latest_snapshot>ba9d7f55db24e410969430d8689619a8</latest_snapshot>
+        <master_snapshot>19e5b751db24e410969430d86896196f</master_snapshot>
+        <name>Create Smart Contract Instance</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:48:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>93937fdddbe0e410969430d8689619a2</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Create Smart Contract Instance</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_93937fdddbe0e410969430d8689619a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:38</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=93937fdddbe0e410969430d8689619a2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=93937fdddbe0e410969430d8689619a2"/>
+    <sys_element_mapping action="delete_multiple" query="id=93937fdddbe0e410969430d8689619a2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>contract_address</field>
+        <id>93937fdddbe0e410969430d8689619a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:25</sys_created_on>
+        <sys_id>1da4fb11db24e410969430d868961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:25</sys_updated_on>
+        <table>var__m_sys_hub_action_output_93937fdddbe0e410969430d8689619a2</table>
+        <value>{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sci</field>
+        <id>93937fdddbe0e410969430d8689619a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 15:09:35</sys_created_on>
+        <sys_id>c658bb91db24e410969430d868961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:09:35</sys_updated_on>
+        <table>var__m_sys_hub_action_output_93937fdddbe0e410969430d8689619a2</table>
+        <value>{{step[3db72170-9cfe-493d-b9b1-dec461ee9b76].record}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=93937fdddbe0e410969430d8689619a2^sys_idNOT IN8da4fb11db24e410969430d868961945,ebb53751db24e410969430d868961945"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</action>
+        <cid>f56d57a5-16cf-4837-8ffa-37053ed48fec</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Get Smart Contract Address</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:24</sys_created_on>
+        <sys_id>8da4fb11db24e410969430d868961945</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:24</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8da4fb11db24e410969430d868961945"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8da4fb11db24e410969430d868961945</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:25</sys_created_on>
+        <sys_id>45a4fb11db24e410969430d868961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:25</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  receipt = JSON.parse(inputs.receipt);
+  
+  outputs.contract_address = receipt.contractAddress;
+  
+  
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8da4fb11db24e410969430d868961945</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:25</sys_created_on>
+        <sys_id>8da4fb11db24e410969430d868961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:25</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8da4fb11db24e410969430d868961945"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>8da4fb11db24e410969430d868961945</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:25</sys_created_on>
+        <sys_id>49a4fb11db24e410969430d868961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>receipt</field>
+        <id>8da4fb11db24e410969430d868961945</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:25</sys_created_on>
+        <sys_id>41a4fb11db24e410969430d86896195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:25</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8da4fb11db24e410969430d868961945</table>
+        <value>{{action.receipt}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>8da4fb11db24e410969430d868961945</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:25</sys_created_on>
+        <sys_id>0da4fb11db24e410969430d868961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=8da4fb11db24e410969430d868961945^sys_idNOT IN45a4fb11db24e410969430d86896194a"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>receipt</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Smart Contract Address">8da4fb11db24e410969430d868961945</model>
+        <model_id>8da4fb11db24e410969430d868961945</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_8da4fb11db24e410969430d868961945</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:24</sys_created_on>
+        <sys_id>45a4fb11db24e410969430d86896194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=8da4fb11db24e410969430d868961945^sys_idNOT IN89a4fb11db24e410969430d86896194f"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f8b0dd63-86bd-4783-a905-c26a41c3e02a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contract_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>contract_address</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Smart Contract Address">8da4fb11db24e410969430d868961945</model>
+        <model_id>8da4fb11db24e410969430d868961945</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_8da4fb11db24e410969430d868961945</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:24</sys_created_on>
+        <sys_id>89a4fb11db24e410969430d86896194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</action>
+        <cid>3db72170-9cfe-493d-b9b1-dec461ee9b76</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Create Record step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Create Record">9cbaa0f267003200553fafb49585ef69</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:14</sys_created_on>
+        <sys_id>ebb53751db24e410969430d868961945</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:24</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ebb53751db24e410969430d868961945"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ebb53751db24e410969430d868961945</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:14</sys_created_on>
+        <sys_id>fbb53751db24e410969430d86896194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:14</sys_updated_on>
+        <value>x_snc_ethereum_smart_contract_instance</value>
+        <variable display_value="">f0fb68f267003200553fafb49585efa0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ebb53751db24e410969430d868961945"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>create_record_field_values</field>
+        <id>ebb53751db24e410969430d868961945</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:14</sys_created_on>
+        <sys_id>b7b53751db24e410969430d86896194a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:24</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
+        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>create_record_table_name</field>
+        <id>ebb53751db24e410969430d868961945</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:14</sys_created_on>
+        <sys_id>7bb53751db24e410969430d86896194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_input action="delete_multiple" query="model=93937fdddbe0e410969430d8689619a2^sys_idNOT IN63b53751db24e410969430d868961934,7ca4f311db24e410969430d868961950,afb53351db24e410969430d868961900,ff8d3f55db24e410969430d868961983"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=a93d3a54-849d-4001-855a-0382b654baa5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>network</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>network</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</model>
+        <model_id>93937fdddbe0e410969430d8689619a2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_93937fdddbe0e410969430d8689619a2</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethereum_network">x_snc_ethereum_network</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:13</sys_created_on>
+        <sys_id>63b53751db24e410969430d868961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=916fffa1-97ea-449c-bfbe-383074a49de7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>receipt</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>receipt</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</model>
+        <model_id>93937fdddbe0e410969430d8689619a2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_93937fdddbe0e410969430d8689619a2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:24</sys_created_on>
+        <sys_id>7ca4f311db24e410969430d868961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=0fb07b34-c841-42bd-be9f-4eec63921982</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sc</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>sc</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</model>
+        <model_id>93937fdddbe0e410969430d8689619a2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_93937fdddbe0e410969430d8689619a2</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethereum_smart_contract">x_snc_ethereum_smart_contract</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:13</sys_created_on>
+        <sys_id>afb53351db24e410969430d868961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7eaba129-8821-4ec2-a45d-129b9b8912d9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>key</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</model>
+        <model_id>93937fdddbe0e410969430d8689619a2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_93937fdddbe0e410969430d8689619a2</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethsign_key">x_snc_ethsign_key</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 15:32:22</sys_created_on>
+        <sys_id>ff8d3f55db24e410969430d868961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=93937fdddbe0e410969430d8689619a2^sys_idNOT IN3158bb91db24e410969430d868961973"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=38d31dff-06b9-49d9-88c3-b3c951e2f57c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sci</element>
+        <element_prototype display_value="Record" element="record" name="var__m_sys_flow_step_definition_output_9cbaa0f267003200553fafb49585ef69">966cd57267003200553fafb49585efa0</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>sci</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</model>
+        <model_id>93937fdddbe0e410969430d8689619a2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_93937fdddbe0e410969430d8689619a2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethereum_smart_contract_instance">x_snc_ethereum_smart_contract_instance</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 15:09:34</sys_created_on>
+        <sys_id>3158bb91db24e410969430d868961973</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=93937fdddbe0e410969430d8689619a2^sys_idNOT IN8da4fb11db24e410969430d868961945,ebb53751db24e410969430d868961945"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</action>
+        <cid>f56d57a5-16cf-4837-8ffa-37053ed48fec</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Get Smart Contract Address</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:24</sys_created_on>
+        <sys_id>8da4fb11db24e410969430d868961945</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:24</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8da4fb11db24e410969430d868961945"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8da4fb11db24e410969430d868961945</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:25</sys_created_on>
+        <sys_id>45a4fb11db24e410969430d868961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:25</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  receipt = JSON.parse(inputs.receipt);
+  
+  outputs.contract_address = receipt.contractAddress;
+  
+  
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8da4fb11db24e410969430d868961945</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:25</sys_created_on>
+        <sys_id>8da4fb11db24e410969430d868961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:25</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8da4fb11db24e410969430d868961945"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>8da4fb11db24e410969430d868961945</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:25</sys_created_on>
+        <sys_id>49a4fb11db24e410969430d868961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>receipt</field>
+        <id>8da4fb11db24e410969430d868961945</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:25</sys_created_on>
+        <sys_id>41a4fb11db24e410969430d86896195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:25</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8da4fb11db24e410969430d868961945</table>
+        <value>{{action.receipt}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>8da4fb11db24e410969430d868961945</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:25</sys_created_on>
+        <sys_id>0da4fb11db24e410969430d868961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=8da4fb11db24e410969430d868961945^sys_idNOT IN45a4fb11db24e410969430d86896194a"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>receipt</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Smart Contract Address">8da4fb11db24e410969430d868961945</model>
+        <model_id>8da4fb11db24e410969430d868961945</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_8da4fb11db24e410969430d868961945</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:24</sys_created_on>
+        <sys_id>45a4fb11db24e410969430d86896194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=8da4fb11db24e410969430d868961945^sys_idNOT IN89a4fb11db24e410969430d86896194f"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f8b0dd63-86bd-4783-a905-c26a41c3e02a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contract_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>contract_address</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Smart Contract Address">8da4fb11db24e410969430d868961945</model>
+        <model_id>8da4fb11db24e410969430d868961945</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_8da4fb11db24e410969430d868961945</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:24</sys_created_on>
+        <sys_id>89a4fb11db24e410969430d86896194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</action>
+        <cid>3db72170-9cfe-493d-b9b1-dec461ee9b76</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Create Record step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Create Record">9cbaa0f267003200553fafb49585ef69</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:14</sys_created_on>
+        <sys_id>ebb53751db24e410969430d868961945</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:24</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ebb53751db24e410969430d868961945"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ebb53751db24e410969430d868961945</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:14</sys_created_on>
+        <sys_id>fbb53751db24e410969430d86896194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:14</sys_updated_on>
+        <value>x_snc_ethereum_smart_contract_instance</value>
+        <variable display_value="">f0fb68f267003200553fafb49585efa0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ebb53751db24e410969430d868961945"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>create_record_field_values</field>
+        <id>ebb53751db24e410969430d868961945</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:14</sys_created_on>
+        <sys_id>b7b53751db24e410969430d86896194a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:24</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
+        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>create_record_table_name</field>
+        <id>ebb53751db24e410969430d868961945</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:14</sys_created_on>
+        <sys_id>7bb53751db24e410969430d86896194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_93937fdddbe0e410969430d8689619a2^sys_idNOT IN27b53351db24e410969430d868961905,7b8d3f55db24e410969430d868961988,a7b53751db24e410969430d868961938,c5a4fb11db24e410969430d868961943"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sc</element>
+        <help/>
+        <hint/>
+        <label>sc</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_93937fdddbe0e410969430d8689619a2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:13</sys_created_on>
+        <sys_id>27b53351db24e410969430d868961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>key</element>
+        <help/>
+        <hint/>
+        <label>key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_93937fdddbe0e410969430d8689619a2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 15:32:23</sys_created_on>
+        <sys_id>7b8d3f55db24e410969430d868961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>network</element>
+        <help/>
+        <hint/>
+        <label>network</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_93937fdddbe0e410969430d8689619a2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:13</sys_created_on>
+        <sys_id>a7b53751db24e410969430d868961938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>receipt</element>
+        <help/>
+        <hint/>
+        <label>receipt</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_93937fdddbe0e410969430d8689619a2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:53:24</sys_created_on>
+        <sys_id>c5a4fb11db24e410969430d868961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:53:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_93937fdddbe0e410969430d8689619a2^sys_idNOT INf958bb91db24e410969430d868961977"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sci</element>
+        <help/>
+        <hint/>
+        <label>sci</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_93937fdddbe0e410969430d8689619a2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 15:09:35</sys_created_on>
+        <sys_id>f958bb91db24e410969430d868961977</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:09:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=93937fdddbe0e410969430d8689619a2^sys_idNOT IN8ee5b751db24e410969430d8689619f7"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8ee5b751db24e410969430d8689619f7","name":"plan"}}</plan>
+        <snapshot>ba9d7f55db24e410969430d8689619a8</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8ee5b751db24e410969430d8689619f7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:41</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_smart_contract_instance</internal_name>
+        <label_cache>[{"name":"{{action.receipt}}","label":"action➛receipt","type":"action","ref":""},{"name":"{{action.sc}}","label":"action➛sc","type":"action","ref":""},{"name":"{{action.network}}","label":"action➛network","type":"action","ref":""},{"name":"{{action.sc.abi}}","label":"action➛sc➛ABI","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].variable}}","label":"step➛Get Smart Contract Address➛variable","type":"step","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}","label":"step➛Get Smart Contract Address➛contract_address","type":"step","ref":""},{"name":"{{step[3db72170-9cfe-493d-b9b1-dec461ee9b76].record}}","label":"step➛Create Record step➛Smart Contract Instance Record","type":"step","ref":"x_snc_ethereum_smart_contract_instance"}]</label_cache>
+        <master>true</master>
+        <name>Create Smart Contract Instance</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>19e5b751db24e410969430d86896196f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:37</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=19e5b751db24e410969430d86896196f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=19e5b751db24e410969430d86896196f"/>
+    <sys_element_mapping action="delete_multiple" query="id=19e5b751db24e410969430d86896196f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>contract_address</field>
+        <id>19e5b751db24e410969430d86896196f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:55</sys_created_on>
+        <sys_id>a9e5b751db24e410969430d8689619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:55</sys_updated_on>
+        <table>var__m_sys_hub_action_output_19e5b751db24e410969430d86896196f</table>
+        <value>{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sci</field>
+        <id>19e5b751db24e410969430d86896196f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 15:12:09</sys_created_on>
+        <sys_id>67e8ff91db24e410969430d8689619bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:12:09</sys_updated_on>
+        <table>var__m_sys_hub_action_output_19e5b751db24e410969430d86896196f</table>
+        <value>{{step[3db72170-9cfe-493d-b9b1-dec461ee9b76].record}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=19e5b751db24e410969430d86896196f^sys_idNOT IN29e5b751db24e410969430d868961982,ade5b751db24e410969430d868961996"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Smart Contract Instance">19e5b751db24e410969430d86896196f</action>
+        <cid>f56d57a5-16cf-4837-8ffa-37053ed48fec</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Get Smart Contract Address</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>29e5b751db24e410969430d868961982</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=29e5b751db24e410969430d868961982"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>29e5b751db24e410969430d868961982</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>a1e5b751db24e410969430d868961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  receipt = JSON.parse(inputs.receipt);
+  
+  outputs.contract_address = receipt.contractAddress;
+  
+  
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>29e5b751db24e410969430d868961982</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>ede5b751db24e410969430d868961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=29e5b751db24e410969430d868961982"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>29e5b751db24e410969430d868961982</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>a9e5b751db24e410969430d868961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>receipt</field>
+        <id>29e5b751db24e410969430d868961982</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>2de5b751db24e410969430d868961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_29e5b751db24e410969430d868961982</table>
+        <value>{{action.receipt}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>29e5b751db24e410969430d868961982</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>6de5b751db24e410969430d868961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=29e5b751db24e410969430d868961982^sys_idNOT IN65e5b751db24e410969430d868961985"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>receipt</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>receipt</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Smart Contract Address">29e5b751db24e410969430d868961982</model>
+        <model_id>29e5b751db24e410969430d868961982</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_29e5b751db24e410969430d868961982</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>65e5b751db24e410969430d868961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=29e5b751db24e410969430d868961982^sys_idNOT INa9e5b751db24e410969430d86896198b"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f8b0dd63-86bd-4783-a905-c26a41c3e02a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contract_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>contract_address</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Smart Contract Address">29e5b751db24e410969430d868961982</model>
+        <model_id>29e5b751db24e410969430d868961982</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_29e5b751db24e410969430d868961982</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>a9e5b751db24e410969430d86896198b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Smart Contract Instance">19e5b751db24e410969430d86896196f</action>
+        <cid>3db72170-9cfe-493d-b9b1-dec461ee9b76</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Create Record step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Create Record">9cbaa0f267003200553fafb49585ef69</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>ade5b751db24e410969430d868961996</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:38</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ade5b751db24e410969430d868961996"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ade5b751db24e410969430d868961996</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>21e5b751db24e410969430d86896199b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <value>x_snc_ethereum_smart_contract_instance</value>
+        <variable display_value="">f0fb68f267003200553fafb49585efa0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ade5b751db24e410969430d868961996"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>create_record_field_values</field>
+        <id>ade5b751db24e410969430d868961996</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>e9e5b751db24e410969430d86896199a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
+        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>create_record_table_name</field>
+        <id>ade5b751db24e410969430d868961996</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>ade5b751db24e410969430d86896199a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_input action="delete_multiple" query="model=19e5b751db24e410969430d86896196f^sys_idNOT IN2de5b751db24e410969430d86896197b,55e5b751db24e410969430d868961970,55e5b751db24e410969430d868961976,df9d7f55db24e410969430d8689619ef"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=a93d3a54-849d-4001-855a-0382b654baa5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>network</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>network</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create Smart Contract Instance">19e5b751db24e410969430d86896196f</model>
+        <model_id>19e5b751db24e410969430d86896196f</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_19e5b751db24e410969430d86896196f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethereum_network">x_snc_ethereum_network</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>2de5b751db24e410969430d86896197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=916fffa1-97ea-449c-bfbe-383074a49de7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>receipt</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>receipt</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Smart Contract Instance">19e5b751db24e410969430d86896196f</model>
+        <model_id>19e5b751db24e410969430d86896196f</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_19e5b751db24e410969430d86896196f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>55e5b751db24e410969430d868961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=0fb07b34-c841-42bd-be9f-4eec63921982</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sc</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>sc</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create Smart Contract Instance">19e5b751db24e410969430d86896196f</model>
+        <model_id>19e5b751db24e410969430d86896196f</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_19e5b751db24e410969430d86896196f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethereum_smart_contract">x_snc_ethereum_smart_contract</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>55e5b751db24e410969430d868961976</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7eaba129-8821-4ec2-a45d-129b9b8912d9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>key</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create Smart Contract Instance">19e5b751db24e410969430d86896196f</model>
+        <model_id>19e5b751db24e410969430d86896196f</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_19e5b751db24e410969430d86896196f</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethsign_key">x_snc_ethsign_key</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 15:32:37</sys_created_on>
+        <sys_id>df9d7f55db24e410969430d8689619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=19e5b751db24e410969430d86896196f^sys_idNOT INefe8ff91db24e410969430d8689619a9"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=38d31dff-06b9-49d9-88c3-b3c951e2f57c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sci</element>
+        <element_prototype display_value="Record" element="record" name="var__m_sys_flow_step_definition_output_9cbaa0f267003200553fafb49585ef69">966cd57267003200553fafb49585efa0</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>sci</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create Smart Contract Instance">19e5b751db24e410969430d86896196f</model>
+        <model_id>19e5b751db24e410969430d86896196f</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_19e5b751db24e410969430d86896196f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethereum_smart_contract_instance">x_snc_ethereum_smart_contract_instance</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 15:12:09</sys_created_on>
+        <sys_id>efe8ff91db24e410969430d8689619a9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=19e5b751db24e410969430d86896196f^sys_idNOT IN29e5b751db24e410969430d868961982,ade5b751db24e410969430d868961996"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Smart Contract Instance">19e5b751db24e410969430d86896196f</action>
+        <cid>f56d57a5-16cf-4837-8ffa-37053ed48fec</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Get Smart Contract Address</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>29e5b751db24e410969430d868961982</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=29e5b751db24e410969430d868961982"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>29e5b751db24e410969430d868961982</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>a1e5b751db24e410969430d868961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  receipt = JSON.parse(inputs.receipt);
+  
+  outputs.contract_address = receipt.contractAddress;
+  
+  
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>29e5b751db24e410969430d868961982</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>ede5b751db24e410969430d868961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=29e5b751db24e410969430d868961982"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>29e5b751db24e410969430d868961982</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>a9e5b751db24e410969430d868961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>receipt</field>
+        <id>29e5b751db24e410969430d868961982</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>2de5b751db24e410969430d868961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_29e5b751db24e410969430d868961982</table>
+        <value>{{action.receipt}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>29e5b751db24e410969430d868961982</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>6de5b751db24e410969430d868961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=29e5b751db24e410969430d868961982^sys_idNOT IN65e5b751db24e410969430d868961985"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>receipt</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>receipt</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Smart Contract Address">29e5b751db24e410969430d868961982</model>
+        <model_id>29e5b751db24e410969430d868961982</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_29e5b751db24e410969430d868961982</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>65e5b751db24e410969430d868961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=29e5b751db24e410969430d868961982^sys_idNOT INa9e5b751db24e410969430d86896198b"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f8b0dd63-86bd-4783-a905-c26a41c3e02a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contract_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>contract_address</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Smart Contract Address">29e5b751db24e410969430d868961982</model>
+        <model_id>29e5b751db24e410969430d868961982</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_29e5b751db24e410969430d868961982</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>a9e5b751db24e410969430d86896198b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Smart Contract Instance">19e5b751db24e410969430d86896196f</action>
+        <cid>3db72170-9cfe-493d-b9b1-dec461ee9b76</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Create Record step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Create Record">9cbaa0f267003200553fafb49585ef69</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>ade5b751db24e410969430d868961996</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:38</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ade5b751db24e410969430d868961996"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ade5b751db24e410969430d868961996</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>21e5b751db24e410969430d86896199b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <value>x_snc_ethereum_smart_contract_instance</value>
+        <variable display_value="">f0fb68f267003200553fafb49585efa0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ade5b751db24e410969430d868961996"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>create_record_field_values</field>
+        <id>ade5b751db24e410969430d868961996</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>e9e5b751db24e410969430d86896199a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
+        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>create_record_table_name</field>
+        <id>ade5b751db24e410969430d868961996</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>ade5b751db24e410969430d86896199a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_19e5b751db24e410969430d86896196f^sys_idNOT IN21e5b751db24e410969430d868961980,579d7f55db24e410969430d8689619f4,69e5b751db24e410969430d86896197a,91e5b751db24e410969430d868961975"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>network</element>
+        <help/>
+        <hint/>
+        <label>network</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_19e5b751db24e410969430d86896196f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>21e5b751db24e410969430d868961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>key</element>
+        <help/>
+        <hint/>
+        <label>key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_19e5b751db24e410969430d86896196f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 15:32:37</sys_created_on>
+        <sys_id>579d7f55db24e410969430d8689619f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:32:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sc</element>
+        <help/>
+        <hint/>
+        <label>sc</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_19e5b751db24e410969430d86896196f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>69e5b751db24e410969430d86896197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>receipt</element>
+        <help/>
+        <hint/>
+        <label>receipt</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_19e5b751db24e410969430d86896196f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 14:58:54</sys_created_on>
+        <sys_id>91e5b751db24e410969430d868961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 14:58:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_19e5b751db24e410969430d86896196f^sys_idNOT INabe8ff91db24e410969430d8689619ae"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sci</element>
+        <help/>
+        <hint/>
+        <label>sci</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_19e5b751db24e410969430d86896196f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 15:12:09</sys_created_on>
+        <sys_id>abe8ff91db24e410969430d8689619ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 15:12:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
