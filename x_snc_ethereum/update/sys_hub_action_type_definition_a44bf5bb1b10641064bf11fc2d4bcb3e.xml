@@ -12,8 +12,8 @@
         <description/>
         <ih_action>false</ih_action>
         <internal_name>call_method</internal_name>
-        <label_cache>[{"name":"{{action.method}}","label":"action➛method","type":"action","ref":""},{"name":"{{action.params}}","label":"action➛params","type":"action","ref":""},{"name":"{{action.endpoint}}","label":"action➛endpoint","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{step[73718985-5542-40b8-bdbf-95e008c2e35a].variable}}","label":"step➛Encode method➛variable","type":"step","ref":""},{"name":"{{step[73718985-5542-40b8-bdbf-95e008c2e35a].encoded_method}}","label":"step➛Encode method➛encoded_method","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>2247ceb71b50641064bf11fc2d4bcb5c</latest_snapshot>
+        <label_cache>[{"name":"{{action.method}}","label":"action➛method","type":"action","ref":""},{"name":"{{action.params}}","label":"action➛params","type":"action","ref":""},{"name":"{{action.endpoint}}","label":"action➛endpoint","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{action.sc}}","label":"action➛sc","type":"action","ref":""},{"name":"{{step[73718985-5542-40b8-bdbf-95e008c2e35a].encoded_method}}","label":"step➛Encode method➛encoded_method","type":"step","ref":""},{"name":"{{step[73718985-5542-40b8-bdbf-95e008c2e35a].encoded_constructor}}","label":"step➛Encode method➛encoded_constructor","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>5cd69791dbe0e410969430d8689619a7</latest_snapshot>
         <master_snapshot>811046b31b50641064bf11fc2d4bcbad</master_snapshot>
         <name>Encode Method</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a44bf5bb1b10641064bf11fc2d4bcb3e</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>Encode Method</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -34,13 +34,25 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_a44bf5bb1b10641064bf11fc2d4bcb3e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:04:49</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:43:09</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
     <sys_translated_text action="delete_multiple" query="documentkey=a44bf5bb1b10641064bf11fc2d4bcb3e"/>
     <sys_variable_value action="delete_multiple" query="document_key=a44bf5bb1b10641064bf11fc2d4bcb3e"/>
     <sys_element_mapping action="delete_multiple" query="id=a44bf5bb1b10641064bf11fc2d4bcb3e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>encoded_constructor</field>
+        <id>a44bf5bb1b10641064bf11fc2d4bcb3e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 12:31:24</sys_created_on>
+        <sys_id>b4241b11dbe0e410969430d868961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 12:31:24</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a44bf5bb1b10641064bf11fc2d4bcb3e</table>
+        <value>{{step[73718985-5542-40b8-bdbf-95e008c2e35a].encoded_constructor}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>encoded_method</field>
         <id>a44bf5bb1b10641064bf11fc2d4bcb3e</id>
@@ -70,10 +82,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:25:35</sys_created_on>
         <sys_id>a05ef1731b50641064bf11fc2d4bcb9d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:25:36</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:43:00</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a05ef1731b50641064bf11fc2d4bcb9d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -84,10 +96,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:25:36</sys_created_on>
         <sys_id>385ef1731b50641064bf11fc2d4bcbb3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:25:36</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:43:00</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+ 
+ //Do not modify!!!
   
  gs.include("ethjs-abi");
   
@@ -149,6 +163,18 @@
         <value>{{action.params}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sc</field>
+        <id>a05ef1731b50641064bf11fc2d4bcb9d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 12:31:22</sys_created_on>
+        <sys_id>d824d711dbe0e410969430d8689619fd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 12:35:45</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_a05ef1731b50641064bf11fc2d4bcb9d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
         <id>a05ef1731b50641064bf11fc2d4bcb9d</id>
         <sys_created_by>admin</sys_created_by>
@@ -160,7 +186,7 @@
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=a05ef1731b50641064bf11fc2d4bcb9d^sys_idNOT IN2c5ef1731b50641064bf11fc2d4bcba5,a05ef1731b50641064bf11fc2d4bcba1"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=a05ef1731b50641064bf11fc2d4bcb9d^sys_idNOT IN2c5ef1731b50641064bf11fc2d4bcba5,f4351751dbe0e410969430d8689619c8"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -205,7 +231,7 @@
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_a05ef1731b50641064bf11fc2d4bcb9d</name>
         <next_element/>
-        <order>100</order>
+        <order>0</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -223,14 +249,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:25:35</sys_created_on>
         <sys_id>2c5ef1731b50641064bf11fc2d4bcba5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:25:35</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:31:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -286,7 +312,7 @@
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_a05ef1731b50641064bf11fc2d4bcb9d</name>
         <next_element/>
-        <order>0</order>
+        <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -302,8 +328,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:25:35</sys_created_on>
-        <sys_id>a05ef1731b50641064bf11fc2d4bcba1</sys_id>
+        <sys_created_on>2020-11-17 12:36:03</sys_created_on>
+        <sys_id>f4351751dbe0e410969430d8689619c8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -311,7 +337,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:25:35</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:36:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -323,12 +349,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=a05ef1731b50641064bf11fc2d4bcb9d^sys_idNOT IN285ef1731b50641064bf11fc2d4bcbaa"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=a05ef1731b50641064bf11fc2d4bcb9d^sys_idNOT IN03c4df11dbe0e410969430d868961976"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5fb75f21-ada3-4b90-95e1-f5a8f06d7132</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=37b71c15-7cca-491a-9c19-c28b7b75997a</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -384,8 +410,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:25:35</sys_created_on>
-        <sys_id>285ef1731b50641064bf11fc2d4bcbaa</sys_id>
+        <sys_created_on>2020-11-17 12:34:16</sys_created_on>
+        <sys_id>03c4df11dbe0e410969430d868961976</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -393,7 +419,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:25:35</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:34:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -405,7 +431,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=a44bf5bb1b10641064bf11fc2d4bcb3e^sys_idNOT IN53ab79ff1b10641064bf11fc2d4bcb88,d7ab75ff1b10641064bf11fc2d4bcb85"/>
+    <sys_hub_action_input action="delete_multiple" query="model=a44bf5bb1b10641064bf11fc2d4bcb3e^sys_idNOT IN53ab79ff1b10641064bf11fc2d4bcb88,5c255351dbe0e410969430d868961985"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -491,7 +517,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=5f17a268-3f01-4030-8624-48158080e460</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=b5d8c1a8-75a0-43da-9ac6-5e3b7bcece9d</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -547,8 +573,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:14:01</sys_created_on>
-        <sys_id>d7ab75ff1b10641064bf11fc2d4bcb85</sys_id>
+        <sys_created_on>2020-11-17 12:35:44</sys_created_on>
+        <sys_id>5c255351dbe0e410969430d868961985</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -556,7 +582,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:14:01</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:35:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -568,12 +594,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_output action="delete_multiple" query="model=a44bf5bb1b10641064bf11fc2d4bcb3e^sys_idNOT IN2f0006b31b50641064bf11fc2d4bcbef"/>
+    <sys_hub_action_output action="delete_multiple" query="model=a44bf5bb1b10641064bf11fc2d4bcb3e^sys_idNOT IN5bc4df11dbe0e410969430d868961988"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=c88dcb80-323e-4292-9f1c-a88a103b595f</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=7ab81bf7-13ed-47f3-9450-669af6e9dc2d</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -608,7 +634,7 @@
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
         <label>encoded_method</label>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Encode Method">a44bf5bb1b10641064bf11fc2d4bcb3e</model>
         <model_id>a44bf5bb1b10641064bf11fc2d4bcb3e</model_id>
@@ -631,8 +657,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:33:09</sys_created_on>
-        <sys_id>2f0006b31b50641064bf11fc2d4bcbef</sys_id>
+        <sys_created_on>2020-11-17 12:34:18</sys_created_on>
+        <sys_id>5bc4df11dbe0e410969430d868961988</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -640,7 +666,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:09</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:34:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -669,10 +695,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:25:35</sys_created_on>
         <sys_id>a05ef1731b50641064bf11fc2d4bcb9d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:25:36</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:43:00</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a05ef1731b50641064bf11fc2d4bcb9d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -683,10 +709,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:25:36</sys_created_on>
         <sys_id>385ef1731b50641064bf11fc2d4bcbb3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:25:36</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:43:00</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+ 
+ //Do not modify!!!
   
  gs.include("ethjs-abi");
   
@@ -748,6 +776,18 @@
         <value>{{action.params}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sc</field>
+        <id>a05ef1731b50641064bf11fc2d4bcb9d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 12:31:22</sys_created_on>
+        <sys_id>d824d711dbe0e410969430d8689619fd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 12:35:45</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_a05ef1731b50641064bf11fc2d4bcb9d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
         <id>a05ef1731b50641064bf11fc2d4bcb9d</id>
         <sys_created_by>admin</sys_created_by>
@@ -759,7 +799,7 @@
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=a05ef1731b50641064bf11fc2d4bcb9d^sys_idNOT IN2c5ef1731b50641064bf11fc2d4bcba5,a05ef1731b50641064bf11fc2d4bcba1"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=a05ef1731b50641064bf11fc2d4bcb9d^sys_idNOT IN2c5ef1731b50641064bf11fc2d4bcba5,f4351751dbe0e410969430d8689619c8"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -804,7 +844,7 @@
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_a05ef1731b50641064bf11fc2d4bcb9d</name>
         <next_element/>
-        <order>100</order>
+        <order>0</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -822,14 +862,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:25:35</sys_created_on>
         <sys_id>2c5ef1731b50641064bf11fc2d4bcba5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:25:35</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:31:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -885,7 +925,7 @@
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_a05ef1731b50641064bf11fc2d4bcb9d</name>
         <next_element/>
-        <order>0</order>
+        <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -901,8 +941,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:25:35</sys_created_on>
-        <sys_id>a05ef1731b50641064bf11fc2d4bcba1</sys_id>
+        <sys_created_on>2020-11-17 12:36:03</sys_created_on>
+        <sys_id>f4351751dbe0e410969430d8689619c8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -910,7 +950,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:25:35</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:36:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -922,12 +962,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=a05ef1731b50641064bf11fc2d4bcb9d^sys_idNOT IN285ef1731b50641064bf11fc2d4bcbaa"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=a05ef1731b50641064bf11fc2d4bcb9d^sys_idNOT IN03c4df11dbe0e410969430d868961976"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5fb75f21-ada3-4b90-95e1-f5a8f06d7132</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=37b71c15-7cca-491a-9c19-c28b7b75997a</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -983,8 +1023,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:25:35</sys_created_on>
-        <sys_id>285ef1731b50641064bf11fc2d4bcbaa</sys_id>
+        <sys_created_on>2020-11-17 12:34:16</sys_created_on>
+        <sys_id>03c4df11dbe0e410969430d868961976</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -992,7 +1032,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:25:35</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:34:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1004,7 +1044,30 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a44bf5bb1b10641064bf11fc2d4bcb3e^sys_idNOT IN9bab79ff1b10641064bf11fc2d4bcb8c,9fab79ff1b10641064bf11fc2d4bcb86"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a44bf5bb1b10641064bf11fc2d4bcb3e^sys_idNOT IN9825d351dbe0e410969430d8689619f8,9bab79ff1b10641064bf11fc2d4bcb8c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>method</element>
+        <help/>
+        <hint/>
+        <label>method</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a44bf5bb1b10641064bf11fc2d4bcb3e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 12:35:44</sys_created_on>
+        <sys_id>9825d351dbe0e410969430d8689619f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 12:35:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>params</element>
         <help/>
@@ -1028,30 +1091,7 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>method</element>
-        <help/>
-        <hint/>
-        <label>method</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_a44bf5bb1b10641064bf11fc2d4bcb3e</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:14:02</sys_created_on>
-        <sys_id>9fab79ff1b10641064bf11fc2d4bcb86</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:14:02</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_a44bf5bb1b10641064bf11fc2d4bcb3e^sys_idNOT IN2f0006b31b50641064bf11fc2d4bcbf4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_a44bf5bb1b10641064bf11fc2d4bcb3e^sys_idNOT IN6fc4df11dbe0e410969430d868961999"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>encoded_method</element>
         <help/>
@@ -1062,8 +1102,8 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:33:09</sys_created_on>
-        <sys_id>2f0006b31b50641064bf11fc2d4bcbf4</sys_id>
+        <sys_created_on>2020-11-17 12:34:18</sys_created_on>
+        <sys_id>6fc4df11dbe0e410969430d868961999</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -1071,7 +1111,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:09</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:34:18</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1079,17 +1119,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Encode Method">a44bf5bb1b10641064bf11fc2d4bcb3e</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"611086b31b50641064bf11fc2d4bcb25","name":"plan"}}</plan>
-        <snapshot>2247ceb71b50641064bf11fc2d4bcb5c</snapshot>
+        <snapshot>5cd69791dbe0e410969430d8689619a7</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:33:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>611086b31b50641064bf11fc2d4bcb25</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 15:04:50</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:43:13</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1102,7 +1142,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>call_method</internal_name>
-        <label_cache>[{"name":"{{action.method}}","label":"action➛method","type":"action","ref":""},{"name":"{{action.params}}","label":"action➛params","type":"action","ref":""},{"name":"{{action.endpoint}}","label":"action➛endpoint","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{step[73718985-5542-40b8-bdbf-95e008c2e35a].variable}}","label":"step➛Encode method➛variable","type":"step","ref":""},{"name":"{{step[73718985-5542-40b8-bdbf-95e008c2e35a].encoded_method}}","label":"step➛Encode method➛encoded_method","type":"step","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.method}}","label":"action➛method","type":"action","ref":""},{"name":"{{action.params}}","label":"action➛params","type":"action","ref":""},{"name":"{{action.endpoint}}","label":"action➛endpoint","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{action.sc}}","label":"action➛sc","type":"action","ref":""},{"name":"{{step[73718985-5542-40b8-bdbf-95e008c2e35a].encoded_method}}","label":"step➛Encode method➛encoded_method","type":"step","ref":""},{"name":"{{step[73718985-5542-40b8-bdbf-95e008c2e35a].encoded_constructor}}","label":"step➛Encode method➛encoded_constructor","type":"step","ref":""}]</label_cache>
         <master>true</master>
         <name>Encode Method</name>
         <natlang/>
@@ -1115,7 +1155,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>811046b31b50641064bf11fc2d4bcbad</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1123,13 +1163,25 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:35</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:34:33</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=811046b31b50641064bf11fc2d4bcbad"/>
     <sys_variable_value action="delete_multiple" query="document_key=811046b31b50641064bf11fc2d4bcbad"/>
     <sys_element_mapping action="delete_multiple" query="id=811046b31b50641064bf11fc2d4bcbad"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>encoded_constructor</field>
+        <id>811046b31b50641064bf11fc2d4bcbad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 12:31:40</sys_created_on>
+        <sys_id>24345b11dbe0e410969430d868961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 12:31:40</sys_updated_on>
+        <table>var__m_sys_hub_action_output_811046b31b50641064bf11fc2d4bcbad</table>
+        <value>{{step[73718985-5542-40b8-bdbf-95e008c2e35a].encoded_constructor}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>encoded_method</field>
         <id>811046b31b50641064bf11fc2d4bcbad</id>
@@ -1159,10 +1211,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:33:16</sys_created_on>
         <sys_id>011046b31b50641064bf11fc2d4bcbc7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:43:09</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=011046b31b50641064bf11fc2d4bcbc7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1173,10 +1225,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:33:16</sys_created_on>
         <sys_id>8d1046b31b50641064bf11fc2d4bcbde</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:43:09</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+ 
+ //Do not modify!!!
   
  gs.include("ethjs-abi");
   
@@ -1238,6 +1292,18 @@
         <value>{{action.params}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sc</field>
+        <id>011046b31b50641064bf11fc2d4bcbc7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 12:31:39</sys_created_on>
+        <sys_id>1c345b11dbe0e410969430d868961973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 12:31:39</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_011046b31b50641064bf11fc2d4bcbc7</table>
+        <value>{{action.sc}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
         <id>011046b31b50641064bf11fc2d4bcbc7</id>
         <sys_created_by>admin</sys_created_by>
@@ -1249,7 +1315,7 @@
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=011046b31b50641064bf11fc2d4bcbc7^sys_idNOT IN4d1046b31b50641064bf11fc2d4bcbc9,8d1046b31b50641064bf11fc2d4bcbcf"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=011046b31b50641064bf11fc2d4bcbc7^sys_idNOT IN23359751dbe0e410969430d86896190c,8d1046b31b50641064bf11fc2d4bcbcf"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1294,7 +1360,7 @@
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_011046b31b50641064bf11fc2d4bcbc7</name>
         <next_element/>
-        <order>0</order>
+        <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1310,8 +1376,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:33:16</sys_created_on>
-        <sys_id>4d1046b31b50641064bf11fc2d4bcbc9</sys_id>
+        <sys_created_on>2020-11-17 12:36:14</sys_created_on>
+        <sys_id>23359751dbe0e410969430d86896190c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1319,7 +1385,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:36:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1375,7 +1441,7 @@
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_011046b31b50641064bf11fc2d4bcbc7</name>
         <next_element/>
-        <order>100</order>
+        <order>0</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1393,14 +1459,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:33:16</sys_created_on>
         <sys_id>8d1046b31b50641064bf11fc2d4bcbcf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:31:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1412,12 +1478,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=011046b31b50641064bf11fc2d4bcbc7^sys_idNOT INcd1046b31b50641064bf11fc2d4bcbd5"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=011046b31b50641064bf11fc2d4bcbc7^sys_idNOT IN07d41351dbe0e410969430d8689619c8"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5fb75f21-ada3-4b90-95e1-f5a8f06d7132</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=37b71c15-7cca-491a-9c19-c28b7b75997a</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1473,8 +1539,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:33:16</sys_created_on>
-        <sys_id>cd1046b31b50641064bf11fc2d4bcbd5</sys_id>
+        <sys_created_on>2020-11-17 12:34:34</sys_created_on>
+        <sys_id>07d41351dbe0e410969430d8689619c8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1482,7 +1548,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:34:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1494,12 +1560,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=811046b31b50641064bf11fc2d4bcbad^sys_idNOT IN811046b31b50641064bf11fc2d4bcbae,851046b31b50641064bf11fc2d4bcbb4"/>
+    <sys_hub_action_input action="delete_multiple" query="model=811046b31b50641064bf11fc2d4bcbad^sys_idNOT IN53355751dbe0e410969430d8689619f4,851046b31b50641064bf11fc2d4bcbb4"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=5f17a268-3f01-4030-8624-48158080e460</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=b5d8c1a8-75a0-43da-9ac6-5e3b7bcece9d</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1555,8 +1621,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:33:15</sys_created_on>
-        <sys_id>811046b31b50641064bf11fc2d4bcbae</sys_id>
+        <sys_created_on>2020-11-17 12:36:13</sys_created_on>
+        <sys_id>53355751dbe0e410969430d8689619f4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1564,7 +1630,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:15</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:36:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1657,12 +1723,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_output action="delete_multiple" query="model=811046b31b50641064bf11fc2d4bcbad^sys_idNOT INd11046b31b50641064bf11fc2d4bcbe2"/>
+    <sys_hub_action_output action="delete_multiple" query="model=811046b31b50641064bf11fc2d4bcbad^sys_idNOT INd3d41351dbe0e410969430d8689619e7"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=c88dcb80-323e-4292-9f1c-a88a103b595f</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=7ab81bf7-13ed-47f3-9450-669af6e9dc2d</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1697,7 +1763,7 @@
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
         <label>encoded_method</label>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Encode Method">811046b31b50641064bf11fc2d4bcbad</model>
         <model_id>811046b31b50641064bf11fc2d4bcbad</model_id>
@@ -1720,8 +1786,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:33:16</sys_created_on>
-        <sys_id>d11046b31b50641064bf11fc2d4bcbe2</sys_id>
+        <sys_created_on>2020-11-17 12:34:35</sys_created_on>
+        <sys_id>d3d41351dbe0e410969430d8689619e7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1729,7 +1795,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:34:35</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1758,10 +1824,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:33:16</sys_created_on>
         <sys_id>011046b31b50641064bf11fc2d4bcbc7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:43:09</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=011046b31b50641064bf11fc2d4bcbc7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1772,10 +1838,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:33:16</sys_created_on>
         <sys_id>8d1046b31b50641064bf11fc2d4bcbde</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:43:09</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+ 
+ //Do not modify!!!
   
  gs.include("ethjs-abi");
   
@@ -1837,6 +1905,18 @@
         <value>{{action.params}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sc</field>
+        <id>011046b31b50641064bf11fc2d4bcbc7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 12:31:39</sys_created_on>
+        <sys_id>1c345b11dbe0e410969430d868961973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 12:31:39</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_011046b31b50641064bf11fc2d4bcbc7</table>
+        <value>{{action.sc}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
         <id>011046b31b50641064bf11fc2d4bcbc7</id>
         <sys_created_by>admin</sys_created_by>
@@ -1848,7 +1928,7 @@
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=011046b31b50641064bf11fc2d4bcbc7^sys_idNOT IN4d1046b31b50641064bf11fc2d4bcbc9,8d1046b31b50641064bf11fc2d4bcbcf"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=011046b31b50641064bf11fc2d4bcbc7^sys_idNOT IN23359751dbe0e410969430d86896190c,8d1046b31b50641064bf11fc2d4bcbcf"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1893,7 +1973,7 @@
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_011046b31b50641064bf11fc2d4bcbc7</name>
         <next_element/>
-        <order>0</order>
+        <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1909,8 +1989,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:33:16</sys_created_on>
-        <sys_id>4d1046b31b50641064bf11fc2d4bcbc9</sys_id>
+        <sys_created_on>2020-11-17 12:36:14</sys_created_on>
+        <sys_id>23359751dbe0e410969430d86896190c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1918,7 +1998,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:36:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1974,7 +2054,7 @@
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_011046b31b50641064bf11fc2d4bcbc7</name>
         <next_element/>
-        <order>100</order>
+        <order>0</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1992,14 +2072,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 14:33:16</sys_created_on>
         <sys_id>8d1046b31b50641064bf11fc2d4bcbcf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:31:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2011,12 +2091,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=011046b31b50641064bf11fc2d4bcbc7^sys_idNOT INcd1046b31b50641064bf11fc2d4bcbd5"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=011046b31b50641064bf11fc2d4bcbc7^sys_idNOT IN07d41351dbe0e410969430d8689619c8"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5fb75f21-ada3-4b90-95e1-f5a8f06d7132</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=37b71c15-7cca-491a-9c19-c28b7b75997a</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2072,8 +2152,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:33:16</sys_created_on>
-        <sys_id>cd1046b31b50641064bf11fc2d4bcbd5</sys_id>
+        <sys_created_on>2020-11-17 12:34:34</sys_created_on>
+        <sys_id>07d41351dbe0e410969430d8689619c8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -2081,7 +2161,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:34:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2093,7 +2173,30 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_811046b31b50641064bf11fc2d4bcbad^sys_idNOT IN8d1046b31b50641064bf11fc2d4bcbb8,c11046b31b50641064bf11fc2d4bcbb3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_811046b31b50641064bf11fc2d4bcbad^sys_idNOT IN23355751dbe0e410969430d8689619f9,8d1046b31b50641064bf11fc2d4bcbb8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>method</element>
+        <help/>
+        <hint/>
+        <label>method</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_811046b31b50641064bf11fc2d4bcbad</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-17 12:36:13</sys_created_on>
+        <sys_id>23355751dbe0e410969430d8689619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-17 12:36:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>params</element>
         <help/>
@@ -2117,30 +2220,7 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>method</element>
-        <help/>
-        <hint/>
-        <label>method</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_811046b31b50641064bf11fc2d4bcbad</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:33:15</sys_created_on>
-        <sys_id>c11046b31b50641064bf11fc2d4bcbb3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:15</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_811046b31b50641064bf11fc2d4bcbad^sys_idNOT INd11046b31b50641064bf11fc2d4bcbe7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_811046b31b50641064bf11fc2d4bcbad^sys_idNOT INdfd41351dbe0e410969430d8689619eb"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>encoded_method</element>
         <help/>
@@ -2151,8 +2231,8 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-12 14:33:16</sys_created_on>
-        <sys_id>d11046b31b50641064bf11fc2d4bcbe7</sys_id>
+        <sys_created_on>2020-11-17 12:34:35</sys_created_on>
+        <sys_id>dfd41351dbe0e410969430d8689619eb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -2160,7 +2240,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 14:33:16</sys_updated_on>
+        <sys_updated_on>2020-11-17 12:34:35</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
