@@ -13,7 +13,7 @@
         <ih_action>false</ih_action>
         <internal_name>get_tx_receipt</internal_name>
         <label_cache>[{"name":"{{action.txhash}}","label":"action➛txhash","type":"action","ref":""},{"name":"{{action.endpoint}}","label":"action➛endpoint","type":"action","ref":""},{"name":"{{action.endpoint.uri}}","label":"action➛endpoint➛URI","type":"action","ref":""},{"name":"{{step[8befc10a-8fd6-4e64-9c09-7ea5398cf2a4].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[8befc10a-8fd6-4e64-9c09-7ea5398cf2a4].receipt}}","label":"step➛Script step➛receipt","type":"step","ref":""},{"name":"{{step[c0e59489-d469-466a-a10c-292d26e410f7].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>143861391b68681064bf11fc2d4bcbfe</latest_snapshot>
+        <latest_snapshot>04aea17d1b68681064bf11fc2d4bcbfd</latest_snapshot>
         <master_snapshot>2e87420c1ba8641064bf11fc2d4bcb8a</master_snapshot>
         <name>Get Tx Receipt</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>09c6c6c81ba8641064bf11fc2d4bcbd9</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_name>Get Tx Receipt</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_09c6c6c81ba8641064bf11fc2d4bcbd9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 17:56:46</sys_updated_on>
+        <sys_updated_on>2020-11-18 18:24:54</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -70,10 +70,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-13 09:44:16</sys_created_on>
         <sys_id>2987020c1ba8641064bf11fc2d4bcb8d</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 17:56:40</sys_updated_on>
+        <sys_updated_on>2020-11-18 18:24:46</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2987020c1ba8641064bf11fc2d4bcb8d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -98,16 +98,23 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-13 09:44:17</sys_created_on>
         <sys_id>e187020c1ba8641064bf11fc2d4bcba7</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 17:56:40</sys_updated_on>
+        <sys_updated_on>2020-11-18 18:24:46</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+ 
+ function sleep(ms) {
+       var unixtime_ms = new Date().getTime();
+       while(new Date().getTime() &lt; unixtime_ms + ms) {}
+}
   
- do {
+ for (i=0; i &lt; 10; i++) {
 
- try { 
+ gs.info("CYCLE " + i + " WAITING FOR " + inputs.txhash);
+
+ sleep(3000);
+   
  var r = new sn_ws.RESTMessageV2();
-// r.setStringParameterNoEscape('txhash', inputs.txhash);
  r.setEndpoint(inputs.endpoint.uri);
  r.setHttpMethod('post');
  var payload = '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["' + inputs.txhash + '"],"id":1}';
@@ -117,15 +124,14 @@
  var response = r.execute();
  var responseBody = response.getBody();
  var httpStatus = response.getStatusCode();
-}
-catch(ex) {
- var message = ex.message;
-}  
-  
-  receipt = JSON.parse(responseBody).result;
- } while (receipt != null);
-  
-  outputs.receipt = JSON.stringify(receipt);
+
+ receipt = JSON.parse(responseBody).result;
+   
+ if (receipt != null ) {break;}
+
+ }
+   
+ outputs.receipt = JSON.stringify(receipt);
   
 })(inputs, outputs);
 </value>
@@ -701,10 +707,10 @@ catch(ex) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-13 09:44:16</sys_created_on>
         <sys_id>2987020c1ba8641064bf11fc2d4bcb8d</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 17:56:40</sys_updated_on>
+        <sys_updated_on>2020-11-18 18:24:46</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2987020c1ba8641064bf11fc2d4bcb8d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -729,16 +735,23 @@ catch(ex) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-13 09:44:17</sys_created_on>
         <sys_id>e187020c1ba8641064bf11fc2d4bcba7</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 17:56:40</sys_updated_on>
+        <sys_updated_on>2020-11-18 18:24:46</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+ 
+ function sleep(ms) {
+       var unixtime_ms = new Date().getTime();
+       while(new Date().getTime() &lt; unixtime_ms + ms) {}
+}
   
- do {
+ for (i=0; i &lt; 10; i++) {
 
- try { 
+ gs.info("CYCLE " + i + " WAITING FOR " + inputs.txhash);
+
+ sleep(3000);
+   
  var r = new sn_ws.RESTMessageV2();
-// r.setStringParameterNoEscape('txhash', inputs.txhash);
  r.setEndpoint(inputs.endpoint.uri);
  r.setHttpMethod('post');
  var payload = '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["' + inputs.txhash + '"],"id":1}';
@@ -748,15 +761,14 @@ catch(ex) {
  var response = r.execute();
  var responseBody = response.getBody();
  var httpStatus = response.getStatusCode();
-}
-catch(ex) {
- var message = ex.message;
-}  
-  
-  receipt = JSON.parse(responseBody).result;
- } while (receipt != null);
-  
-  outputs.receipt = JSON.stringify(receipt);
+
+ receipt = JSON.parse(responseBody).result;
+   
+ if (receipt != null ) {break;}
+
+ }
+   
+ outputs.receipt = JSON.stringify(receipt);
   
 })(inputs, outputs);
 </value>
@@ -1143,17 +1155,17 @@ catch(ex) {
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Get Tx Receipt">09c6c6c81ba8641064bf11fc2d4bcbd9</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"db87820c1ba8641064bf11fc2d4bcb28","name":"plan"}}</plan>
-        <snapshot>143861391b68681064bf11fc2d4bcbfe</snapshot>
+        <snapshot>04aea17d1b68681064bf11fc2d4bcbfd</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-13 09:44:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>db87820c1ba8641064bf11fc2d4bcb28</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 17:56:47</sys_updated_on>
+        <sys_updated_on>2020-11-18 18:24:55</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1223,10 +1235,10 @@ catch(ex) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-13 09:44:21</sys_created_on>
         <sys_id>fe87420c1ba8641064bf11fc2d4bcba9</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 17:56:46</sys_updated_on>
+        <sys_updated_on>2020-11-18 18:24:54</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fe87420c1ba8641064bf11fc2d4bcba9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1251,16 +1263,23 @@ catch(ex) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-13 09:44:22</sys_created_on>
         <sys_id>f287420c1ba8641064bf11fc2d4bcbb6</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 17:56:46</sys_updated_on>
+        <sys_updated_on>2020-11-18 18:24:54</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+ 
+ function sleep(ms) {
+       var unixtime_ms = new Date().getTime();
+       while(new Date().getTime() &lt; unixtime_ms + ms) {}
+}
   
- do {
+ for (i=0; i &lt; 10; i++) {
 
- try { 
+ gs.info("CYCLE " + i + " WAITING FOR " + inputs.txhash);
+
+ sleep(3000);
+   
  var r = new sn_ws.RESTMessageV2();
-// r.setStringParameterNoEscape('txhash', inputs.txhash);
  r.setEndpoint(inputs.endpoint.uri);
  r.setHttpMethod('post');
  var payload = '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["' + inputs.txhash + '"],"id":1}';
@@ -1270,15 +1289,14 @@ catch(ex) {
  var response = r.execute();
  var responseBody = response.getBody();
  var httpStatus = response.getStatusCode();
-}
-catch(ex) {
- var message = ex.message;
-}  
-  
-  receipt = JSON.parse(responseBody).result;
- } while (receipt != null);
-  
-  outputs.receipt = JSON.stringify(receipt);
+
+ receipt = JSON.parse(responseBody).result;
+   
+ if (receipt != null ) {break;}
+
+ }
+   
+ outputs.receipt = JSON.stringify(receipt);
   
 })(inputs, outputs);
 </value>
@@ -1854,10 +1872,10 @@ catch(ex) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-13 09:44:21</sys_created_on>
         <sys_id>fe87420c1ba8641064bf11fc2d4bcba9</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 17:56:46</sys_updated_on>
+        <sys_updated_on>2020-11-18 18:24:54</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fe87420c1ba8641064bf11fc2d4bcba9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1882,16 +1900,23 @@ catch(ex) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-13 09:44:22</sys_created_on>
         <sys_id>f287420c1ba8641064bf11fc2d4bcbb6</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 17:56:46</sys_updated_on>
+        <sys_updated_on>2020-11-18 18:24:54</sys_updated_on>
         <value>(function execute(inputs, outputs) {
+ 
+ function sleep(ms) {
+       var unixtime_ms = new Date().getTime();
+       while(new Date().getTime() &lt; unixtime_ms + ms) {}
+}
   
- do {
+ for (i=0; i &lt; 10; i++) {
 
- try { 
+ gs.info("CYCLE " + i + " WAITING FOR " + inputs.txhash);
+
+ sleep(3000);
+   
  var r = new sn_ws.RESTMessageV2();
-// r.setStringParameterNoEscape('txhash', inputs.txhash);
  r.setEndpoint(inputs.endpoint.uri);
  r.setHttpMethod('post');
  var payload = '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["' + inputs.txhash + '"],"id":1}';
@@ -1901,15 +1926,14 @@ catch(ex) {
  var response = r.execute();
  var responseBody = response.getBody();
  var httpStatus = response.getStatusCode();
-}
-catch(ex) {
- var message = ex.message;
-}  
-  
-  receipt = JSON.parse(responseBody).result;
- } while (receipt != null);
-  
-  outputs.receipt = JSON.stringify(receipt);
+
+ receipt = JSON.parse(responseBody).result;
+   
+ if (receipt != null ) {break;}
+
+ }
+   
+ outputs.receipt = JSON.stringify(receipt);
   
 })(inputs, outputs);
 </value>
