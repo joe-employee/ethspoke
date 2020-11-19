@@ -13,7 +13,7 @@
         <ih_action>false</ih_action>
         <internal_name>parse_abi</internal_name>
         <label_cache>[{"name":"{{action.sci}}","label":"action➛sci","type":"action","ref":""},{"name":"{{action.sci.abi}}","label":"action➛sci➛ABI","type":"action","ref":""},{"name":"{{action.sci.sys_id}}","label":"action➛sci➛Sys ID","type":"action","ref":""}]</label_cache>
-        <latest_snapshot>d9234775db982010969430d8689619ed</latest_snapshot>
+        <latest_snapshot>363199ce1b60a81064bf11fc2d4bcbd1</latest_snapshot>
         <master_snapshot>b6ef68f4db842010969430d8689619af</master_snapshot>
         <name>Parse ABI</name>
         <natlang/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3fd32070db842010969430d8689619a0</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>Parse ABI</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_3fd32070db842010969430d8689619a0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 14:18:29</sys_updated_on>
+        <sys_updated_on>2020-11-19 10:54:55</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -56,10 +56,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-21 14:45:27</sys_created_on>
         <sys_id>8def28f4db842010969430d8689619e4</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 14:18:21</sys_updated_on>
+        <sys_updated_on>2020-11-19 10:52:30</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8def28f4db842010969430d8689619e4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -84,9 +84,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-21 14:45:29</sys_created_on>
         <sys_id>a5ef28f4db842010969430d8689619f3</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 14:18:21</sys_updated_on>
+        <sys_updated_on>2020-11-19 10:52:30</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   abi = JSON.parse(inputs.sci.smart_contract.abi);
 	
@@ -95,7 +95,7 @@
 
       var m = new GlideRecord('x_snc_ethereum_method');
       m.initialize();
-      m.name = abi[i].name;
+      m.name = abi[i].name + "@" inputs.sci.address + "@" + inputs.sci.network;
       m.fragment = JSON.stringify(abi[i]); 
       m.state_mutability = abi[i].stateMutability;
       m.smart_contract_instance = inputs.sci.sys_id;
@@ -371,10 +371,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-21 14:45:27</sys_created_on>
         <sys_id>8def28f4db842010969430d8689619e4</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 14:18:21</sys_updated_on>
+        <sys_updated_on>2020-11-19 10:52:30</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8def28f4db842010969430d8689619e4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -399,9 +399,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-21 14:45:29</sys_created_on>
         <sys_id>a5ef28f4db842010969430d8689619f3</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 14:18:21</sys_updated_on>
+        <sys_updated_on>2020-11-19 10:52:30</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   abi = JSON.parse(inputs.sci.smart_contract.abi);
 	
@@ -410,7 +410,7 @@
 
       var m = new GlideRecord('x_snc_ethereum_method');
       m.initialize();
-      m.name = abi[i].name;
+      m.name = abi[i].name + "@" inputs.sci.address + "@" + inputs.sci.network;
       m.fragment = JSON.stringify(abi[i]); 
       m.state_mutability = abi[i].stateMutability;
       m.smart_contract_instance = inputs.sci.sys_id;
@@ -615,17 +615,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Parse ABI">3fd32070db842010969430d8689619a0</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"dfefa8f4db842010969430d868961922","name":"plan"}}</plan>
-        <snapshot>d9234775db982010969430d8689619ed</snapshot>
+        <snapshot>363199ce1b60a81064bf11fc2d4bcbd1</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-21 14:45:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dfefa8f4db842010969430d868961922</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 14:18:31</sys_updated_on>
+        <sys_updated_on>2020-11-19 10:54:56</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -681,10 +681,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-21 14:45:34</sys_created_on>
         <sys_id>beef68f4db842010969430d8689619b7</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 14:18:29</sys_updated_on>
+        <sys_updated_on>2020-11-19 10:54:55</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=beef68f4db842010969430d8689619b7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -695,9 +695,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-21 14:45:34</sys_created_on>
         <sys_id>7aef68f4db842010969430d8689619d0</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 14:18:29</sys_updated_on>
+        <sys_updated_on>2020-11-19 10:54:55</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   abi = JSON.parse(inputs.sci.smart_contract.abi);
 	
@@ -706,7 +706,7 @@
 
       var m = new GlideRecord('x_snc_ethereum_method');
       m.initialize();
-      m.name = abi[i].name;
+      m.name = abi[i].name + "@" inputs.sci.address + "@" + inputs.sci.network;
       m.fragment = JSON.stringify(abi[i]); 
       m.state_mutability = abi[i].stateMutability;
       m.smart_contract_instance = inputs.sci.sys_id;
@@ -996,10 +996,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-21 14:45:34</sys_created_on>
         <sys_id>beef68f4db842010969430d8689619b7</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 14:18:29</sys_updated_on>
+        <sys_updated_on>2020-11-19 10:54:55</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=beef68f4db842010969430d8689619b7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1010,9 +1010,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-21 14:45:34</sys_created_on>
         <sys_id>7aef68f4db842010969430d8689619d0</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 14:18:29</sys_updated_on>
+        <sys_updated_on>2020-11-19 10:54:55</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   abi = JSON.parse(inputs.sci.smart_contract.abi);
 	
@@ -1021,7 +1021,7 @@
 
       var m = new GlideRecord('x_snc_ethereum_method');
       m.initialize();
-      m.name = abi[i].name;
+      m.name = abi[i].name + "@" inputs.sci.address + "@" + inputs.sci.network;
       m.fragment = JSON.stringify(abi[i]); 
       m.state_mutability = abi[i].stateMutability;
       m.smart_contract_instance = inputs.sci.sys_id;
