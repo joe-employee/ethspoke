@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Method" max_length="40" name="x_snc_ethereum_method" sizeclass="2" type="collection">
+    <element label="Method" max_length="40" name="x_snc_ethereum_method" sizeclass="13" type="collection">
         <element label="Fragment" max_length="1000" name="fragment" type="string"/>
         <element label="name" max_length="1000" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Number" max_length="40" name="number" type="integer"/>

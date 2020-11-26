@@ -13,7 +13,7 @@
         <ih_action>false</ih_action>
         <internal_name>decode_result</internal_name>
         <label_cache>[{"name":"{{action.method}}","label":"action➛method","type":"action","ref":""},{"name":"{{action.responsebody}}","label":"action➛response_body","type":"action","ref":""},{"name":"{{action.response_body}}","label":"action➛response_body","type":"action","ref":""},{"name":"{{step[f626854a-1182-4ce8-8080-a67fa94a093b].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[f626854a-1182-4ce8-8080-a67fa94a093b].output}}","label":"step➛Script step➛output","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>5b1b96371b90641064bf11fc2d4bcbab</latest_snapshot>
+        <latest_snapshot>1c110f13dba0a010969430d868961986</latest_snapshot>
         <master_snapshot>1fc952f31b90641064bf11fc2d4bcb81</master_snapshot>
         <name>Decode result</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>41cf827f1b50641064bf11fc2d4bcbe9</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Decode result</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_41cf827f1b50641064bf11fc2d4bcbe9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 16:31:25</sys_updated_on>
+        <sys_updated_on>2020-11-23 16:15:58</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -70,10 +70,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 16:23:23</sys_created_on>
         <sys_id>82491eb31b90641064bf11fc2d4bcb0c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 16:31:11</sys_updated_on>
+        <sys_updated_on>2020-11-23 16:15:51</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=82491eb31b90641064bf11fc2d4bcb0c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -98,16 +98,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 16:23:23</sys_created_on>
         <sys_id>9a491eb31b90641064bf11fc2d4bcb19</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 16:31:11</sys_updated_on>
+        <sys_updated_on>2020-11-23 16:15:51</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 gs.include("ethjs-abi");
   
-x = ethAbi.decodeMethod(JSON.parse(inputs.method.fragment), JSON.parse(inputs.response_body).result);
+decoded_output = ethAbi.decodeMethod(JSON.parse(inputs.method.fragment), JSON.parse(inputs.response_body).result);
   
-outputs.output = JSON.stringify(x);
+outputs.output = JSON.stringify(decoded_output);
   
 })(inputs, outputs);
 </value>
@@ -671,10 +671,10 @@ outputs.output = JSON.stringify(x);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 16:23:23</sys_created_on>
         <sys_id>82491eb31b90641064bf11fc2d4bcb0c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 16:31:11</sys_updated_on>
+        <sys_updated_on>2020-11-23 16:15:51</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=82491eb31b90641064bf11fc2d4bcb0c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -699,16 +699,16 @@ outputs.output = JSON.stringify(x);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 16:23:23</sys_created_on>
         <sys_id>9a491eb31b90641064bf11fc2d4bcb19</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 16:31:11</sys_updated_on>
+        <sys_updated_on>2020-11-23 16:15:51</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 gs.include("ethjs-abi");
   
-x = ethAbi.decodeMethod(JSON.parse(inputs.method.fragment), JSON.parse(inputs.response_body).result);
+decoded_output = ethAbi.decodeMethod(JSON.parse(inputs.method.fragment), JSON.parse(inputs.response_body).result);
   
-outputs.output = JSON.stringify(x);
+outputs.output = JSON.stringify(decoded_output);
   
 })(inputs, outputs);
 </value>
@@ -1083,17 +1083,17 @@ outputs.output = JSON.stringify(x);
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Decode result">41cf827f1b50641064bf11fc2d4bcbe9</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"0cd992f31b90641064bf11fc2d4bcb01","name":"plan"}}</plan>
-        <snapshot>5b1b96371b90641064bf11fc2d4bcbab</snapshot>
+        <snapshot>1c110f13dba0a010969430d868961986</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 16:25:41</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0cd992f31b90641064bf11fc2d4bcb01</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 16:31:26</sys_updated_on>
+        <sys_updated_on>2020-11-23 16:15:59</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1163,10 +1163,10 @@ outputs.output = JSON.stringify(x);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 16:25:39</sys_created_on>
         <sys_id>9bc952f31b90641064bf11fc2d4bcb8f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 16:31:24</sys_updated_on>
+        <sys_updated_on>2020-11-23 16:15:58</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9bc952f31b90641064bf11fc2d4bcb8f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1191,16 +1191,16 @@ outputs.output = JSON.stringify(x);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 16:25:40</sys_created_on>
         <sys_id>e7c952f31b90641064bf11fc2d4bcba7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 16:31:24</sys_updated_on>
+        <sys_updated_on>2020-11-23 16:15:58</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 gs.include("ethjs-abi");
   
-x = ethAbi.decodeMethod(JSON.parse(inputs.method.fragment), JSON.parse(inputs.response_body).result);
+decoded_output = ethAbi.decodeMethod(JSON.parse(inputs.method.fragment), JSON.parse(inputs.response_body).result);
   
-outputs.output = JSON.stringify(x);
+outputs.output = JSON.stringify(decoded_output);
   
 })(inputs, outputs);
 </value>
@@ -1764,10 +1764,10 @@ outputs.output = JSON.stringify(x);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 16:25:39</sys_created_on>
         <sys_id>9bc952f31b90641064bf11fc2d4bcb8f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 16:31:24</sys_updated_on>
+        <sys_updated_on>2020-11-23 16:15:58</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9bc952f31b90641064bf11fc2d4bcb8f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1792,16 +1792,16 @@ outputs.output = JSON.stringify(x);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-12 16:25:40</sys_created_on>
         <sys_id>e7c952f31b90641064bf11fc2d4bcba7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-12 16:31:24</sys_updated_on>
+        <sys_updated_on>2020-11-23 16:15:58</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 gs.include("ethjs-abi");
   
-x = ethAbi.decodeMethod(JSON.parse(inputs.method.fragment), JSON.parse(inputs.response_body).result);
+decoded_output = ethAbi.decodeMethod(JSON.parse(inputs.method.fragment), JSON.parse(inputs.response_body).result);
   
-outputs.output = JSON.stringify(x);
+outputs.output = JSON.stringify(decoded_output);
   
 })(inputs, outputs);
 </value>

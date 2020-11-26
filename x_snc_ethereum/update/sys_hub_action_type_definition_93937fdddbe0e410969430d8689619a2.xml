@@ -12,8 +12,8 @@
         <description/>
         <ih_action>false</ih_action>
         <internal_name>get_contract_address</internal_name>
-        <label_cache>[{"name":"{{action.receipt}}","label":"action➛receipt","type":"action","ref":""},{"name":"{{action.sc}}","label":"action➛sc","type":"action","ref":""},{"name":"{{action.network}}","label":"action➛network","type":"action","ref":""},{"name":"{{action.sc.abi}}","label":"action➛sc➛ABI","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{action.params}}","label":"action➛params","type":"action","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].variable}}","label":"step➛Get Smart Contract Address➛variable","type":"step","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}","label":"step➛Get Smart Contract Address➛contract_address","type":"step","ref":""},{"name":"{{step[3db72170-9cfe-493d-b9b1-dec461ee9b76].record}}","label":"step➛Create Record step➛Smart Contract Instance Record","type":"step","ref":"x_snc_ethereum_smart_contract_instance"}]</label_cache>
-        <latest_snapshot>8c6299021ba0a81064bf11fc2d4bcb1a</latest_snapshot>
+        <label_cache>[{"name":"{{action.receipt}}","label":"action➛receipt","type":"action","ref":""},{"name":"{{action.sc}}","label":"action➛sc","type":"action","ref":""},{"name":"{{action.network}}","label":"action➛network","type":"action","ref":""},{"name":"{{action.sc.abi}}","label":"action➛sc➛ABI","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{action.params}}","label":"action➛params","type":"action","ref":""},{"name":"{{action.network.name}}","label":"action➛network➛Name","type":"action","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].variable}}","label":"step➛Get Smart Contract Address➛variable","type":"step","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}","label":"step➛Get Smart Contract Address➛contract_address","type":"step","ref":""},{"name":"{{step[3db72170-9cfe-493d-b9b1-dec461ee9b76].record}}","label":"step➛Create Record step➛Smart Contract Instance Record","type":"step","ref":"x_snc_ethereum_smart_contract_instance"}]</label_cache>
+        <latest_snapshot>5070cf061ba4a81064bf11fc2d4bcb32</latest_snapshot>
         <master_snapshot>19e5b751db24e410969430d86896196f</master_snapshot>
         <name>Create Smart Contract Instance</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>93937fdddbe0e410969430d8689619a2</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>Create Smart Contract Instance</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_93937fdddbe0e410969430d8689619a2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:57</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:51</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -342,10 +342,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-17 14:58:14</sys_created_on>
         <sys_id>ebb53751db24e410969430d868961945</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:48</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:43</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ebb53751db24e410969430d868961945"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -369,11 +369,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-17 14:58:14</sys_created_on>
         <sys_id>b7b53751db24e410969430d86896194a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:48</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:43</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
-        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}^constructor_parameters={{action.params}}^name={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}@{{action.network}}</value>
+        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}^constructor_parameters={{action.params}}^name={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}@{{action.network.name}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>create_record_table_name</field>
@@ -858,14 +858,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-17 15:09:34</sys_created_on>
         <sys_id>3158bb91db24e410969430d868961973</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:53</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1154,10 +1154,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-17 14:58:14</sys_created_on>
         <sys_id>ebb53751db24e410969430d868961945</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:48</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:43</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ebb53751db24e410969430d868961945"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1181,11 +1181,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-17 14:58:14</sys_created_on>
         <sys_id>b7b53751db24e410969430d86896194a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:48</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:43</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
-        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}^constructor_parameters={{action.params}}^name={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}@{{action.network}}</value>
+        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}^constructor_parameters={{action.params}}^name={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}@{{action.network.name}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>create_record_table_name</field>
@@ -1343,17 +1343,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Create Smart Contract Instance">93937fdddbe0e410969430d8689619a2</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8ee5b751db24e410969430d8689619f7","name":"plan"}}</plan>
-        <snapshot>8c6299021ba0a81064bf11fc2d4bcb1a</snapshot>
+        <snapshot>5070cf061ba4a81064bf11fc2d4bcb32</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-17 14:58:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8ee5b751db24e410969430d8689619f7</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:59</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:53</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1366,7 +1366,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>create_smart_contract_instance</internal_name>
-        <label_cache>[{"name":"{{action.receipt}}","label":"action➛receipt","type":"action","ref":""},{"name":"{{action.sc}}","label":"action➛sc","type":"action","ref":""},{"name":"{{action.network}}","label":"action➛network","type":"action","ref":""},{"name":"{{action.sc.abi}}","label":"action➛sc➛ABI","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{action.params}}","label":"action➛params","type":"action","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].variable}}","label":"step➛Get Smart Contract Address➛variable","type":"step","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}","label":"step➛Get Smart Contract Address➛contract_address","type":"step","ref":""},{"name":"{{step[3db72170-9cfe-493d-b9b1-dec461ee9b76].record}}","label":"step➛Create Record step➛Smart Contract Instance Record","type":"step","ref":"x_snc_ethereum_smart_contract_instance"}]</label_cache>
+        <label_cache>[{"name":"{{action.receipt}}","label":"action➛receipt","type":"action","ref":""},{"name":"{{action.sc}}","label":"action➛sc","type":"action","ref":""},{"name":"{{action.network}}","label":"action➛network","type":"action","ref":""},{"name":"{{action.sc.abi}}","label":"action➛sc➛ABI","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{action.params}}","label":"action➛params","type":"action","ref":""},{"name":"{{action.network.name}}","label":"action➛network➛Name","type":"action","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].variable}}","label":"step➛Get Smart Contract Address➛variable","type":"step","ref":""},{"name":"{{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}","label":"step➛Get Smart Contract Address➛contract_address","type":"step","ref":""},{"name":"{{step[3db72170-9cfe-493d-b9b1-dec461ee9b76].record}}","label":"step➛Create Record step➛Smart Contract Instance Record","type":"step","ref":"x_snc_ethereum_smart_contract_instance"}]</label_cache>
         <master>true</master>
         <name>Create Smart Contract Instance</name>
         <natlang/>
@@ -1379,7 +1379,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>19e5b751db24e410969430d86896196f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1387,7 +1387,7 @@
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 09:21:46</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:50</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1695,10 +1695,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-17 14:58:54</sys_created_on>
         <sys_id>ade5b751db24e410969430d868961996</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:57</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:51</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ade5b751db24e410969430d868961996"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1722,11 +1722,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-17 14:58:54</sys_created_on>
         <sys_id>e9e5b751db24e410969430d86896199a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:57</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:51</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
-        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}^constructor_parameters={{action.params}}^name={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}@{{action.network}}</value>
+        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}^constructor_parameters={{action.params}}^name={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}@{{action.network.name}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>create_record_table_name</field>
@@ -2211,14 +2211,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-17 15:12:09</sys_created_on>
         <sys_id>efe8ff91db24e410969430d8689619a9</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:57</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2507,10 +2507,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-17 14:58:54</sys_created_on>
         <sys_id>ade5b751db24e410969430d868961996</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:57</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:51</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ade5b751db24e410969430d868961996"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2534,11 +2534,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-17 14:58:54</sys_created_on>
         <sys_id>e9e5b751db24e410969430d86896199a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 10:59:57</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:00:51</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_9cbaa0f267003200553fafb49585ef69</table>
-        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}^constructor_parameters={{action.params}}^name={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}@{{action.network}}</value>
+        <value>address={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}^smart_contract={{action.sc}}^abi={{action.sc.abi}}^network={{action.network}}^deployed_by={{action.key}}^constructor_parameters={{action.params}}^name={{step[f56d57a5-16cf-4837-8ffa-37053ed48fec].contract_address}}@{{action.network.name}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>create_record_table_name</field>

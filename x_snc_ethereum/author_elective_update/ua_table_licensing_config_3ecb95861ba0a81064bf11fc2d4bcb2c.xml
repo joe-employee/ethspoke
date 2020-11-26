@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_snc_ethereum_account</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 11:41:04</sys_created_on>
+        <sys_id>3ecb95861ba0a81064bf11fc2d4bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ethereum_account</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>ua_table_licensing_config_3ecb95861ba0a81064bf11fc2d4bcb2c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 11:41:04</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Ethereum">3c0e4434db442010969430d868961918</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>ua_table_licensing_config_3ecb95861ba0a81064bf11fc2d4bcb2c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_snc_ethereum_account</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-19 11:41:04</sys_created_on><sys_id>3ecb95861ba0a81064bf11fc2d4bcb2c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_ethereum_account</sys_name><sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package><sys_policy/><sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope><sys_update_name>ua_table_licensing_config_3ecb95861ba0a81064bf11fc2d4bcb2c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-11-19 11:41:04</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>-1250807807</payload_hash>
+        <record_name>x_snc_ethereum_account</record_name>
+        <reverted_from/>
+        <source>581e9bc51ba0281064bf11fc2d4bcb9c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 11:41:04</sys_created_on>
+        <sys_id>facb95861ba0a81064bf11fc2d4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>175e04ed62e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 11:41:04</sys_updated_on>
+        <type>Table Subscription Configuration</type>
+        <update_guid>36cb9586e7a0a810ba5b1757c5b3422e</update_guid>
+        <update_guid_history>36cb9586e7a0a810ba5b1757c5b3422e:-1250807807</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 08:23:14</sys_created_on>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>b3264c9f4fcc44578454d149f8327089</sys_id>
+        <sys_metadata>3ecb95861ba0a81064bf11fc2d4bcb2c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ethereum_account</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_scope_delete display_value="">2bb8a3046e8a400e969b229d381b21b1</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_3ecb95861ba0a81064bf11fc2d4bcb2c</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_3ecb95861ba0a81064bf11fc2d4bcb2c">facb95861ba0a81064bf11fc2d4bcb2e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 08:23:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
