@@ -3,7 +3,7 @@
         <element label="Fragment" max_length="1000" name="fragment" type="string"/>
         <element label="name" max_length="1000" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Number" max_length="40" name="number" type="integer"/>
-        <element label="Smart Contract Instance" max_length="32" name="smart_contract_instance" reference="x_snc_ethereum_smart_contract_instance" type="reference"/>
+        <element label="Smart Contract Instance" max_length="32" name="smart_contract_instance" reference="x_snc_ethereum_smart_contract_instance" reference_cascade_rule="cascade" type="reference"/>
         <element choice="1" label="State Mutability" max_length="40" name="state_mutability" type="choice">
             <choice>
                 <element inactive_on_update="false" label="nonpayable" value="nonpayable"/>

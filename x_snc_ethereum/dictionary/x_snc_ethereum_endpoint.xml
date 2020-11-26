@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Endpoint" max_length="40" name="x_snc_ethereum_endpoint" sizeclass="2" type="collection">
+    <element label="Endpoint" max_length="40" name="x_snc_ethereum_endpoint" sizeclass="5" type="collection">
         <element label="Name" max_length="100" name="name" type="string"/>
         <element label="Network" max_length="32" name="network" reference="x_snc_ethereum_network" type="reference"/>
+        <element label="Priority" max_length="40" name="priority" type="integer"/>
         <element label="uri" max_length="1000" name="uri" type="string"/>
         <index name="index">
             <element name="network"/>

@@ -1,0 +1,1866 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>invoke_method</internal_name>
+        <label_cache>[{"name":"subflow.method.state_mutability","label":"Input➛method➛State Mutability","reference":"","reference_display":"State Mutability","type":"choice","base_type":"choice","parent_table_name":"x_snc_ethereum_method","column_name":"state_mutability"},{"name":"subflow.method","label":"Input➛method","reference":"x_snc_ethereum_method","reference_display":"Method","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bdaf2e1f-f30a-419f-b16f-963c17550300","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"020fe61d-d5d6-46f1-81c6-86aeae2e9cc0.receipt","label":"3➛receipt","reference_display":"receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a9268e26-7d5b-4543-a756-086208d5c538"}},{"name":"6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx","label":"1➛tx","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"02808c5b-57c6-4396-8c2e-3e2726f96159"}},{"name":"6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.encoded_method","label":"1➛encoded_method","reference_display":"encoded_method","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"787ee4fd-6552-4876-a242-0bf3a6e9932b"}},{"name":"subflow.method.smart_contract_instance","label":"Input➛method➛Smart Contract Instance","reference":"x_snc_ethereum_smart_contract_instance","reference_display":"Smart Contract Instance","type":"reference","base_type":"reference","parent_table_name":"x_snc_ethereum_method","column_name":"smart_contract_instance"},{"name":"subflow.params","label":"Input➛params","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6badb014-fb70-4b56-a564-78baed8a7a82","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.key","label":"Input➛key","reference":"x_snc_ethsign_key","reference_display":"Key","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"08b0b7fa-1811-4a35-9f22-48def77d02fc"}},{"name":"subflow.endpoint","label":"Input➛endpoint","reference":"x_snc_ethereum_endpoint","reference_display":"Endpoint","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f2942b3c-24fe-4576-a14b-fb31398612f6","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <latest_snapshot>f9585732db58a010969430d86896198c</latest_snapshot>
+        <master_snapshot>f9585732db58a010969430d86896198c</master_snapshot>
+        <name>Invoke method</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 16:53:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6963d9191b98641064bf11fc2d4bcb28</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Invoke method</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_hub_flow_6963d9191b98641064bf11fc2d4bcb28</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:54</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=6963d9191b98641064bf11fc2d4bcb28"/>
+    <sys_variable_value action="DELETE" query="document_key=6963d9191b98641064bf11fc2d4bcb28"/>
+    <sys_hub_flow_component action="DELETE" query="flow=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN86a7dffedb18a010969430d86896190c,c6a7dffedb18a010969430d86896190f,d3c71332db58a010969430d868961970"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Invoke Transaction">6094df7edb18a010969430d8689619dd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>86a7dffedb18a010969430d86896190c</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:54</sys_updated_on>
+        <ui_id>6f2fea6b-fca8-46f5-b266-1d0d24a5df0a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=86a7dffedb18a010969430d86896190c"/>
+    <sys_element_mapping action="DELETE" query="id=86a7dffedb18a010969430d86896190c"/>
+    <sys_element_mapping action="DELETE">
+        <field>endpoint</field>
+        <id>86a7dffedb18a010969430d86896190c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>4ea7dffedb18a010969430d86896190e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 10:51:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.endpoint}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>key</field>
+        <id>86a7dffedb18a010969430d86896190c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>c2a7dffedb18a010969430d86896190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:21:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>method</field>
+        <id>86a7dffedb18a010969430d86896190c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-12 11:45:14</sys_created_on>
+        <sys_id>27999d7b1bdc241064bf11fc2d4bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 11:45:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.method}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>params</field>
+        <id>86a7dffedb18a010969430d86896190c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>02a7dffedb18a010969430d86896190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:21:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.params}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sci</field>
+        <id>86a7dffedb18a010969430d86896190c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>8aa7dffedb18a010969430d86896190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:21:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.method.smart_contract_instance}}</value>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</flow>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id/>
+        <subflow display_value="Prepare Tx">825cf6741b5c241064bf11fc2d4bcbe3</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>c6a7dffedb18a010969430d86896190f</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:54</sys_updated_on>
+        <ui_id>1311b6e8-0432-4ff2-a2ca-a70182984b3f</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="DELETE" query="document_key=c6a7dffedb18a010969430d86896190f"/>
+    <sys_element_mapping action="DELETE" query="id=c6a7dffedb18a010969430d86896190f"/>
+    <sys_element_mapping action="DELETE">
+        <field>tx</field>
+        <id>c6a7dffedb18a010969430d86896190f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:22:35</sys_created_on>
+        <sys_id>cfc71332db58a010969430d86896196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:22:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_825cf6741b5c241064bf11fc2d4bcbe3</table>
+        <value>{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}</value>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</flow>
+        <inputs/>
+        <inputs/>
+        <order>3</order>
+        <parent_ui_id/>
+        <subflow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:22:35</sys_created_on>
+        <sys_id>d3c71332db58a010969430d868961970</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:54</sys_updated_on>
+        <ui_id>020fe61d-d5d6-46f1-81c6-86aeae2e9cc0</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="DELETE" query="document_key=d3c71332db58a010969430d868961970"/>
+    <sys_element_mapping action="DELETE" query="id=d3c71332db58a010969430d868961970"/>
+    <sys_element_mapping action="DELETE">
+        <field>tx</field>
+        <id>d3c71332db58a010969430d868961970</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:22:35</sys_created_on>
+        <sys_id>57c71332db58a010969430d868961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:22:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f7aaaf4ddbd46410969430d8689619d4</table>
+        <value>{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="DELETE" query="id=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN2d63d9191b98641064bf11fc2d4bcb29"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>6963d9191b98641064bf11fc2d4bcb28</id>
+        <name>Invoke method</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 16:53:15</sys_created_on>
+        <sys_id>2d63d9191b98641064bf11fc2d4bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 16:53:15</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="DELETE" query="model=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN0ef1d33edb18a010969430d868961962,71a79ffedb18a010969430d8689619fe,96f1db3edb18a010969430d86896193e,b5a79ffedb18a010969430d86896199e,daf1db3edb18a010969430d868961943"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bdaf2e1f-f30a-419f-b16f-963c17550300</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_ethereum_method</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>method</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>method</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</model>
+        <model_id>6963d9191b98641064bf11fc2d4bcb28</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethereum_method">x_snc_ethereum_method</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 17:57:07</sys_created_on>
+        <sys_id>0ef1d33edb18a010969430d868961962</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 17:57:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=08b0b7fa-1811-4a35-9f22-48def77d02fc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_ethsign_key</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>key</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</model>
+        <model_id>6963d9191b98641064bf11fc2d4bcb28</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethsign_key">x_snc_ethsign_key</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:57</sys_created_on>
+        <sys_id>71a79ffedb18a010969430d8689619fe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 10:43:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6badb014-fb70-4b56-a564-78baed8a7a82</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>params</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>params</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</model>
+        <model_id>6963d9191b98641064bf11fc2d4bcb28</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 17:57:08</sys_created_on>
+        <sys_id>96f1db3edb18a010969430d86896193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 17:57:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f2942b3c-24fe-4576-a14b-fb31398612f6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_ethereum_endpoint</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>endpoint</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>endpoint</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</model>
+        <model_id>6963d9191b98641064bf11fc2d4bcb28</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethereum_endpoint">x_snc_ethereum_endpoint</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:57</sys_created_on>
+        <sys_id>b5a79ffedb18a010969430d86896199e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 10:50:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a8cb4a49-fc71-4457-9af9-87ebcc9880f4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>send_anyway</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>send_anyway</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</model>
+        <model_id>6963d9191b98641064bf11fc2d4bcb28</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 17:57:08</sys_created_on>
+        <sys_id>daf1db3edb18a010969430d868961943</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 10:43:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="DELETE" query="flow=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN86a7dffedb18a010969430d86896190c"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Invoke Transaction">6094df7edb18a010969430d8689619dd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>86a7dffedb18a010969430d86896190c</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:54</sys_updated_on>
+        <ui_id>6f2fea6b-fca8-46f5-b266-1d0d24a5df0a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=86a7dffedb18a010969430d86896190c"/>
+    <sys_element_mapping action="DELETE" query="id=86a7dffedb18a010969430d86896190c"/>
+    <sys_element_mapping action="DELETE">
+        <field>endpoint</field>
+        <id>86a7dffedb18a010969430d86896190c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>4ea7dffedb18a010969430d86896190e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 10:51:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.endpoint}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>key</field>
+        <id>86a7dffedb18a010969430d86896190c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>c2a7dffedb18a010969430d86896190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:21:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>method</field>
+        <id>86a7dffedb18a010969430d86896190c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-12 11:45:14</sys_created_on>
+        <sys_id>27999d7b1bdc241064bf11fc2d4bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 11:45:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.method}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>params</field>
+        <id>86a7dffedb18a010969430d86896190c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>02a7dffedb18a010969430d86896190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:21:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.params}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sci</field>
+        <id>86a7dffedb18a010969430d86896190c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>8aa7dffedb18a010969430d86896190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:21:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.method.smart_contract_instance}}</value>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT INc6a7dffedb18a010969430d86896190f,d3c71332db58a010969430d868961970"/>
+    <sys_hub_sub_flow_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</flow>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id/>
+        <subflow display_value="Prepare Tx">825cf6741b5c241064bf11fc2d4bcbe3</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:58</sys_created_on>
+        <sys_id>c6a7dffedb18a010969430d86896190f</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:54</sys_updated_on>
+        <ui_id>1311b6e8-0432-4ff2-a2ca-a70182984b3f</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="DELETE" query="document_key=c6a7dffedb18a010969430d86896190f"/>
+    <sys_element_mapping action="DELETE" query="id=c6a7dffedb18a010969430d86896190f"/>
+    <sys_element_mapping action="DELETE">
+        <field>tx</field>
+        <id>c6a7dffedb18a010969430d86896190f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:22:35</sys_created_on>
+        <sys_id>cfc71332db58a010969430d86896196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:22:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_825cf6741b5c241064bf11fc2d4bcbe3</table>
+        <value>{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}</value>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</flow>
+        <inputs/>
+        <inputs/>
+        <order>3</order>
+        <parent_ui_id/>
+        <subflow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:22:35</sys_created_on>
+        <sys_id>d3c71332db58a010969430d868961970</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:54</sys_updated_on>
+        <ui_id>020fe61d-d5d6-46f1-81c6-86aeae2e9cc0</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="DELETE" query="document_key=d3c71332db58a010969430d868961970"/>
+    <sys_element_mapping action="DELETE" query="id=d3c71332db58a010969430d868961970"/>
+    <sys_element_mapping action="DELETE">
+        <field>tx</field>
+        <id>d3c71332db58a010969430d868961970</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:22:35</sys_created_on>
+        <sys_id>57c71332db58a010969430d868961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:22:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f7aaaf4ddbd46410969430d8689619d4</table>
+        <value>{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN16f1db3edb18a010969430d868961942,96f1db3edb18a010969430d86896194a,b9a79ffedb18a010969430d8689619fc,caa7dffedb18a010969430d868961904,def1db3edb18a010969430d86896193c"/>
+    <sys_documentation action="DELETE">
+        <element>params</element>
+        <help/>
+        <hint/>
+        <label>params</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 17:57:08</sys_created_on>
+        <sys_id>16f1db3edb18a010969430d868961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 17:57:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>send_anyway</element>
+        <help/>
+        <hint/>
+        <label>send_anyway</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 17:57:08</sys_created_on>
+        <sys_id>96f1db3edb18a010969430d86896194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 17:57:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>endpoint</element>
+        <help/>
+        <hint/>
+        <label>endpoint</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:57</sys_created_on>
+        <sys_id>b9a79ffedb18a010969430d8689619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:21:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>key</element>
+        <help/>
+        <hint/>
+        <label>key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:21:57</sys_created_on>
+        <sys_id>caa7dffedb18a010969430d868961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:21:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>method</element>
+        <help/>
+        <hint/>
+        <label>method</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 17:57:08</sys_created_on>
+        <sys_id>def1db3edb18a010969430d86896193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 17:57:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN4f589732db58a010969430d86896192c"/>
+    <sys_flow_subflow_plan action="DELETE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@1ea68df</plan>
+        <plan_id display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</plan_id>
+        <snapshot>f9585732db58a010969430d86896198c</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f589732db58a010969430d86896192c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:54</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>invoke_method</internal_name>
+        <label_cache>[{"name":"subflow.method.state_mutability","label":"Input➛method➛State Mutability","reference":"","reference_display":"State Mutability","type":"choice","base_type":"choice","parent_table_name":"x_snc_ethereum_method","column_name":"state_mutability"},{"name":"subflow.method","label":"Input➛method","reference":"x_snc_ethereum_method","reference_display":"Method","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bdaf2e1f-f30a-419f-b16f-963c17550300","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"020fe61d-d5d6-46f1-81c6-86aeae2e9cc0.receipt","label":"3➛receipt","reference_display":"receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a9268e26-7d5b-4543-a756-086208d5c538"}},{"name":"6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx","label":"1➛tx","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"02808c5b-57c6-4396-8c2e-3e2726f96159"}},{"name":"6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.encoded_method","label":"1➛encoded_method","reference_display":"encoded_method","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"787ee4fd-6552-4876-a242-0bf3a6e9932b"}},{"name":"subflow.method.smart_contract_instance","label":"Input➛method➛Smart Contract Instance","reference":"x_snc_ethereum_smart_contract_instance","reference_display":"Smart Contract Instance","type":"reference","base_type":"reference","parent_table_name":"x_snc_ethereum_method","column_name":"smart_contract_instance"},{"name":"subflow.params","label":"Input➛params","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6badb014-fb70-4b56-a564-78baed8a7a82","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.key","label":"Input➛key","reference":"x_snc_ethsign_key","reference_display":"Key","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"08b0b7fa-1811-4a35-9f22-48def77d02fc"}},{"name":"subflow.endpoint","label":"Input➛endpoint","reference":"x_snc_ethereum_endpoint","reference_display":"Endpoint","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f2942b3c-24fe-4576-a14b-fb31398612f6","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master>true</master>
+        <name>Invoke method</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Invoke method">6963d9191b98641064bf11fc2d4bcb28</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f9585732db58a010969430d86896198c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:52</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=f9585732db58a010969430d86896198c"/>
+    <sys_variable_value action="DELETE" query="document_key=f9585732db58a010969430d86896198c"/>
+    <sys_hub_flow_component action="DELETE" query="flow=f9585732db58a010969430d86896198c^sys_idNOT IN12589732db58a010969430d868961904,da585732db58a010969430d8689619f5,e2589732db58a010969430d868961905"/>
+    <sys_hub_sub_flow_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoke method">f9585732db58a010969430d86896198c</flow>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id/>
+        <subflow display_value="Prepare Tx">825cf6741b5c241064bf11fc2d4bcbe3</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>12589732db58a010969430d868961904</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:52</sys_updated_on>
+        <ui_id>1311b6e8-0432-4ff2-a2ca-a70182984b3f</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="DELETE" query="document_key=12589732db58a010969430d868961904"/>
+    <sys_element_mapping action="DELETE" query="id=12589732db58a010969430d868961904"/>
+    <sys_element_mapping action="DELETE">
+        <field>tx</field>
+        <id>12589732db58a010969430d868961904</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>62589732db58a010969430d868961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_825cf6741b5c241064bf11fc2d4bcbe3</table>
+        <value>{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Invoke Transaction">6094df7edb18a010969430d8689619dd</action_type>
+        <action_type_parent display_value="Create Invoke Transaction">95525f3edb18a010969430d8689619a5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>6094df7edb18a010969430d8689619dd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Invoke method">f9585732db58a010969430d86896198c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>da585732db58a010969430d8689619f5</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:52</sys_updated_on>
+        <ui_id>6f2fea6b-fca8-46f5-b266-1d0d24a5df0a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=da585732db58a010969430d8689619f5"/>
+    <sys_element_mapping action="DELETE" query="id=da585732db58a010969430d8689619f5"/>
+    <sys_element_mapping action="DELETE">
+        <field>endpoint</field>
+        <id>da585732db58a010969430d8689619f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>1a589732db58a010969430d868961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.endpoint}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>key</field>
+        <id>da585732db58a010969430d8689619f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>9e589732db58a010969430d868961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>method</field>
+        <id>da585732db58a010969430d8689619f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-12 11:45:22</sys_created_on>
+        <sys_id>69a911bb1bdc241064bf11fc2d4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 11:45:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.method}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>params</field>
+        <id>da585732db58a010969430d8689619f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>da589732db58a010969430d868961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.params}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sci</field>
+        <id>da585732db58a010969430d8689619f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>56589732db58a010969430d868961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.method.smart_contract_instance}}</value>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoke method">f9585732db58a010969430d86896198c</flow>
+        <inputs/>
+        <inputs/>
+        <order>3</order>
+        <parent_ui_id/>
+        <subflow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>e2589732db58a010969430d868961905</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:52</sys_updated_on>
+        <ui_id>020fe61d-d5d6-46f1-81c6-86aeae2e9cc0</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="DELETE" query="document_key=e2589732db58a010969430d868961905"/>
+    <sys_element_mapping action="DELETE" query="id=e2589732db58a010969430d868961905"/>
+    <sys_element_mapping action="DELETE">
+        <field>tx</field>
+        <id>e2589732db58a010969430d868961905</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>26589732db58a010969430d868961906</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f7aaaf4ddbd46410969430d8689619d4</table>
+        <value>{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="DELETE" query="id=f9585732db58a010969430d86896198c^sys_idNOT INf5585732db58a010969430d86896198d"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>f9585732db58a010969430d86896198c</id>
+        <name>Invoke method</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:57</sys_created_on>
+        <sys_id>f5585732db58a010969430d86896198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:24:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="DELETE" query="model=f9585732db58a010969430d86896198c^sys_idNOT IN42585732db58a010969430d8689619c4,56585732db58a010969430d8689619d8,9e585732db58a010969430d8689619e3,ca585732db58a010969430d8689619cc,f9585732db58a010969430d86896198e"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6badb014-fb70-4b56-a564-78baed8a7a82</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>params</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>params</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Invoke method">f9585732db58a010969430d86896198c</model>
+        <model_id>f9585732db58a010969430d86896198c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:58</sys_created_on>
+        <sys_id>42585732db58a010969430d8689619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:24:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f2942b3c-24fe-4576-a14b-fb31398612f6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_ethereum_endpoint</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>endpoint</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>endpoint</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Invoke method">f9585732db58a010969430d86896198c</model>
+        <model_id>f9585732db58a010969430d86896198c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethereum_endpoint">x_snc_ethereum_endpoint</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:59</sys_created_on>
+        <sys_id>56585732db58a010969430d8689619d8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 10:51:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=08b0b7fa-1811-4a35-9f22-48def77d02fc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_ethsign_key</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>key</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Invoke method">f9585732db58a010969430d86896198c</model>
+        <model_id>f9585732db58a010969430d86896198c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethsign_key">x_snc_ethsign_key</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:59</sys_created_on>
+        <sys_id>9e585732db58a010969430d8689619e3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 10:43:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a8cb4a49-fc71-4457-9af9-87ebcc9880f4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>send_anyway</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>send_anyway</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Invoke method">f9585732db58a010969430d86896198c</model>
+        <model_id>f9585732db58a010969430d86896198c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:58</sys_created_on>
+        <sys_id>ca585732db58a010969430d8689619cc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 10:43:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bdaf2e1f-f30a-419f-b16f-963c17550300</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_ethereum_method</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>method</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>method</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Invoke method">f9585732db58a010969430d86896198c</model>
+        <model_id>f9585732db58a010969430d86896198c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethereum_method">x_snc_ethereum_method</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:57</sys_created_on>
+        <sys_id>f9585732db58a010969430d86896198e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:24:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="DELETE" query="flow=f9585732db58a010969430d86896198c^sys_idNOT INda585732db58a010969430d8689619f5"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Invoke Transaction">6094df7edb18a010969430d8689619dd</action_type>
+        <action_type_parent display_value="Create Invoke Transaction">95525f3edb18a010969430d8689619a5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>6094df7edb18a010969430d8689619dd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Invoke method">f9585732db58a010969430d86896198c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>da585732db58a010969430d8689619f5</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:52</sys_updated_on>
+        <ui_id>6f2fea6b-fca8-46f5-b266-1d0d24a5df0a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=da585732db58a010969430d8689619f5"/>
+    <sys_element_mapping action="DELETE" query="id=da585732db58a010969430d8689619f5"/>
+    <sys_element_mapping action="DELETE">
+        <field>endpoint</field>
+        <id>da585732db58a010969430d8689619f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>1a589732db58a010969430d868961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.endpoint}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>key</field>
+        <id>da585732db58a010969430d8689619f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>9e589732db58a010969430d868961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>method</field>
+        <id>da585732db58a010969430d8689619f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-12 11:45:22</sys_created_on>
+        <sys_id>69a911bb1bdc241064bf11fc2d4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 11:45:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.method}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>params</field>
+        <id>da585732db58a010969430d8689619f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>da589732db58a010969430d868961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.params}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sci</field>
+        <id>da585732db58a010969430d8689619f5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>56589732db58a010969430d868961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd</table>
+        <value>{{subflow.method.smart_contract_instance}}</value>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=f9585732db58a010969430d86896198c^sys_idNOT IN12589732db58a010969430d868961904,e2589732db58a010969430d868961905"/>
+    <sys_hub_sub_flow_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoke method">f9585732db58a010969430d86896198c</flow>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id/>
+        <subflow display_value="Prepare Tx">825cf6741b5c241064bf11fc2d4bcbe3</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>12589732db58a010969430d868961904</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:52</sys_updated_on>
+        <ui_id>1311b6e8-0432-4ff2-a2ca-a70182984b3f</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="DELETE" query="document_key=12589732db58a010969430d868961904"/>
+    <sys_element_mapping action="DELETE" query="id=12589732db58a010969430d868961904"/>
+    <sys_element_mapping action="DELETE">
+        <field>tx</field>
+        <id>12589732db58a010969430d868961904</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>62589732db58a010969430d868961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_825cf6741b5c241064bf11fc2d4bcbe3</table>
+        <value>{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}</value>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoke method">f9585732db58a010969430d86896198c</flow>
+        <inputs/>
+        <inputs/>
+        <order>3</order>
+        <parent_ui_id/>
+        <subflow display_value="Execute Tx">f7aaaf4ddbd46410969430d8689619d4</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>e2589732db58a010969430d868961905</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:52</sys_updated_on>
+        <ui_id>020fe61d-d5d6-46f1-81c6-86aeae2e9cc0</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="DELETE" query="document_key=e2589732db58a010969430d868961905"/>
+    <sys_element_mapping action="DELETE" query="id=e2589732db58a010969430d868961905"/>
+    <sys_element_mapping action="DELETE">
+        <field>tx</field>
+        <id>e2589732db58a010969430d868961905</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:25:00</sys_created_on>
+        <sys_id>26589732db58a010969430d868961906</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:25:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f7aaaf4ddbd46410969430d8689619d4</table>
+        <value>{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c^sys_idNOT IN16585732db58a010969430d8689619d4,31585732db58a010969430d868961996,5e585732db58a010969430d8689619df,8a585732db58a010969430d8689619c8,d6585732db58a010969430d8689619eb"/>
+    <sys_documentation action="DELETE">
+        <element>send_anyway</element>
+        <help/>
+        <hint/>
+        <label>send_anyway</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:59</sys_created_on>
+        <sys_id>16585732db58a010969430d8689619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:24:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>method</element>
+        <help/>
+        <hint/>
+        <label>method</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:57</sys_created_on>
+        <sys_id>31585732db58a010969430d868961996</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:24:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>endpoint</element>
+        <help/>
+        <hint/>
+        <label>endpoint</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:59</sys_created_on>
+        <sys_id>5e585732db58a010969430d8689619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:24:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>params</element>
+        <help/>
+        <hint/>
+        <label>params</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:58</sys_created_on>
+        <sys_id>8a585732db58a010969430d8689619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:24:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>key</element>
+        <help/>
+        <hint/>
+        <label>key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 18:24:59</sys_created_on>
+        <sys_id>d6585732db58a010969430d8689619eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 18:24:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Ethereum">3c0e4434db442010969430d868961918</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>sys_hub_flow_6963d9191b98641064bf11fc2d4bcb28</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;invoke_method&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"subflow.method.state_mutability","label":"Input➛method➛State Mutability","reference":"","reference_display":"State Mutability","type":"choice","base_type":"choice","parent_table_name":"x_snc_ethereum_method","column_name":"state_mutability"},{"name":"subflow.method","label":"Input➛method","reference":"x_snc_ethereum_method","reference_display":"Method","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bdaf2e1f-f30a-419f-b16f-963c17550300","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"020fe61d-d5d6-46f1-81c6-86aeae2e9cc0.receipt","label":"3➛receipt","reference_display":"receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a9268e26-7d5b-4543-a756-086208d5c538"}},{"name":"6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx","label":"1➛tx","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"02808c5b-57c6-4396-8c2e-3e2726f96159"}},{"name":"6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.encoded_method","label":"1➛encoded_method","reference_display":"encoded_method","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"787ee4fd-6552-4876-a242-0bf3a6e9932b"}},{"name":"subflow.method.smart_contract_instance","label":"Input➛method➛Smart Contract Instance","reference":"x_snc_ethereum_smart_contract_instance","reference_display":"Smart Contract Instance","type":"reference","base_type":"reference","parent_table_name":"x_snc_ethereum_method","column_name":"smart_contract_instance"},{"name":"subflow.params","label":"Input➛params","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6badb014-fb70-4b56-a564-78baed8a7a82","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.key","label":"Input➛key","reference":"x_snc_ethsign_key","reference_display":"Key","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"08b0b7fa-1811-4a35-9f22-48def77d02fc"}},{"name":"subflow.endpoint","label":"Input➛endpoint","reference":"x_snc_ethereum_endpoint","reference_display":"Endpoint","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f2942b3c-24fe-4576-a14b-fb31398612f6","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]&lt;/label_cache&gt;&lt;latest_snapshot&gt;f9585732db58a010969430d86896198c&lt;/latest_snapshot&gt;&lt;master_snapshot&gt;f9585732db58a010969430d86896198c&lt;/master_snapshot&gt;&lt;name&gt;Invoke method&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-04 16:53:15&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;Invoke method&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_6963d9191b98641064bf11fc2d4bcb28&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:54&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=6963d9191b98641064bf11fc2d4bcb28"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=6963d9191b98641064bf11fc2d4bcb28"/&gt;&lt;sys_hub_flow_component action="delete_multiple" query="flow=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN86a7dffedb18a010969430d86896190c,c6a7dffedb18a010969430d86896190f,d3c71332db58a010969430d868961970"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Create Invoke Transaction"&gt;6094df7edb18a010969430d8689619dd&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;86a7dffedb18a010969430d86896190c&lt;/sys_id&gt;&lt;sys_mod_count&gt;36&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:54&lt;/sys_updated_on&gt;&lt;ui_id&gt;6f2fea6b-fca8-46f5-b266-1d0d24a5df0a&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=86a7dffedb18a010969430d86896190c"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=86a7dffedb18a010969430d86896190c"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;endpoint&lt;/field&gt;&lt;id&gt;86a7dffedb18a010969430d86896190c&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;4ea7dffedb18a010969430d86896190e&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 10:51:03&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.endpoint}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;key&lt;/field&gt;&lt;id&gt;86a7dffedb18a010969430d86896190c&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;c2a7dffedb18a010969430d86896190f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:21:58&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.key}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;method&lt;/field&gt;&lt;id&gt;86a7dffedb18a010969430d86896190c&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-12 11:45:14&lt;/sys_created_on&gt;&lt;sys_id&gt;27999d7b1bdc241064bf11fc2d4bcbd7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 11:45:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.method}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;params&lt;/field&gt;&lt;id&gt;86a7dffedb18a010969430d86896190c&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;02a7dffedb18a010969430d86896190f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:21:58&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.params}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sci&lt;/field&gt;&lt;id&gt;86a7dffedb18a010969430d86896190c&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;8aa7dffedb18a010969430d86896190e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:21:58&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.method.smart_contract_instance}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_sub_flow_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/flow&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;subflow display_value="Prepare Tx"&gt;825cf6741b5c241064bf11fc2d4bcbe3&lt;/subflow&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;c6a7dffedb18a010969430d86896190f&lt;/sys_id&gt;&lt;sys_mod_count&gt;36&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:54&lt;/sys_updated_on&gt;&lt;ui_id&gt;1311b6e8-0432-4ff2-a2ca-a70182984b3f&lt;/ui_id&gt;&lt;/sys_hub_sub_flow_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=c6a7dffedb18a010969430d86896190f"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=c6a7dffedb18a010969430d86896190f"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;tx&lt;/field&gt;&lt;id&gt;c6a7dffedb18a010969430d86896190f&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:22:35&lt;/sys_created_on&gt;&lt;sys_id&gt;cfc71332db58a010969430d86896196f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:22:35&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_825cf6741b5c241064bf11fc2d4bcbe3&lt;/table&gt;&lt;value&gt;{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_sub_flow_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/flow&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;subflow display_value="Execute Tx"&gt;f7aaaf4ddbd46410969430d8689619d4&lt;/subflow&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:22:35&lt;/sys_created_on&gt;&lt;sys_id&gt;d3c71332db58a010969430d868961970&lt;/sys_id&gt;&lt;sys_mod_count&gt;34&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:54&lt;/sys_updated_on&gt;&lt;ui_id&gt;020fe61d-d5d6-46f1-81c6-86aeae2e9cc0&lt;/ui_id&gt;&lt;/sys_hub_sub_flow_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=d3c71332db58a010969430d868961970"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=d3c71332db58a010969430d868961970"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;tx&lt;/field&gt;&lt;id&gt;d3c71332db58a010969430d868961970&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:22:35&lt;/sys_created_on&gt;&lt;sys_id&gt;57c71332db58a010969430d868961971&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:22:35&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_f7aaaf4ddbd46410969430d8689619d4&lt;/table&gt;&lt;value&gt;{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN2d63d9191b98641064bf11fc2d4bcb29"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/id&gt;&lt;name&gt;Invoke method&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-04 16:53:15&lt;/sys_created_on&gt;&lt;sys_id&gt;2d63d9191b98641064bf11fc2d4bcb29&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-04 16:53:15&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN0ef1d33edb18a010969430d868961962,71a79ffedb18a010969430d8689619fe,96f1db3edb18a010969430d86896193e,b5a79ffedb18a010969430d86896199e,daf1db3edb18a010969430d868961943"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bdaf2e1f-f30a-419f-b16f-963c17550300&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;x_snc_ethereum_method&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;method&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;method&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/model&gt;&lt;model_id&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="x_snc_ethereum_method"&gt;x_snc_ethereum_method&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 17:57:07&lt;/sys_created_on&gt;&lt;sys_id&gt;0ef1d33edb18a010969430d868961962&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 17:57:07&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=08b0b7fa-1811-4a35-9f22-48def77d02fc&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;x_snc_ethsign_key&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;key&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;key&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/model&gt;&lt;model_id&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;4&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="x_snc_ethsign_key"&gt;x_snc_ethsign_key&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:57&lt;/sys_created_on&gt;&lt;sys_id&gt;71a79ffedb18a010969430d8689619fe&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 10:43:45&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6badb014-fb70-4b56-a564-78baed8a7a82&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;params&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;params&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/model&gt;&lt;model_id&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 17:57:08&lt;/sys_created_on&gt;&lt;sys_id&gt;96f1db3edb18a010969430d86896193e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 17:57:08&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f2942b3c-24fe-4576-a14b-fb31398612f6&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;x_snc_ethereum_endpoint&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;endpoint&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;endpoint&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/model&gt;&lt;model_id&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="x_snc_ethereum_endpoint"&gt;x_snc_ethereum_endpoint&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:57&lt;/sys_created_on&gt;&lt;sys_id&gt;b5a79ffedb18a010969430d86896199e&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 10:50:43&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a8cb4a49-fc71-4457-9af9-87ebcc9880f4&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;3&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;false&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;send_anyway&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;send_anyway&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/model&gt;&lt;model_id&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;5&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 17:57:08&lt;/sys_created_on&gt;&lt;sys_id&gt;daf1db3edb18a010969430d868961943&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 10:43:45&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN86a7dffedb18a010969430d86896190c"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Create Invoke Transaction"&gt;6094df7edb18a010969430d8689619dd&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;86a7dffedb18a010969430d86896190c&lt;/sys_id&gt;&lt;sys_mod_count&gt;36&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:54&lt;/sys_updated_on&gt;&lt;ui_id&gt;6f2fea6b-fca8-46f5-b266-1d0d24a5df0a&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=86a7dffedb18a010969430d86896190c"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=86a7dffedb18a010969430d86896190c"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;endpoint&lt;/field&gt;&lt;id&gt;86a7dffedb18a010969430d86896190c&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;4ea7dffedb18a010969430d86896190e&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 10:51:03&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.endpoint}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;key&lt;/field&gt;&lt;id&gt;86a7dffedb18a010969430d86896190c&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;c2a7dffedb18a010969430d86896190f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:21:58&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.key}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;method&lt;/field&gt;&lt;id&gt;86a7dffedb18a010969430d86896190c&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-12 11:45:14&lt;/sys_created_on&gt;&lt;sys_id&gt;27999d7b1bdc241064bf11fc2d4bcbd7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 11:45:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.method}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;params&lt;/field&gt;&lt;id&gt;86a7dffedb18a010969430d86896190c&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;02a7dffedb18a010969430d86896190f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:21:58&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.params}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sci&lt;/field&gt;&lt;id&gt;86a7dffedb18a010969430d86896190c&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;8aa7dffedb18a010969430d86896190e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:21:58&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.method.smart_contract_instance}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_sub_flow_instance action="delete_multiple" query="flow=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT INc6a7dffedb18a010969430d86896190f,d3c71332db58a010969430d868961970"/&gt;&lt;sys_hub_sub_flow_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/flow&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;subflow display_value="Prepare Tx"&gt;825cf6741b5c241064bf11fc2d4bcbe3&lt;/subflow&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:58&lt;/sys_created_on&gt;&lt;sys_id&gt;c6a7dffedb18a010969430d86896190f&lt;/sys_id&gt;&lt;sys_mod_count&gt;36&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:54&lt;/sys_updated_on&gt;&lt;ui_id&gt;1311b6e8-0432-4ff2-a2ca-a70182984b3f&lt;/ui_id&gt;&lt;/sys_hub_sub_flow_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=c6a7dffedb18a010969430d86896190f"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=c6a7dffedb18a010969430d86896190f"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;tx&lt;/field&gt;&lt;id&gt;c6a7dffedb18a010969430d86896190f&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:22:35&lt;/sys_created_on&gt;&lt;sys_id&gt;cfc71332db58a010969430d86896196f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:22:35&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_825cf6741b5c241064bf11fc2d4bcbe3&lt;/table&gt;&lt;value&gt;{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_sub_flow_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/flow&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;subflow display_value="Execute Tx"&gt;f7aaaf4ddbd46410969430d8689619d4&lt;/subflow&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:22:35&lt;/sys_created_on&gt;&lt;sys_id&gt;d3c71332db58a010969430d868961970&lt;/sys_id&gt;&lt;sys_mod_count&gt;34&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:54&lt;/sys_updated_on&gt;&lt;ui_id&gt;020fe61d-d5d6-46f1-81c6-86aeae2e9cc0&lt;/ui_id&gt;&lt;/sys_hub_sub_flow_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=d3c71332db58a010969430d868961970"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=d3c71332db58a010969430d868961970"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;tx&lt;/field&gt;&lt;id&gt;d3c71332db58a010969430d868961970&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:22:35&lt;/sys_created_on&gt;&lt;sys_id&gt;57c71332db58a010969430d868961971&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:22:35&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_f7aaaf4ddbd46410969430d8689619d4&lt;/table&gt;&lt;value&gt;{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN16f1db3edb18a010969430d868961942,96f1db3edb18a010969430d86896194a,b9a79ffedb18a010969430d8689619fc,caa7dffedb18a010969430d868961904,def1db3edb18a010969430d86896193c"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;params&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;params&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 17:57:08&lt;/sys_created_on&gt;&lt;sys_id&gt;16f1db3edb18a010969430d868961942&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 17:57:08&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;send_anyway&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;send_anyway&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 17:57:08&lt;/sys_created_on&gt;&lt;sys_id&gt;96f1db3edb18a010969430d86896194a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 17:57:08&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;endpoint&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;endpoint&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:57&lt;/sys_created_on&gt;&lt;sys_id&gt;b9a79ffedb18a010969430d8689619fc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:21:57&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;key&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;key&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:21:57&lt;/sys_created_on&gt;&lt;sys_id&gt;caa7dffedb18a010969430d868961904&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:21:57&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;method&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;method&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_6963d9191b98641064bf11fc2d4bcb28&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 17:57:08&lt;/sys_created_on&gt;&lt;sys_id&gt;def1db3edb18a010969430d86896193c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 17:57:08&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=6963d9191b98641064bf11fc2d4bcb28^sys_idNOT IN4f589732db58a010969430d86896192c"/&gt;&lt;sys_flow_subflow_plan action="INSERT_OR_UPDATE"&gt;&lt;plan&gt;com.snc.process_flow.engine.ProcessPlan@1ea68df&lt;/plan&gt;&lt;plan_id display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/plan_id&gt;&lt;snapshot&gt;f9585732db58a010969430d86896198c&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:02&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4f589732db58a010969430d86896192c&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:54&lt;/sys_updated_on&gt;&lt;/sys_flow_subflow_plan&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;invoke_method&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"subflow.method.state_mutability","label":"Input➛method➛State Mutability","reference":"","reference_display":"State Mutability","type":"choice","base_type":"choice","parent_table_name":"x_snc_ethereum_method","column_name":"state_mutability"},{"name":"subflow.method","label":"Input➛method","reference":"x_snc_ethereum_method","reference_display":"Method","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bdaf2e1f-f30a-419f-b16f-963c17550300","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"020fe61d-d5d6-46f1-81c6-86aeae2e9cc0.receipt","label":"3➛receipt","reference_display":"receipt","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a9268e26-7d5b-4543-a756-086208d5c538"}},{"name":"6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx","label":"1➛tx","reference":"x_snc_ethereum_transaction","reference_display":"Transaction","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"02808c5b-57c6-4396-8c2e-3e2726f96159"}},{"name":"6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.encoded_method","label":"1➛encoded_method","reference_display":"encoded_method","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"787ee4fd-6552-4876-a242-0bf3a6e9932b"}},{"name":"subflow.method.smart_contract_instance","label":"Input➛method➛Smart Contract Instance","reference":"x_snc_ethereum_smart_contract_instance","reference_display":"Smart Contract Instance","type":"reference","base_type":"reference","parent_table_name":"x_snc_ethereum_method","column_name":"smart_contract_instance"},{"name":"subflow.params","label":"Input➛params","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6badb014-fb70-4b56-a564-78baed8a7a82","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.key","label":"Input➛key","reference":"x_snc_ethsign_key","reference_display":"Key","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"08b0b7fa-1811-4a35-9f22-48def77d02fc"}},{"name":"subflow.endpoint","label":"Input➛endpoint","reference":"x_snc_ethereum_endpoint","reference_display":"Endpoint","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f2942b3c-24fe-4576-a14b-fb31398612f6","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Invoke method&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Invoke method"&gt;6963d9191b98641064bf11fc2d4bcb28&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f9585732db58a010969430d86896198c&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:52&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f9585732db58a010969430d86896198c"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=f9585732db58a010969430d86896198c"/&gt;&lt;sys_hub_flow_component action="delete_multiple" query="flow=f9585732db58a010969430d86896198c^sys_idNOT IN12589732db58a010969430d868961904,da585732db58a010969430d8689619f5,e2589732db58a010969430d868961905"/&gt;&lt;sys_hub_sub_flow_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;f9585732db58a010969430d86896198c&lt;/flow&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;subflow display_value="Prepare Tx"&gt;825cf6741b5c241064bf11fc2d4bcbe3&lt;/subflow&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;12589732db58a010969430d868961904&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:52&lt;/sys_updated_on&gt;&lt;ui_id&gt;1311b6e8-0432-4ff2-a2ca-a70182984b3f&lt;/ui_id&gt;&lt;/sys_hub_sub_flow_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=12589732db58a010969430d868961904"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=12589732db58a010969430d868961904"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;tx&lt;/field&gt;&lt;id&gt;12589732db58a010969430d868961904&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;62589732db58a010969430d868961905&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_825cf6741b5c241064bf11fc2d4bcbe3&lt;/table&gt;&lt;value&gt;{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Create Invoke Transaction"&gt;6094df7edb18a010969430d8689619dd&lt;/action_type&gt;&lt;action_type_parent display_value="Create Invoke Transaction"&gt;95525f3edb18a010969430d8689619a5&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;6094df7edb18a010969430d8689619dd&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;f9585732db58a010969430d86896198c&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;da585732db58a010969430d8689619f5&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:52&lt;/sys_updated_on&gt;&lt;ui_id&gt;6f2fea6b-fca8-46f5-b266-1d0d24a5df0a&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=da585732db58a010969430d8689619f5"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=da585732db58a010969430d8689619f5"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;endpoint&lt;/field&gt;&lt;id&gt;da585732db58a010969430d8689619f5&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;1a589732db58a010969430d868961903&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.endpoint}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;key&lt;/field&gt;&lt;id&gt;da585732db58a010969430d8689619f5&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;9e589732db58a010969430d868961903&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.key}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;method&lt;/field&gt;&lt;id&gt;da585732db58a010969430d8689619f5&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-12 11:45:22&lt;/sys_created_on&gt;&lt;sys_id&gt;69a911bb1bdc241064bf11fc2d4bcb22&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 11:45:22&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.method}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;params&lt;/field&gt;&lt;id&gt;da585732db58a010969430d8689619f5&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;da589732db58a010969430d868961903&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.params}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sci&lt;/field&gt;&lt;id&gt;da585732db58a010969430d8689619f5&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;56589732db58a010969430d868961903&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.method.smart_contract_instance}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_sub_flow_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;f9585732db58a010969430d86896198c&lt;/flow&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;subflow display_value="Execute Tx"&gt;f7aaaf4ddbd46410969430d8689619d4&lt;/subflow&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;e2589732db58a010969430d868961905&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:52&lt;/sys_updated_on&gt;&lt;ui_id&gt;020fe61d-d5d6-46f1-81c6-86aeae2e9cc0&lt;/ui_id&gt;&lt;/sys_hub_sub_flow_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=e2589732db58a010969430d868961905"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=e2589732db58a010969430d868961905"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;tx&lt;/field&gt;&lt;id&gt;e2589732db58a010969430d868961905&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;26589732db58a010969430d868961906&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_f7aaaf4ddbd46410969430d8689619d4&lt;/table&gt;&lt;value&gt;{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=f9585732db58a010969430d86896198c^sys_idNOT INf5585732db58a010969430d86896198d"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;f9585732db58a010969430d86896198c&lt;/id&gt;&lt;name&gt;Invoke method&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:57&lt;/sys_created_on&gt;&lt;sys_id&gt;f5585732db58a010969430d86896198d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:24:57&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=f9585732db58a010969430d86896198c^sys_idNOT IN42585732db58a010969430d8689619c4,56585732db58a010969430d8689619d8,9e585732db58a010969430d8689619e3,ca585732db58a010969430d8689619cc,f9585732db58a010969430d86896198e"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6badb014-fb70-4b56-a564-78baed8a7a82&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;params&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;params&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Invoke method"&gt;f9585732db58a010969430d86896198c&lt;/model&gt;&lt;model_id&gt;f9585732db58a010969430d86896198c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:58&lt;/sys_created_on&gt;&lt;sys_id&gt;42585732db58a010969430d8689619c4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:24:58&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f2942b3c-24fe-4576-a14b-fb31398612f6&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;x_snc_ethereum_endpoint&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;endpoint&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;endpoint&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Invoke method"&gt;f9585732db58a010969430d86896198c&lt;/model&gt;&lt;model_id&gt;f9585732db58a010969430d86896198c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="x_snc_ethereum_endpoint"&gt;x_snc_ethereum_endpoint&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:59&lt;/sys_created_on&gt;&lt;sys_id&gt;56585732db58a010969430d8689619d8&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 10:51:10&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=08b0b7fa-1811-4a35-9f22-48def77d02fc&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;x_snc_ethsign_key&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;key&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;key&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Invoke method"&gt;f9585732db58a010969430d86896198c&lt;/model&gt;&lt;model_id&gt;f9585732db58a010969430d86896198c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;4&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="x_snc_ethsign_key"&gt;x_snc_ethsign_key&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:59&lt;/sys_created_on&gt;&lt;sys_id&gt;9e585732db58a010969430d8689619e3&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 10:43:52&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a8cb4a49-fc71-4457-9af9-87ebcc9880f4&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;3&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;false&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;send_anyway&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;send_anyway&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Invoke method"&gt;f9585732db58a010969430d86896198c&lt;/model&gt;&lt;model_id&gt;f9585732db58a010969430d86896198c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;5&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:58&lt;/sys_created_on&gt;&lt;sys_id&gt;ca585732db58a010969430d8689619cc&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 10:43:52&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bdaf2e1f-f30a-419f-b16f-963c17550300&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;x_snc_ethereum_method&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;method&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;method&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Invoke method"&gt;f9585732db58a010969430d86896198c&lt;/model&gt;&lt;model_id&gt;f9585732db58a010969430d86896198c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="x_snc_ethereum_method"&gt;x_snc_ethereum_method&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:57&lt;/sys_created_on&gt;&lt;sys_id&gt;f9585732db58a010969430d86896198e&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:24:57&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=f9585732db58a010969430d86896198c^sys_idNOT INda585732db58a010969430d8689619f5"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Create Invoke Transaction"&gt;6094df7edb18a010969430d8689619dd&lt;/action_type&gt;&lt;action_type_parent display_value="Create Invoke Transaction"&gt;95525f3edb18a010969430d8689619a5&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;6094df7edb18a010969430d8689619dd&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;f9585732db58a010969430d86896198c&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;da585732db58a010969430d8689619f5&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:52&lt;/sys_updated_on&gt;&lt;ui_id&gt;6f2fea6b-fca8-46f5-b266-1d0d24a5df0a&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=da585732db58a010969430d8689619f5"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=da585732db58a010969430d8689619f5"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;endpoint&lt;/field&gt;&lt;id&gt;da585732db58a010969430d8689619f5&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;1a589732db58a010969430d868961903&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.endpoint}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;key&lt;/field&gt;&lt;id&gt;da585732db58a010969430d8689619f5&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;9e589732db58a010969430d868961903&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.key}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;method&lt;/field&gt;&lt;id&gt;da585732db58a010969430d8689619f5&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-12 11:45:22&lt;/sys_created_on&gt;&lt;sys_id&gt;69a911bb1bdc241064bf11fc2d4bcb22&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 11:45:22&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.method}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;params&lt;/field&gt;&lt;id&gt;da585732db58a010969430d8689619f5&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;da589732db58a010969430d868961903&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.params}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sci&lt;/field&gt;&lt;id&gt;da585732db58a010969430d8689619f5&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;56589732db58a010969430d868961903&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_6094df7edb18a010969430d8689619dd&lt;/table&gt;&lt;value&gt;{{subflow.method.smart_contract_instance}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_sub_flow_instance action="delete_multiple" query="flow=f9585732db58a010969430d86896198c^sys_idNOT IN12589732db58a010969430d868961904,e2589732db58a010969430d868961905"/&gt;&lt;sys_hub_sub_flow_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;f9585732db58a010969430d86896198c&lt;/flow&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;subflow display_value="Prepare Tx"&gt;825cf6741b5c241064bf11fc2d4bcbe3&lt;/subflow&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;12589732db58a010969430d868961904&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:52&lt;/sys_updated_on&gt;&lt;ui_id&gt;1311b6e8-0432-4ff2-a2ca-a70182984b3f&lt;/ui_id&gt;&lt;/sys_hub_sub_flow_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=12589732db58a010969430d868961904"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=12589732db58a010969430d868961904"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;tx&lt;/field&gt;&lt;id&gt;12589732db58a010969430d868961904&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;62589732db58a010969430d868961905&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_825cf6741b5c241064bf11fc2d4bcbe3&lt;/table&gt;&lt;value&gt;{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_sub_flow_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Invoke method"&gt;f9585732db58a010969430d86896198c&lt;/flow&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;subflow display_value="Execute Tx"&gt;f7aaaf4ddbd46410969430d8689619d4&lt;/subflow&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;e2589732db58a010969430d868961905&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-12 14:11:52&lt;/sys_updated_on&gt;&lt;ui_id&gt;020fe61d-d5d6-46f1-81c6-86aeae2e9cc0&lt;/ui_id&gt;&lt;/sys_hub_sub_flow_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=e2589732db58a010969430d868961905"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=e2589732db58a010969430d868961905"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;tx&lt;/field&gt;&lt;id&gt;e2589732db58a010969430d868961905&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:25:00&lt;/sys_created_on&gt;&lt;sys_id&gt;26589732db58a010969430d868961906&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:25:00&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_f7aaaf4ddbd46410969430d8689619d4&lt;/table&gt;&lt;value&gt;{{6f2fea6b-fca8-46f5-b266-1d0d24a5df0a.tx}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c^sys_idNOT IN16585732db58a010969430d8689619d4,31585732db58a010969430d868961996,5e585732db58a010969430d8689619df,8a585732db58a010969430d8689619c8,d6585732db58a010969430d8689619eb"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;send_anyway&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;send_anyway&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:59&lt;/sys_created_on&gt;&lt;sys_id&gt;16585732db58a010969430d8689619d4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:24:59&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;method&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;method&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:57&lt;/sys_created_on&gt;&lt;sys_id&gt;31585732db58a010969430d868961996&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:24:57&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;endpoint&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;endpoint&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:59&lt;/sys_created_on&gt;&lt;sys_id&gt;5e585732db58a010969430d8689619df&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:24:59&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;params&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;params&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:58&lt;/sys_created_on&gt;&lt;sys_id&gt;8a585732db58a010969430d8689619c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:24:58&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;key&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;key&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_f9585732db58a010969430d86896198c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-09 18:24:59&lt;/sys_created_on&gt;&lt;sys_id&gt;d6585732db58a010969430d8689619eb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Ethereum" source="x_snc_ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Ethereum"&gt;3c0e4434db442010969430d868961918&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-09 18:24:59&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>187662918</payload_hash>
+        <record_name>Invoke method</record_name>
+        <reverted_from/>
+        <source>255c451fdbc46010969430d8689619a4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-12 14:11:55</sys_created_on>
+        <sys_id>a83b35ff1b10641064bf11fc2d4bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>175bccc6f500000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 14:11:55</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>a03b35ff7d10641008dcab2f6fa46b24</update_guid>
+        <update_guid_history>a03b35ff7d10641008dcab2f6fa46b24:187662918,572bb1ff27106410395633b01b4230fd:2052522119,4a2bb1ffee1064103a2bdaaf8ad41783:-1785084945,8ba911bb4fdc24104d0ca336b9c91eca:1115082557,0da9dd7b87dc2410ab334610d1d029c7:-2082971976,04a9dd7bf3dc2410e6b899858f886c3d:-1863750636,304dc5b348dc241027dca2360c66245b:-1711599561,9b3d85b3ccdc241008fbb3f60a79473d:1259527215,1a3d45b320dc241023e16b24ec674599:-1150647567,e52d05b36ddc241078fab14b9d2ffb55:-401516013,1e1dc1b33bdc2410e126d0c67669b89b:-763533614,429b0573e4dc2410f6a9a3e0d676d549:-172946235,909bc173acdc2410362299ff0d463f2e:207881402,538b817364dc2410addd290792b5ef90:-2062675932,635897327958a01054547fba7ad0676f:1828325528,295857326f58a01035d39e4e5aa3c573:-1482514448,d3c713322758a01054f2c5657e5a848b:1349104310,1aa7dffe2918a01020d16baf85953d34:892033027,6ef1db3e7e18a010221ba14dc3579c5b:-1929873095,e563d91966986410c9a269cfbf858f2c:1692979652</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 17:17:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>aa3e7c76b5ec448b85cf20142cfb55a9</sys_id>
+        <sys_metadata>6963d9191b98641064bf11fc2d4bcb28</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Invoke method</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_scope_delete display_value="">2bb8a3046e8a400e969b229d381b21b1</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_6963d9191b98641064bf11fc2d4bcb28</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_6963d9191b98641064bf11fc2d4bcb28">a83b35ff1b10641064bf11fc2d4bcb24</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 17:17:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

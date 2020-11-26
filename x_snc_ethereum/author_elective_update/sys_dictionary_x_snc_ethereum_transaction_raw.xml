@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="raw" table="x_snc_ethereum_transaction">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>edge_encryption_enabled=true</attributes>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Raw</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>raw</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <name>x_snc_ethereum_transaction</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-26 11:23:22</sys_created_on>
+        <sys_id>bd91f5dadb48e010969430d868961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Raw</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_dictionary_x_snc_ethereum_transaction_raw</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-26 11:23:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Ethereum">3c0e4434db442010969430d868961918</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>sys_dictionary_x_snc_ethereum_transaction_raw</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="INSERT_OR_UPDATE" element="raw" table="x_snc_ethereum_transaction">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>edge_encryption_enabled=true</attributes>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Raw</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>raw</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <name>x_snc_ethereum_transaction</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-26 11:23:22</sys_created_on>
+        <sys_id>bd91f5dadb48e010969430d868961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Raw</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_dictionary_x_snc_ethereum_transaction_raw</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-26 11:23:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+</record_update>]]></payload>
+        <payload_hash>427078958</payload_hash>
+        <record_name>Transaction.Raw</record_name>
+        <reverted_from/>
+        <source>36db091fdbc46010969430d8689619a5</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-29 11:14:35</sys_created_on>
+        <sys_id>9a5c895fdbc46010969430d868961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17574110a690000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-29 11:14:35</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>1a5c895f83c46010dcb2a9ce7717dd84</update_guid>
+        <update_guid_history>1a5c895f83c46010dcb2a9ce7717dd84:0,410c015fcdc46010d090b7d2884e8d01:-1661796216,ada901dbffc4601057934e43fb07e6f7:0,35f8059b48c46010a963b3bfdc3d9a79:-1661796216,acc549d793c46010dcbde28bc971425b:0,566f30d3d1c46010d38d1b4574a28906:-1661796216,da91f5dadb48e010382941e016fba3c0:-1848909636</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 17:34:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>38d58657c7a94862b9433eb9c13255d9</sys_id>
+        <sys_metadata>b44cc55fdbc46010969430d86896198a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Raw</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_parent display_value="">e6401874db442010969430d868961901</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_scope_delete display_value="">2bb8a3046e8a400e969b229d381b21b1</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_snc_ethereum_transaction_raw</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_snc_ethereum_transaction_raw">9a5c895fdbc46010969430d868961984</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 17:34:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

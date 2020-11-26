@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="DELETE">
+        <active>true</active>
+        <condition table="x_snc_ethereum_transaction">state=1^EQ<item display_value="Ready" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Ready</label>
+        <name>Transaction Flow Formatter</name>
+        <order>20</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-29 14:55:19</sys_created_on>
+        <sys_id>73de39dbdb486010969430d86896192d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Transaction Flow Formatter</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_process_flow_73de39dbdb486010969430d86896192d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-29 14:55:19</sys_updated_on>
+        <table>x_snc_ethereum_transaction</table>
+    </sys_process_flow>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Ethereum">3c0e4434db442010969430d868961918</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>sys_process_flow_73de39dbdb486010969430d86896192d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="x_snc_ethereum_transaction">state=1^EQ<item display_value="Ready" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Ready</label><name>Transaction Flow Formatter</name><order>20</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-10-29 14:55:19</sys_created_on><sys_id>73de39dbdb486010969430d86896192d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Transaction Flow Formatter</sys_name><sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package><sys_policy/><sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope><sys_update_name>sys_process_flow_73de39dbdb486010969430d86896192d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-10-29 14:55:19</sys_updated_on><table>x_snc_ethereum_transaction</table></sys_process_flow></record_update>]]></payload>
+        <payload_hash>1239882529</payload_hash>
+        <record_name>Transaction Flow Formatter</record_name>
+        <reverted_from/>
+        <source>255c451fdbc46010969430d8689619a4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-29 14:55:19</sys_created_on>
+        <sys_id>f7de39dbdb486010969430d86896192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17574db226e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-29 14:55:19</sys_updated_on>
+        <type>Flow Formatter</type>
+        <update_guid>33de39dbfb48601049fdf9df081d7b2e</update_guid>
+        <update_guid_history>33de39dbfb48601049fdf9df081d7b2e:1239882529</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 17:34:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_process_flow">sys_process_flow</sys_db_object>
+        <sys_id>1c0f99946ac9494097022b9ac5835100</sys_id>
+        <sys_metadata>73de39dbdb486010969430d86896192d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Transaction Flow Formatter</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_scope_delete display_value="">2bb8a3046e8a400e969b229d381b21b1</sys_scope_delete>
+        <sys_update_name>sys_process_flow_73de39dbdb486010969430d86896192d</sys_update_name>
+        <sys_update_version display_value="sys_process_flow_73de39dbdb486010969430d86896192d">f7de39dbdb486010969430d86896192e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 17:34:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

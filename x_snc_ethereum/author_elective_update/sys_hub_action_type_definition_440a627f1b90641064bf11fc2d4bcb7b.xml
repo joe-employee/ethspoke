@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>send_transaction</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Send Transaction</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-12 17:36:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>440a627f1b90641064bf11fc2d4bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send Transaction</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_440a627f1b90641064bf11fc2d4bcb7b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 17:36:25</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=440a627f1b90641064bf11fc2d4bcb7b"/>
+    <sys_variable_value action="DELETE" query="document_key=440a627f1b90641064bf11fc2d4bcb7b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Ethereum">3c0e4434db442010969430d868961918</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>sys_hub_action_type_definition_440a627f1b90641064bf11fc2d4bcb7b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>public</access><acls/><action_template/><active>true</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description/><ih_action>false</ih_action><internal_name>send_transaction</internal_name><label_cache/><latest_snapshot/><master_snapshot/><name>Send Transaction</name><natlang/><outputs/><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-12 17:36:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>440a627f1b90641064bf11fc2d4bcb7b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Send Transaction</sys_name><sys_overrides/><sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package><sys_policy/><sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope><sys_update_name>sys_hub_action_type_definition_440a627f1b90641064bf11fc2d4bcb7b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-11-12 17:36:25</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_translated_text action="delete_multiple" query="documentkey=440a627f1b90641064bf11fc2d4bcb7b"/><sys_variable_value action="delete_multiple" query="document_key=440a627f1b90641064bf11fc2d4bcb7b"/></record_update>]]></payload>
+        <payload_hash>-1065745333</payload_hash>
+        <record_name>Send Transaction</record_name>
+        <reverted_from/>
+        <source>255c451fdbc46010969430d8689619a4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-12 17:36:25</sys_created_on>
+        <sys_id>cc0a627f1b90641064bf11fc2d4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>175bd87a8ad0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 17:36:25</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>080a627f02906410cbeda769a499877e</update_guid>
+        <update_guid_history>080a627f02906410cbeda769a499877e:-1065745333</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 17:30:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>2c659c883002468c9661b4709e33f644</sys_id>
+        <sys_metadata>440a627f1b90641064bf11fc2d4bcb7b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send Transaction</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_scope_delete display_value="">2bb8a3046e8a400e969b229d381b21b1</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_440a627f1b90641064bf11fc2d4bcb7b</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_440a627f1b90641064bf11fc2d4bcb7b">cc0a627f1b90641064bf11fc2d4bcb7e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 17:30:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

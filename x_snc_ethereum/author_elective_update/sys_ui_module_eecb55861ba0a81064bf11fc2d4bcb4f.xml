@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Ethereum">48601c74db442010969430d8689619fe</application>
+        <filter/>
+        <name>Accounts</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_snc_ethereum.account_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 11:41:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eecb55861ba0a81064bf11fc2d4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Accounts</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_update_name>sys_ui_module_eecb55861ba0a81064bf11fc2d4bcb4f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 11:41:03</sys_updated_on>
+        <table>x_snc_ethereum_account</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Ethereum">3c0e4434db442010969430d868961918</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>sys_ui_module_eecb55861ba0a81064bf11fc2d4bcb4f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Ethereum">48601c74db442010969430d8689619fe</application><filter/><name>Accounts</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_snc_ethereum.account_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-19 11:41:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>eecb55861ba0a81064bf11fc2d4bcb4f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Accounts</sys_name><sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package><sys_policy/><sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope><sys_update_name>sys_ui_module_eecb55861ba0a81064bf11fc2d4bcb4f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-11-19 11:41:03</sys_updated_on><table>x_snc_ethereum_account</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>-901307497</payload_hash>
+        <record_name>Accounts</record_name>
+        <reverted_from/>
+        <source>581e9bc51ba0281064bf11fc2d4bcb9c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 11:41:03</sys_created_on>
+        <sys_id>eacb55861ba0a81064bf11fc2d4bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>175e04ed13d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 11:41:03</sys_updated_on>
+        <type>Module</type>
+        <update_guid>26cb558666a0a8109687eddc111fa0b5</update_guid>
+        <update_guid_history>26cb558666a0a8109687eddc111fa0b5:-901307497</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 08:23:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>e38181095dc74c928c951aad31527249</sys_id>
+        <sys_metadata>eecb55861ba0a81064bf11fc2d4bcb4f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Accounts</sys_name>
+        <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+        <sys_scope_delete display_value="">2bb8a3046e8a400e969b229d381b21b1</sys_scope_delete>
+        <sys_update_name>sys_ui_module_eecb55861ba0a81064bf11fc2d4bcb4f</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_eecb55861ba0a81064bf11fc2d4bcb4f">eacb55861ba0a81064bf11fc2d4bcbb5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 08:23:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

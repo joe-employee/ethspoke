@@ -90,7 +90,7 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>SignTx (EthSigner App)</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
-        <sys_parent display_value="Transaction">e6401874db442010969430d868961901</sys_parent>
+        <sys_parent display_value="">e6401874db442010969430d868961901</sys_parent>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
         <sys_scope_delete display_value="">2bb8a3046e8a400e969b229d381b21b1</sys_scope_delete>
