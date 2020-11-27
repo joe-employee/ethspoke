@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Smart Contract Instance" max_length="40" name="x_snc_ethereum_smart_contract_instance" sizeclass="2" type="collection">
+    <element label="Smart Contract Instance" max_length="40" name="x_snc_ethereum_smart_contract_instance" sizeclass="3" type="collection">
         <element label="ABI" max_length="10000" name="abi" type="string"/>
         <element display="true" label="Address" max_length="42" name="address" type="string"/>
         <element label="Constructor Parameters" max_length="1000" name="constructor_parameters" type="string"/>
