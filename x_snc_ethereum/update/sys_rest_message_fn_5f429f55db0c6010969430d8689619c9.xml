@@ -26,7 +26,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-26 15:12:52</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
-        <use_mid_server display_value="quorum">4154ea2edb835410969430d868961940</use_mid_server>
+        <use_mid_server display_value="">4154ea2edb835410969430d868961940</use_mid_server>
         <use_mutual_auth>false</use_mutual_auth>
     </sys_rest_message_fn>
 </record_update>

@@ -42,7 +42,7 @@
         <update_guid_history>db21865fac486010f9e780cdffa2617e:1096943439</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_snc_ethereum_abi.x_snc_ethereum.abi_user">5ec1029fdb486010969430d868961950</sys_audit_delete>
+        <sys_audit_delete display_value="">5ec1029fdb486010969430d868961950</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-29 15:08:03</sys_created_on>

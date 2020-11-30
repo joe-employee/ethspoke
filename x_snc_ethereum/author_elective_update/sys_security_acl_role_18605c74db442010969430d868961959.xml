@@ -60,7 +60,7 @@
         <update_guid_history>ad8ccd5fddc460101cc4e84b537a01f7:0,8afb4d1f0bc4601022ab5d42686e26e6:1944392340,a6d905db37c460108f34dbe9db93a5cc:0,fcf8819bcfc46010b237099eb7dbaa9c:1944392340,90d5c9d757c46010a8a389208c9a00ae:0,106f7c9396c46010dfa31e5cbd391788:-148650068,18605c749f442010215193b889b8765b:-171121900</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_snc_ethereum_transaction.x_snc_ethereum.transaction_user">be36e144db38e010969430d8689619d2</sys_audit_delete>
+        <sys_audit_delete display_value="">be36e144db38e010969430d8689619d2</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-25 17:34:31</sys_created_on>

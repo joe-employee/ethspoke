@@ -65,7 +65,7 @@
         <update_guid_history>78e8656b3340a010130b941015945e99:1924605041</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Accounts">7df4f2701b5c241064bf11fc2d4bcb15</sys_audit_delete>
+        <sys_audit_delete display_value="">7df4f2701b5c241064bf11fc2d4bcb15</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-03 10:42:34</sys_created_on>

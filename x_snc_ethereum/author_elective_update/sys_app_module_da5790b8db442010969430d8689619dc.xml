@@ -106,7 +106,7 @@
         <update_guid_history>365c895f96c46010503624ff1ba438f0:0,41eb491f51c460109e50f8cda43fe7d7:-100465272,43a941db99c46010b10d66a14b824867:0,06e88d5b9bc46010ec4748faa61b928d:-100465272,70c549d7dfc46010485087d0ec559999:0,f45f789300c46010b9e88c0bf0b64ea1:-458120177,925790b875442010d20337a61587a8de:818131954</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Smart Contract Instances">16524a9fdb486010969430d868961978</sys_audit_delete>
+        <sys_audit_delete display_value="">16524a9fdb486010969430d868961978</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-29 15:10:30</sys_created_on>

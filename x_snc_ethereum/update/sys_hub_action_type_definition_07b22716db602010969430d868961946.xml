@@ -803,11 +803,11 @@ while (gr.next()) {
         <sys_created_on>2020-11-20 16:09:07</sys_created_on>
         <sys_id>dfb22716db602010969430d86896194e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>network</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_07b22716db602010969430d868961946_network_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-20 16:09:07</sys_updated_on>
         <url/>
@@ -827,11 +827,11 @@ while (gr.next()) {
         <sys_created_on>2020-11-20 16:09:09</sys_created_on>
         <sys_id>6bb22716db602010969430d86896198f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>endpoint</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_07b22716db602010969430d868961946_endpoint_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-20 16:09:09</sys_updated_on>
         <url/>
@@ -1654,11 +1654,11 @@ while (gr.next()) {
         <sys_created_on>2020-11-20 16:11:32</sys_created_on>
         <sys_id>6a43eb16db602010969430d868961959</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>network</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_1643eb16db602010969430d868961947_network_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-20 16:11:32</sys_updated_on>
         <url/>
@@ -1678,11 +1678,11 @@ while (gr.next()) {
         <sys_created_on>2020-11-20 16:11:34</sys_created_on>
         <sys_id>4743eb16db602010969430d868961982</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>endpoint</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1643eb16db602010969430d868961947_endpoint_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-20 16:11:34</sys_updated_on>
         <url/>

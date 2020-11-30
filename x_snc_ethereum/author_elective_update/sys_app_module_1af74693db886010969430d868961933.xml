@@ -65,7 +65,7 @@
         <update_guid_history>17c886d35f886010ca801e500439e80d:737363204,92f746939988601034c56ca1cdc69335:373189773,92f746939988601034c56ca1cdc69335:373189773</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Constructors">033a0379db982010969430d8689619e3</sys_audit_delete>
+        <sys_audit_delete display_value="">033a0379db982010969430d8689619e3</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-06 14:49:24</sys_created_on>

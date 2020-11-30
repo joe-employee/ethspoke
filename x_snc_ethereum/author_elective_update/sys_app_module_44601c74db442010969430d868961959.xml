@@ -106,7 +106,7 @@
         <update_guid_history>665c895f8cc46010d2457c23a0896ee9:0,5afb8d1f6ac460108b4aedb10bab5346:1295581480,c7a941dbdbc46010f92869a9d42f0a62:0,38f8819bd4c460109661407facbe21d7:1295581480,f8c549d712c4601087bedfa7dabd7394:0,106f7c935ec46010bc04568bf26de4e2:-922474622,48601c74fe442010f5f4816e9ace66fd:-244169824</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Transactions">62f5ed04db38e010969430d868961951</sys_audit_delete>
+        <sys_audit_delete display_value="">62f5ed04db38e010969430d868961951</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-25 17:33:24</sys_created_on>

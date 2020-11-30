@@ -1094,11 +1094,11 @@
         <sys_created_on>2020-11-13 09:41:34</sys_created_on>
         <sys_id>39e60ac81ba8641064bf11fc2d4bcbfc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>txhash</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_09c6c6c81ba8641064bf11fc2d4bcbd9_txhash_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-13 09:41:34</sys_updated_on>
         <url/>
@@ -1117,11 +1117,11 @@
         <sys_created_on>2020-11-13 09:41:34</sys_created_on>
         <sys_id>b9e68ac81ba8641064bf11fc2d4bcba9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>endpoint</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_09c6c6c81ba8641064bf11fc2d4bcbd9_endpoint_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-13 09:41:34</sys_updated_on>
         <url/>
@@ -1141,11 +1141,11 @@
         <sys_created_on>2020-11-13 09:44:37</sys_created_on>
         <sys_id>2297820c1ba8641064bf11fc2d4bcbaf</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>receipt</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_09c6c6c81ba8641064bf11fc2d4bcbd9_receipt_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-13 09:44:37</sys_updated_on>
         <url/>
@@ -2259,11 +2259,11 @@
         <sys_created_on>2020-11-13 09:44:21</sys_created_on>
         <sys_id>7687420c1ba8641064bf11fc2d4bcb97</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>endpoint</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_2e87420c1ba8641064bf11fc2d4bcb8a_endpoint_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-13 09:44:21</sys_updated_on>
         <url/>
@@ -2282,11 +2282,11 @@
         <sys_created_on>2020-11-13 09:44:21</sys_created_on>
         <sys_id>b287420c1ba8641064bf11fc2d4bcb91</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>txhash</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_2e87420c1ba8641064bf11fc2d4bcb8a_txhash_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-13 09:44:21</sys_updated_on>
         <url/>
@@ -2306,11 +2306,11 @@
         <sys_created_on>2020-11-13 09:45:12</sys_created_on>
         <sys_id>83b7460c1ba8641064bf11fc2d4bcbc0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>receipt</sys_name>
         <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_2e87420c1ba8641064bf11fc2d4bcb8a_receipt_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-13 09:45:12</sys_updated_on>
         <url/>

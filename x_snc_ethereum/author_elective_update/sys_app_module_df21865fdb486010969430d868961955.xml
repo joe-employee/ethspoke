@@ -65,7 +65,7 @@
         <update_guid_history>d721865f9748601062b5b752b6762e57:-2107454762</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="ABIs">2ec1029fdb486010969430d868961999</sys_audit_delete>
+        <sys_audit_delete display_value="">2ec1029fdb486010969430d868961999</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-10-29 15:08:04</sys_created_on>

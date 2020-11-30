@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
     <sc_cat_item action="INSERT_OR_UPDATE">
+        <access_type/>
         <active>true</active>
         <availability>on_desktop</availability>
         <billable>false</billable>

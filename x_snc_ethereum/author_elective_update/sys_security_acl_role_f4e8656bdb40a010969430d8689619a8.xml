@@ -42,7 +42,7 @@
         <update_guid_history>bce8656bb940a01061b464731015bcb6:-1019544829</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_snc_ethereum_account.x_snc_ethereum.account_user">2df4b2701b5c241064bf11fc2d4bcbce</sys_audit_delete>
+        <sys_audit_delete display_value="">2df4b2701b5c241064bf11fc2d4bcbce</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-03 10:42:32</sys_created_on>

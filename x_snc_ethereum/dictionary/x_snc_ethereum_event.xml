@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Event" max_length="40" name="x_snc_ethereum_event" sizeclass="5" type="collection">
+    <element label="Event" max_length="40" name="x_snc_ethereum_event" type="collection">
         <element label="Name" max_length="100" name="name" type="string"/>
         <element label="Number" max_length="40" name="number" type="integer"/>
         <element label="parameters" max_length="1000" name="parameters" type="string"/>

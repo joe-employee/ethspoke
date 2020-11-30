@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="txhash" label="txhash" language="en" table="var__m_sys_hub_action_input_09c6c6c81ba8641064bf11fc2d4bcbd9">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>txhash</element>
+            <help/>
+            <hint/>
+            <label>txhash</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_09c6c6c81ba8641064bf11fc2d4bcbd9</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-13 09:41:34</sys_created_on>
+            <sys_id>39e60ac81ba8641064bf11fc2d4bcbfc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>txhash</sys_name>
+            <sys_package display_value="Ethereum" source="x_snc_ethereum">3c0e4434db442010969430d868961918</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Ethereum">3c0e4434db442010969430d868961918</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_09c6c6c81ba8641064bf11fc2d4bcbd9_txhash_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-13 09:41:34</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
